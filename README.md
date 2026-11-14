@@ -14,7 +14,7 @@
 
 新增工具自检：`python agent-workflow/scripts/test_workflow.py`。历史 R5.4 ZIP 和 `manifest-R5.4.json` 保留原发布快照；新的协作入口不在旧 ZIP 内。
 
-[现有技能审计与取舍](skills-system-review/AUDIT-2026-11-14.md) · [196 条能力目录](skills-system-review/capabilities-2026-11-14.json) · [协作验证记录](agent-workflow/VALIDATION.md)
+[新 Skill 全部文件](agent-workflow/) · [协作验证记录](agent-workflow/VALIDATION.md)
 
 ## 以后怎么用
 

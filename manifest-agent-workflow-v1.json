@@ -20,8 +20,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3718,
-      "sha256": "e2bbe8d5883479c7e23527b7675283e28dd77c286116e0974d295ed67957c57c"
+      "bytes": 3612,
+      "sha256": "5b582def42df1df638a2c597bf3bc0cd1b6a2c9e1697eadd4e3a55bbd4c26e43"
     },
     {
       "path": "START.txt",
@@ -102,21 +102,6 @@
       "path": "pipeline/test_pipeline.py",
       "bytes": 1622,
       "sha256": "e0ab360d45fc9e2f873b0846670cf59c676447980105d4d5f709c7fcc3df6d72"
-    },
-    {
-      "path": "skills-system-review/AUDIT-2026-11-14.md",
-      "bytes": 4873,
-      "sha256": "4b32a271162c60facd0b8b33fcdca6f7dd2f91ae436024b2173cd720e0bae1b4"
-    },
-    {
-      "path": "skills-system-review/README.md",
-      "bytes": 18091,
-      "sha256": "ecfeca2052fed60d1a83a6e72f8b2263a02a5be918d26c417569d62543bca838"
-    },
-    {
-      "path": "skills-system-review/capabilities-2026-11-14.json",
-      "bytes": 220463,
-      "sha256": "eca7759b9138c2aae2674c02ae4717e72603988d1d5fdf588fbe6b805e66ae10"
     },
     {
       "path": "tutorial/00_R5.2研究更新说明.md",
