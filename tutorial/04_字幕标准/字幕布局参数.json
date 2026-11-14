@@ -1,0 +1,27 @@
+{
+  "version": "2026-11-12",
+  "aspect_ratio": "9:16",
+  "reference_canvas": [
+    900,
+    1600
+  ],
+  "execution_canvas": [
+    1080,
+    1920
+  ],
+  "center_ratio": [
+    0.5,
+    0.8
+  ],
+  "center_pixels": [
+    540,
+    1536
+  ],
+  "subtitle_reserved_y": [
+    1440,
+    1640
+  ],
+  "PIP_bottom_max_y_recommended": 1420,
+  "minimum_gap_from_actual_subtitle_box_px": 20,
+  "font_and_style": "Use episode-confirmed style; 58px and 88/156px boxes are examples, not universal."
+}

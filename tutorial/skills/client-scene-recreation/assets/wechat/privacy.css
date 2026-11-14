@@ -1,0 +1,18 @@
+.privacy-mask {
+  display: inline-block !important;
+  position: relative;
+  vertical-align: baseline;
+  white-space: pre;
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: none !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  pointer-events: none;
+}
+input.privacy-control, select.privacy-control {
+  filter: blur(2.5px);
+  caret-color: transparent;
+}

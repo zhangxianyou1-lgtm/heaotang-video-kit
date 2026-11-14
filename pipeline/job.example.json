@@ -1,0 +1,18 @@
+{
+  "sources": ["input/01.mp4", "input/02.mp4"],
+  "script": "input/本期文稿.md",
+  "work": "jobs/本期",
+  "model": "large-v3-turbo",
+  "device": "cpu",
+  "compute_type": "int8",
+  "blur": "heavy",
+  "green_screen": true,
+  "key_color": "0x5fa557",
+  "key_similarity": 0.055,
+  "key_blend": 0.025,
+  "foreground_gain": 0.97,
+  "foreground_offset": 1,
+  "silence_db": -35,
+  "silence_min": 0.8,
+  "speech_margin": 0.21
+}
