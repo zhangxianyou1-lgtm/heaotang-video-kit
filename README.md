@@ -4,6 +4,18 @@
 
 [下载完整 R5.4 流程包](./heaotang-video-kit-R5.4.zip?raw=true) · [历史 R5.3 教程包](./heaotang-video-kit-R5.3.zip?raw=true)
 
+## Codex 聊天内自动协作
+
+当前源码新增 [协作入口](agent-workflow/SKILL.md)。在 Codex 中打开本仓库，直接说明目标；根 [AGENTS.md](AGENTS.md) 会按任务选择技能，并在有独立交付项时组织子 Agent、复查和有限返工。明确的小修改直接完成；视频继续使用原流程。
+
+[任务与证据协议](agent-workflow/references/protocol.md)说明命令和恢复方式。证据工具只需 Python 3.11 及以上版本的标准库，由主 Agent 调用；它核对依赖、文件版本、实际检查日志和独立审核，防止沿用陈旧的通过结果。它不是后台服务，也不保证拥有同等写权限的 Agent 无法篡改记录。
+
+本项目接入不等于已经全机安装；其他项目可复制 `agent-workflow/`，在其 AGENTS.md 中按需引用并保留原项目约定。工具与插件按当前环境实际可用能力选择，关闭聊天后不承诺继续运行。
+
+新增工具自检：`python agent-workflow/scripts/test_workflow.py`。历史 R5.4 ZIP 和 `manifest-R5.4.json` 保留原发布快照；新的协作入口不在旧 ZIP 内。
+
+[现有技能审计与取舍](skills-system-review/AUDIT-2026-11-14.md) · [196 条能力目录](skills-system-review/capabilities-2026-11-14.json) · [协作验证记录](agent-workflow/VALIDATION.md)
+
 ## 以后怎么用
 
 1. 下载R5.4并解压，在Codex中打开整包目录。
