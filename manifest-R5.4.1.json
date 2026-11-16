@@ -1,0 +1,274 @@
+{
+  "version": "R5.4.1",
+  "date": "2026-11-16",
+  "entry": "AGENTS.md",
+  "base_version": "R5.4",
+  "change": "画面方案完成后全文复查，检查漏选并记录具体修改或保留依据；不设隐喻数量配额。",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4959,
+      "sha256": "c83bf02261090769c7d14b20a551603edd9f489cbf790f6d2f9d64fb8da368ae"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 4783,
+      "sha256": "2d3d899c22f3aee4ee880d97188736ad1c5156b9e93653a455ff3c0fbc01eb4c"
+    },
+    {
+      "path": "START.txt",
+      "bytes": 961,
+      "sha256": "8d6d7649eec44d3ddb54ad4285f5b6bd008d833be932c8f1a77d355c1f412985"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 44,
+      "sha256": "37835b727359a46aef3f501053c5c73350cb4d9206b824a23594f6ee195d7dad"
+    },
+    {
+      "path": "pipeline/assets/studio-medium.png",
+      "bytes": 1554753,
+      "sha256": "f8da08e97507abe3362da97b7c34d528924a0094fe5cf7d07a62e604d7ac7d11"
+    },
+    {
+      "path": "pipeline/job.example.json",
+      "bytes": 426,
+      "sha256": "8bdae5de5ce2e7328aeaf9458df62029ccd0eb2c399b5fc9096136d87060e915"
+    },
+    {
+      "path": "pipeline/pipeline.py",
+      "bytes": 16688,
+      "sha256": "54f87b17dfcb2035a848f02a81b92583e8c479b18f5ad65038b81e08d931fc4b"
+    },
+    {
+      "path": "pipeline/README.md",
+      "bytes": 4573,
+      "sha256": "a1c22e01233d132ddbd34dd5d8da03b05c8866fed92a129544f5d3e4e799e09f"
+    },
+    {
+      "path": "pipeline/requirements.txt",
+      "bytes": 38,
+      "sha256": "89cceb720598b53869bca3e10b6de3a3f84fb57b69a82d4e8eee7db95cbcbb90"
+    },
+    {
+      "path": "pipeline/test_pipeline.py",
+      "bytes": 1622,
+      "sha256": "e0ab360d45fc9e2f873b0846670cf59c676447980105d4d5f709c7fcc3df6d72"
+    },
+    {
+      "path": "pipeline/VALIDATION.md",
+      "bytes": 1600,
+      "sha256": "f859f85cd7441f8103dc104e432bf2978c0becee610e4d43efc7af3ce734a18f"
+    },
+    {
+      "path": "tutorial/00_R5.2研究更新说明.md",
+      "bytes": 2847,
+      "sha256": "0fde2c6b1ec603ccd2e1c867c8d71b3916225094637d140bc4b3baea75273197"
+    },
+    {
+      "path": "tutorial/00_R5.3平台分工更新说明.md",
+      "bytes": 1200,
+      "sha256": "4dfe11947ea09139ffff5935d44de348e96a7e672842946ad6432f4c0e7e0109"
+    },
+    {
+      "path": "tutorial/00_先读我.md",
+      "bytes": 5521,
+      "sha256": "b8b31455b4667188697dbb3a974bad1fbf5cd0a0564884f4850c6798f2459281"
+    },
+    {
+      "path": "tutorial/00_先读我.txt",
+      "bytes": 5521,
+      "sha256": "b8b31455b4667188697dbb3a974bad1fbf5cd0a0564884f4850c6798f2459281"
+    },
+    {
+      "path": "tutorial/01_直接复制给AI的启动词.txt",
+      "bytes": 5014,
+      "sha256": "464d3465ae89de2105e702c7d94cf8ff42cb51392decc4494d04bea7ae79f0c1"
+    },
+    {
+      "path": "tutorial/02_收到视频后的完整流程.md",
+      "bytes": 14045,
+      "sha256": "657afe710220fe5287dfe147e5ee13d57509647df3df22b3b099faad4f02a168"
+    },
+    {
+      "path": "tutorial/03_任务与验收模板/Claude动画与BGM任务模板.md",
+      "bytes": 9441,
+      "sha256": "c31bb932abb709cd2bcc8a90e77c41e280225942ec0ed5943be334bb333cb063"
+    },
+    {
+      "path": "tutorial/03_任务与验收模板/回交与成片验收清单.md",
+      "bytes": 10965,
+      "sha256": "687c4cd1ff616bb48b846d41934d66748a89807a4073156ddff490d6a6f49e96"
+    },
+    {
+      "path": "tutorial/03_任务与验收模板/生成方案模板.md",
+      "bytes": 4937,
+      "sha256": "28922210fc790ca7b390a6ac0f3360ca3da41d35bf4b1c74ce8c17d4bd494382"
+    },
+    {
+      "path": "tutorial/03_任务与验收模板/项目记录模板.md",
+      "bytes": 2649,
+      "sha256": "ec2cb27b0093e9bcd5d7d93ab6d16d1272454f95cecea2a4cae4f298384bd077"
+    },
+    {
+      "path": "tutorial/04_字幕标准/字幕与小窗标准.md",
+      "bytes": 1579,
+      "sha256": "7185c9d8e12855b7175cf91add30c1eddba238a0ce537a0af7c4a03ba9081398"
+    },
+    {
+      "path": "tutorial/04_字幕标准/字幕布局参数.json",
+      "bytes": 482,
+      "sha256": "67ef2fcae117cea11a1096735b02495dd6212a558b3985709f76d7f1739a53c8"
+    },
+    {
+      "path": "tutorial/04_字幕标准/用户参考图.png",
+      "bytes": 672685,
+      "sha256": "991686dafd4e8786eccb9ca4ac82bbfe12168a7e7406bd0e6788169824ba1367"
+    },
+    {
+      "path": "tutorial/05_创作参考/动作提示词工程_研究综述.md",
+      "bytes": 10734,
+      "sha256": "5793f9c5535238764d72906636beb2b84558e7f5a01e73c153c5e903ef2a2341"
+    },
+    {
+      "path": "tutorial/05_创作参考/研究来源/00_来源索引.md",
+      "bytes": 3990,
+      "sha256": "ec6a4c78bfb2469b147040727c65e597c3b7add2e167abfc50fc4ccc3d494315"
+    },
+    {
+      "path": "tutorial/05_创作参考/研究来源/01_动作实验与反例.md",
+      "bytes": 8839,
+      "sha256": "5eb9f81a1555f0e68def9cd95fea91084b6f5ead259c2e62b27ab849d484ea05"
+    },
+    {
+      "path": "tutorial/05_创作参考/研究来源/02_国际创作者复盘.md",
+      "bytes": 10047,
+      "sha256": "94e13972b5bce07708bff855682711e3822560114506fba54ab674c0dcc2fe63"
+    },
+    {
+      "path": "tutorial/05_创作参考/研究来源/03_中文作者与团队实测.md",
+      "bytes": 9879,
+      "sha256": "4b5213401ed5c4b956227940421c891f976cc8c09769823e706c6b334b1d6353"
+    },
+    {
+      "path": "tutorial/05_创作参考/研究来源/04_视觉隐喻与跨媒介案例.md",
+      "bytes": 12545,
+      "sha256": "2e59094514709206e6c48c4073799d38c1442f9f9f1aacb6055dd0a2ef03ed03"
+    },
+    {
+      "path": "tutorial/05_创作参考/视觉构思参考.md",
+      "bytes": 7493,
+      "sha256": "5bf57a7068a2ac0eb5f6e0a36d3a2f5326fc0ffa107908b4c2c75bdb500c1e51"
+    },
+    {
+      "path": "tutorial/05_创作参考/视觉隐喻与口播适配_代码之桥案例.md",
+      "bytes": 10647,
+      "sha256": "1b2590ae73585f64e3bba288414876f4e978344165eefbeb92f2fa32f092dcc5"
+    },
+    {
+      "path": "tutorial/05_创作参考/连续动作设计与视频提示词.md",
+      "bytes": 7296,
+      "sha256": "bdfa251c6c3f91ce3670105ab79c89d5f7c987c5b72c513d79cbf9af3ca0e21d"
+    },
+    {
+      "path": "tutorial/06_新电脑工具与素材检查.md",
+      "bytes": 2502,
+      "sha256": "3ab9835c1fe36513634ed40d4866044a9bf2a3ee22c34dfa62ff781a09a2b0b1"
+    },
+    {
+      "path": "tutorial/AGENTS.md",
+      "bytes": 2639,
+      "sha256": "a7b8baa0e3e28a7386928ee966fcf596282518e670eef9675d5f660f1e4a3825"
+    },
+    {
+      "path": "tutorial/README.md",
+      "bytes": 1900,
+      "sha256": "298036f804cc174fa9c923b349828ef003aadad40292c728567aacbf9bfae441"
+    },
+    {
+      "path": "tutorial/skills/client-scene-recreation/agents/openai.yaml",
+      "bytes": 183,
+      "sha256": "a1273776bf78623e1833d2155b3c4c96fe983fb7c7ecfa31596464d12700f15f"
+    },
+    {
+      "path": "tutorial/skills/client-scene-recreation/assets/wechat/camera.js",
+      "bytes": 2221,
+      "sha256": "0145518e56ef5bc75c61a483f7be2dd8cd513682e34975df562ead084366114b"
+    },
+    {
+      "path": "tutorial/skills/client-scene-recreation/assets/wechat/mobile.html",
+      "bytes": 35595,
+      "sha256": "b65ccab1135c0f43991d47045b93df74ec9ec5c202772ae78db9fe94624ee983"
+    },
+    {
+      "path": "tutorial/skills/client-scene-recreation/assets/wechat/privacy.css",
+      "bytes": 488,
+      "sha256": "f5d76402364b0485b459f8ccc7ff29cf05d72f4f35358b4bf956e249bb2cc6e8"
+    },
+    {
+      "path": "tutorial/skills/client-scene-recreation/assets/wechat/privacy.js",
+      "bytes": 7648,
+      "sha256": "d38734e4f11efec1a11619e8eb821a7ae7ea95f6c8efff6ac70ef44dc654f115"
+    },
+    {
+      "path": "tutorial/skills/client-scene-recreation/assets/wechat/recording-cursor.js",
+      "bytes": 1679,
+      "sha256": "3f16bcc170e19ae09181b2c9329d730420bee1bd4746d302ff8b452e07d5f478"
+    },
+    {
+      "path": "tutorial/skills/client-scene-recreation/assets/wechat/statusbar-preview.jpg",
+      "bytes": 8615,
+      "sha256": "3f2f3d26e7fbd5450cdbedd230cbe637720d33133016c25e4550ef4be1c3762e"
+    },
+    {
+      "path": "tutorial/skills/client-scene-recreation/assets/wechat/success-landscape.jpg",
+      "bytes": 22762,
+      "sha256": "ed6f93bce363445c601d89a644306244898e2a2c94d82735527b37d64622f1f6"
+    },
+    {
+      "path": "tutorial/skills/client-scene-recreation/assets/wechat/success-portrait.jpg",
+      "bytes": 33761,
+      "sha256": "9b26c8fbc92c574a133aeefc155f4abeb02589b2762e2a3340281ae83c47f7f1"
+    },
+    {
+      "path": "tutorial/skills/client-scene-recreation/references/property-case.md",
+      "bytes": 2447,
+      "sha256": "4ae072ad17f7969ee21e7beef9655da1b1678c9440acb6bffc4c6334af0665fa"
+    },
+    {
+      "path": "tutorial/skills/client-scene-recreation/references/realism-and-capture.md",
+      "bytes": 3349,
+      "sha256": "31fde4f4330bd5d19a967c70354c75f6d8ee32cdd61ca2bb80ea608f744e545f"
+    },
+    {
+      "path": "tutorial/skills/client-scene-recreation/references/two-pass-review.md",
+      "bytes": 2854,
+      "sha256": "97f586249940fa848eda385c639e44641671ce0f4849f67cc70ee953e07bb4af"
+    },
+    {
+      "path": "tutorial/skills/client-scene-recreation/references/wechat-payment.md",
+      "bytes": 3924,
+      "sha256": "68aa8e6b568718ea4c78b0fdec95e34399f58b9a78a04e641affde3e399c4272"
+    },
+    {
+      "path": "tutorial/skills/client-scene-recreation/SKILL.md",
+      "bytes": 6486,
+      "sha256": "7c100fe924a882ba6d86bf15eb37b6dc5c62948bda63b287dfe54535f3e1b868"
+    },
+    {
+      "path": "tutorial/skills/he-aotang-claude-handoff/SKILL.md",
+      "bytes": 3266,
+      "sha256": "2d5efe7b6b0ff3608f4d78e3608ae2c19250bc0617c1414b7d30006484c3a2fb"
+    },
+    {
+      "path": "tutorial/交付清单.json",
+      "bytes": 7774,
+      "sha256": "dd0098de5437707e221978e4138d2777c371060a9828a9a86c4680a76d0cb008"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 19,
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    }
+  ]
+}
