@@ -1,6 +1,11 @@
 """Validate planned frame slots, not rendered media. Run with Python 3.11+."""
 from pathlib import Path
 import json
+import argparse
+import math
+import contextlib
+import io
+import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED = {2:6314,3:6356,4:7065,5:7026,6:7194,7:7055,8:7679,9:7031}
@@ -13,18 +18,14 @@ REQUIRED = {1:[15,16,17,18],2:[8,9,10,11,12,16,19,20],3:[8,12,13,14,15,17],
 def validate(d):
     n=d['total_frames']; slots=d['slots']; assert isinstance(n,int) and n>450
     counts=dict.fromkeys('PGRA',0); cursor=0; run=0; maximum=0
-    g_run=0; g_id=None; a_ids=set(); a_runs=0; last=None
+    a_ids=set(); a_runs=0; last=None
     for s in slots:
         a,b,m=s['start_frame'],s['end_frame'],s['mode']
         assert type(a) is int and type(b) is int and a==cursor and b>a, ('coverage',s)
         assert m in counts and s['task_id'] and s['quote'] and s['action']
+        assert s['task_id'] not in ('A_open','A_bridge') and not s['task_id'].startswith('A_tail'), ('retired cross-media filler',s)
         counts[m]+=b-a;cursor=b
         run=run+b-a if m=='P' else 0;maximum=max(maximum,run)
-        if m=='G':
-            g_run=g_run+b-a if g_id==s['task_id'] else b-a
-            assert g_run<=165, ('G child exceeds 5.5s',s)
-            g_id=s['task_id']
-        else:g_id=None;g_run=0
         if m=='A':
             a_ids.add(s['task_id']);a_runs+=last!='A'
         last=m
@@ -35,7 +36,13 @@ def validate(d):
             merged[-1]['end_frame']=s['end_frame']
         else: merged.append(dict(s))
     for s in merged:
-        if s['mode']=='G': assert 120<=s['end_frame']-s['start_frame']<=165, ('G must be 4-5.5s',s)
+        if s['mode']=='G':
+            length=s['end_frame']-s['start_frame']
+            assert 120<=length<=165 or (length in (180,210) and s.get('duration_exception_reason')), ('G duration / full-action exception',s)
+            assert s.get('generation_model')=='MiniMax-H3', ('H3 model missing',s)
+            seconds=s.get('generation_seconds')
+            assert type(seconds) is int and 4<=seconds<=15 and seconds>=math.ceil(length/30), ('H3 integer duration',s)
+    assert slots[0]['start_frame']==0 and slots[0]['end_frame']==180 and slots[0]['mode']=='G', 'six-second continuous G opener required'
     assert counts['P']/n<=.35 and maximum<=360, ('P limit',counts,maximum)
     for s in slots:
         a,b=s['start_frame'],s['end_frame']
@@ -49,26 +56,41 @@ def validate(d):
             'A_task_ids':len(a_ids),'A_continuous_runs':a_runs,'slots':len(slots),
             'timing_basis':d['timing_basis']}
 
-def main():
-    windows=json.loads((ROOT/'tools/r60_required_windows.json').read_text(encoding='utf-8'))
-    files=sorted((ROOT/'plans/九期整期画面分配').glob('0[1-9]*.json'))
-    assert len(files)==9, f'Expected nine JSON plans, got {len(files)}'
-    results=[]
-    for p in files:
-        d=json.loads(p.read_text(encoding='utf-8-sig')); i=int(p.name[:2])
-        if i in EXPECTED:assert d['total_frames']==EXPECTED[i] and d['timing_basis']=='existing'
-        else:assert d['timing_basis']=='estimated'
-        stats=validate(d);stats['title']=d['title']
-        a_slots={(s['task_id'],s['start_frame']):s for s in d['slots'] if s['mode']=='A'}
-        event_slots=set()
-        for e in d.get('sfx_events',[]):
-            key=(e['task_id'],e['slot_start']);s=a_slots[key];event_slots.add(key)
+def validate_sfx(d, require_aligned=False):
+    a_slots={(s['task_id'],s['start_frame']):s for s in d['slots'] if s['mode']=='A'}
+    event_slots=set();pending=0
+    for e in d.get('sfx_events',[]):
+        key=(e['task_id'],e['slot_start']);s=a_slots[key];event_slots.add(key)
+        for field in ('anchor','visual_event','sound'):
+            assert isinstance(e.get(field),str) and e[field].strip(), ('missing semantic SFX field',field,e)
+        if e.get('alignment_status')=='pending_word_alignment':
+            pending+=1
+            assert all(e.get(k) is None for k in ('local_frame','global_frame','sample_48k','sample_offset')), ('invented pending timecode',e)
+            assert not require_aligned, 'SFX word alignment pending: plan is not ready to mix'
+        else:
+            assert e.get('alignment_status')=='aligned' and e.get('alignment_evidence'), ('missing word-alignment evidence',e)
+            assert type(e.get('local_frame')) is int and type(e.get('global_frame')) is int
             assert 0<=e['local_frame']<s['end_frame']-s['start_frame']
             assert e['global_frame']==s['start_frame']+e['local_frame']
-            assert e.get('sample_48k',e.get('sample_offset'))==e['global_frame']*1600
-        assert event_slots==set(a_slots), ('A slots missing SFX events',p.name)
+            assert e.get('sample_48k')==e['global_frame']*1600
+    assert event_slots==set(a_slots), 'A slots missing semantic SFX events'
+    return pending
+
+def main(require_aligned=False, plan=None):
+    windows=json.loads((ROOT/'tools/r60_required_windows.json').read_text(encoding='utf-8'))
+    all_files=sorted((ROOT/'plans/九期整期画面分配').glob('0[1-9]*.json'))
+    known={p.name:int(p.name[:2]) for p in all_files}
+    files=[Path(plan)] if plan else all_files
+    if plan is None: assert len(files)==9, f'Expected nine JSON plans, got {len(files)}'
+    results=[]
+    for p in files:
+        d=json.loads(p.read_text(encoding='utf-8-sig')); i=known.get(p.name)
+        if i in EXPECTED:assert d['total_frames']==EXPECTED[i] and d['timing_basis']=='existing'
+        elif i==1:assert d['timing_basis']=='estimated'
+        stats=validate(d);stats['title']=d['title']
+        stats['pending_SFX_events']=validate_sfx(d,require_aligned)
         # old_section is an auditable source anchor, not a new timeline boundary.
-        missing=[s for s in d['slots'] if s.get('old_section') in REQUIRED[i] and s['mode']=='P'
+        missing=[s for s in d['slots'] if s.get('old_section') in REQUIRED.get(i,[]) and s['mode']=='P'
                  and s['start_frame']>=450 and s['end_frame']<=d['total_frames']-150]
         assert not missing, ('required visualized section still P',p.name,missing)
         for s in d['slots']:
@@ -81,15 +103,39 @@ def main():
     return results
 
 def self_check():
-    d={'total_frames':1200,'timing_basis':'estimated','slots':[]}
-    for a,b,m in [(0,120,'G'),(120,180,'A'),(180,360,'P'),(360,450,'R'),(450,1050,'R'),(1050,1200,'P')]:
+    d={'title':'self-check fixture','total_frames':1200,'timing_basis':'estimated','slots':[]}
+    for a,b,m in [(0,180,'G'),(180,360,'P'),(360,450,'R'),(450,1050,'A'),(1050,1200,'P')]:
         d['slots'].append(dict(start_frame=a,end_frame=b,mode=m,task_id=str(a),quote='x',action='x'))
+    d['slots'][0].update(generation_model='MiniMax-H3',generation_seconds=6,duration_exception_reason='continuous opener')
     validate(d)
-    for slot_index,mode in [(1,'G'),(4,'P')]:
-        bad=json.loads(json.dumps(d));bad['slots'][slot_index]['mode']=mode
-        try: validate(bad)
-        except AssertionError: pass
-        else: raise AssertionError('Short G or long P rejection missing')
+    def rejected(call):
+        try: call()
+        except AssertionError: return
+        raise AssertionError('Invalid plan accepted')
+    for index,mode in [(2,'G'),(3,'P')]:
+        bad=json.loads(json.dumps(d));bad['slots'][index]['mode']=mode
+        rejected(lambda:validate(bad))
+    for value in (5,6.0):
+        bad=json.loads(json.dumps(d));bad['slots'][0]['generation_seconds']=value
+        rejected(lambda:validate(bad))
+    d['sfx_events']=[dict(task_id='450',slot_start=450,anchor='三单',visual_event='订单落位',sound='pop',alignment_status='pending_word_alignment',local_frame=None,global_frame=None,sample_48k=None)]
+    assert validate_sfx(d)==1
+    rejected(lambda:validate_sfx(d,True))
+    d['sfx_events'][0]['local_frame']=12
+    rejected(lambda:validate_sfx(d))
+    d['sfx_events'][0].update(alignment_status='aligned',alignment_evidence='fixture word boundary',global_frame=462,sample_48k=462*1600)
+    assert validate_sfx(d,True)==0
+    # An aligned single plan must not be blocked by the other eight pending plans.
+    with tempfile.TemporaryDirectory() as tmp, contextlib.redirect_stdout(io.StringIO()):
+        p=Path(tmp)/'single_plan.json';p.write_text(json.dumps(d),encoding='utf-8')
+        assert len(main(True,p))==1
+        known=next((ROOT/'plans/九期整期画面分配').glob('02*.json'))
+        p=Path(tmp)/known.name;p.write_text(json.dumps(d),encoding='utf-8')
+        rejected(lambda:main(True,p))  # Known episode totals remain locked.
 
 if __name__=='__main__':
-    self_check();main()
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--require-aligned-sfx',action='store_true',help='Reject unaligned SFX before mixing; default only checks the plan.')
+    parser.add_argument('--plan',type=Path,help='Check one JSON plan; omit to check all nine. Known episode filenames retain their original-frame and mandatory-window checks.')
+    args=parser.parse_args()
+    self_check();main(args.require_aligned_sfx,args.plan)

@@ -6,19 +6,14 @@
   "slots": [
     {
       "start_frame": 0,
-      "end_frame": 120,
-      "mode": "G",
-      "task_id": "G01a",
-      "quote": "“你嫌人多转身就走……可到了下午，他的椅子又空着。”",
-      "action": "整体概念：黄金时间带从同一把皮椅表面抬起、强行剥离并扭转卷曲；钟声落点撕裂成金色碎片，碎片在半空解体消散，最后只留完整空椅。15:00–16:00／45元由可控文字层跟随时间带。 本子镜动作：黄金带抬离椅面并卷曲，4秒落点开始撕裂；带上时间金额由代码层跟踪。"
-    },
-    {
-      "start_frame": 120,
       "end_frame": 180,
-      "mode": "A",
-      "task_id": "A_open",
+      "mode": "G",
+      "task_id": "G01",
       "quote": "“你嫌人多转身就走……可到了下午，他的椅子又空着。”",
-      "action": "Claude引用前一G镜尾帧和分层素材，以2.5D代码动画继续结果变化；不发起新的LibTV生成任务、不重复触发。承接悬空裂带，碎片加速散开并消隐，镜头结果落在完整空椅。"
+      "action": "0–1.5秒，同一把理发皮椅上浮起黄金时间带；1.5–3.5秒，时间带被强行抽离、扭转卷曲；3.5–5秒，带体在半空撕裂并粉碎，碎片加速散开；5–6秒，碎片消散，推近完整而空着的椅子。全部空间运动由同一条H3三维视频完成。15:00–16:00与45元由可控文字层跟踪叠加，非视频模型写字。",
+      "duration_exception_reason": "六秒完整首镜：触发、主变化与结果全部由同一条三维视频完成，避免跨媒介透视拼缝。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 6
     },
     {
       "start_frame": 180,
@@ -48,9 +43,9 @@
       "start_frame": 561,
       "end_frame": 641,
       "mode": "A",
-      "task_id": "A_insert_561",
+      "task_id": "A06",
       "quote": "“货今天卖不掉，明天还在架子上。”",
-      "action": "Claude以独立2.5D代码图形完成此短时槽，非LibTV生成镜头。货架商品化作坚实立方体留在原位；相邻椅面时间薄片被风卷走，形成有形库存与逝去时段的尺度对照。"
+      "action": "独立2.5D库存对照图：商品立方体留在货架，日期翻到明天后仍存在；旁边只预示一个倒计时时槽，为下一条G的不可追回时间作语义对照。本图自有构图，不引用三维尾帧。"
     },
     {
       "start_frame": 641,
@@ -58,7 +53,9 @@
       "mode": "G",
       "task_id": "G03",
       "quote": "“椅子今天下午空着，这个钟头就没了，明天补不回来。”",
-      "action": "回扣首镜但推进到消失之后：碎片落到次日日历前穿透成尘，空椅上次日新时间带浮起，昨天空出的那段无法装回。"
+      "action": "回扣首镜但推进到消失之后：碎片落到次日日历前穿透成尘，空椅上次日新时间带浮起，昨天空出的那段无法装回。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 6
     },
     {
       "start_frame": 793,
@@ -66,7 +63,9 @@
       "mode": "G",
       "task_id": "G04",
       "quote": "“跟飞机一个道理……空着的座位就再也卖不出去。”",
-      "action": "一把空椅的扶手伸展成客机座舱剖面，成排空座随起飞轨迹抬离售票窗口，未售时间券在窗外崩散。"
+      "action": "一把空椅的扶手伸展成客机座舱剖面，成排空座随起飞轨迹抬离售票窗口，未售时间券在窗外崩散。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 6
     },
     {
       "start_frame": 956,
@@ -138,7 +137,9 @@
       "mode": "G",
       "task_id": "G05a",
       "quote": "“从前……老板……刷手机；现在那一格约满了……椅子没多添一把，人没多请一个。”",
-      "action": "整体概念：前景预约页占满周二时槽，镜头越过屏幕后方两把巨大透明椅子的内部：空时格逐一被客流光块填入，椅数与员工数固定，随后时间带由破碎变成完整闭环。 本子镜动作：前景预约页立起成巨大透明门，周二时槽从空白亮起。"
+      "action": "整体概念：前景预约页占满周二时槽，镜头越过屏幕后方两把巨大透明椅子的内部：空时格逐一被客流光块填入，椅数与员工数固定，随后时间带由破碎变成完整闭环。 本子镜动作：前景预约页立起成巨大透明门，周二时槽从空白亮起。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 4
     },
     {
       "start_frame": 3177,
@@ -146,7 +147,9 @@
       "mode": "G",
       "task_id": "G05b",
       "quote": "“从前……老板……刷手机；现在那一格约满了……椅子没多添一把，人没多请一个。”",
-      "action": "整体概念：前景预约页占满周二时槽，镜头越过屏幕后方两把巨大透明椅子的内部：空时格逐一被客流光块填入，椅数与员工数固定，随后时间带由破碎变成完整闭环。 本子镜动作：接前镜尾态，门内两把透明椅子伸出各自时间轨道。"
+      "action": "整体概念：前景预约页占满周二时槽，镜头越过屏幕后方两把巨大透明椅子的内部：空时格逐一被客流光块填入，椅数与员工数固定，随后时间带由破碎变成完整闭环。 本子镜动作：接前镜尾态，门内两把透明椅子伸出各自时间轨道。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 4
     },
     {
       "start_frame": 3297,
@@ -154,7 +157,9 @@
       "mode": "G",
       "task_id": "G05c",
       "quote": "“从前……老板……刷手机；现在那一格约满了……椅子没多添一把，人没多请一个。”",
-      "action": "整体概念：前景预约页占满周二时槽，镜头越过屏幕后方两把巨大透明椅子的内部：空时格逐一被客流光块填入，椅数与员工数固定，随后时间带由破碎变成完整闭环。 本子镜动作：预约块沿两条轨道滑入，同一把椅子的空时格被逐次填亮。"
+      "action": "整体概念：前景预约页占满周二时槽，镜头越过屏幕后方两把巨大透明椅子的内部：空时格逐一被客流光块填入，椅数与员工数固定，随后时间带由破碎变成完整闭环。 本子镜动作：预约块沿两条轨道滑入，同一把椅子的空时格被逐次填亮。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 4
     },
     {
       "start_frame": 3417,
@@ -162,15 +167,17 @@
       "mode": "G",
       "task_id": "G05d",
       "quote": "“从前……老板……刷手机；现在那一格约满了……椅子没多添一把，人没多请一个。”",
-      "action": "整体概念：前景预约页占满周二时槽，镜头越过屏幕后方两把巨大透明椅子的内部：空时格逐一被客流光块填入，椅数与员工数固定，随后时间带由破碎变成完整闭环。 本子镜动作：保持两椅布局，原先破碎的时间带随客流块进入逐段闭合。"
+      "action": "接上一条同源G的两椅布局，预约块继续滑入剩余空时格；两条时间带在本镜内闭合，推近已填满时格形成明确结果。最后完整闭合姿态留在这条三维视频中；随后直接切到独立录制的预约界面，不让代码继续模拟三维物理。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 4
     },
     {
       "start_frame": 3537,
       "end_frame": 3611,
-      "mode": "A",
-      "task_id": "A_insert_3537",
+      "mode": "R",
+      "task_id": "R01",
       "quote": "“从前……老板……刷手机；现在那一格约满了……椅子没多添一把，人没多请一个。”",
-      "action": "Claude引用前一G镜尾帧和分层素材，以2.5D代码动画继续结果变化；不发起新的LibTV生成任务、不重复触发。两条完整时间环锁定，与页面已预约结果同框停留。"
+      "action": "独立切到实际录制的同一预约页面，查看已预约时间格与后台仍为两把椅子的容量设置；呼应“椅子没多添一把，人没多请一个”。这是软件证据视角，不接前镜的时间环运动。"
     },
     {
       "start_frame": 3611,
@@ -214,27 +221,22 @@
     },
     {
       "start_frame": 4984,
-      "end_frame": 5104,
+      "end_frame": 5164,
       "mode": "G",
-      "task_id": "G06a",
+      "task_id": "G06",
       "quote": "“客人只能打电话问……理发师一手拿剪刀，一手接。”",
-      "action": "整体概念：巨型来电线缆从手机伸出缠住剪刀，营业时间带被每次铃声扯断一截；同店前景手机与后景空椅形成忙而有空的反差。 本子镜动作：来电线缆猛然伸出手机并缠住剪刀，时间带被拉直。"
+      "action": "0–2秒，巨型来电线缆从手机伸出缠住剪刀；2–4秒，每次振动都把营业时间带拉紧并扯断一截；4–6秒，镜头在同一三维空间拉开，让前景电话与后景空椅同时显露。主变化和损失结果在单条六秒H3片内完成。",
+      "duration_exception_reason": "来电缠绕、扯断时间带及前后景揭示需连续六秒三维运动，消除原两秒代码尾态。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 6
     },
     {
-      "start_frame": 5104,
-      "end_frame": 5174,
-      "mode": "A",
-      "task_id": "A_insert_5104",
-      "quote": "“客人只能打电话问……理发师一手拿剪刀，一手接。”",
-      "action": "Claude引用前一G镜尾帧和分层素材，以2.5D代码动画继续结果变化；不发起新的LibTV生成任务、不重复触发。接拉直状态，铃声扯下一截时间带，前景电话与后景空椅同时显露。"
-    },
-    {
-      "start_frame": 5174,
+      "start_frame": 5164,
       "end_frame": 5368,
       "mode": "P",
       "task_id": "P04",
-      "quote": "“搁在前几年，请人定做，开口就是两三万，小店舍不得。”",
-      "action": "真人讲过去定制报价的门槛，角标“报价为口播估算”。"
+      "quote": "“理发师一手拿剪刀，一手接……搁在前几年，请人定做，开口就是两三万，小店舍不得。”",
+      "action": "在完整G结果后切回真人；原声延续上一句尾字，再进入过去定制报价门槛，角标“报价为口播估算”。画面提前10帧切回，声音不移动。"
     },
     {
       "start_frame": 5368,
@@ -302,19 +304,11 @@
     },
     {
       "start_frame": 6805,
-      "end_frame": 6906,
+      "end_frame": 6915,
       "mode": "R",
       "task_id": "R01",
       "quote": "“早挑的便宜一点，就这么一件事。”",
       "action": "点击提前预约优惠开关，价格摘要减少5元并保留结果，衔接最终反问。"
-    },
-    {
-      "start_frame": 6906,
-      "end_frame": 6915,
-      "mode": "R",
-      "task_id": "R01",
-      "quote": "“下回你去剪头，看一眼那把空着的椅子……你知道他一个月值多少钱了？”",
-      "action": "延续上一槽预约优惠结果，保持同一画面可读停留9帧，再切回真人最后五秒。"
     },
     {
       "start_frame": 6915,
@@ -327,403 +321,456 @@
   ],
   "sfx_events": [
     {
-      "task_id": "A01",
-      "slot_start": 2651,
-      "local_frame": 12,
-      "global_frame": 2663,
-      "milliseconds": 88766.66666666667,
-      "sample_48k": 4260800,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "task_id": "A06",
+      "slot_start": 561,
+      "anchor": "货今天卖不掉",
+      "visual_event": "商品立方体留在货架",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A01",
-      "slot_start": 2651,
-      "local_frame": 203,
-      "global_frame": 2854,
-      "milliseconds": 95133.33333333333,
-      "sample_48k": 4566400,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
-    },
-    {
-      "task_id": "A01",
-      "slot_start": 2651,
-      "local_frame": 394,
-      "global_frame": 3045,
-      "milliseconds": 101500.0,
-      "sample_48k": 4872000,
-      "action": "结果锁定",
-      "sfx": "Click"
-    },
-    {
-      "task_id": "A02",
-      "slot_start": 3611,
-      "local_frame": 12,
-      "global_frame": 3623,
-      "milliseconds": 120766.66666666667,
-      "sample_48k": 5796800,
-      "action": "结构入场",
-      "sfx": "Whoosh"
-    },
-    {
-      "task_id": "A02",
-      "slot_start": 3611,
-      "local_frame": 250,
-      "global_frame": 3861,
-      "milliseconds": 128700.0,
-      "sample_48k": 6177600,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
-    },
-    {
-      "task_id": "A02",
-      "slot_start": 3611,
-      "local_frame": 488,
-      "global_frame": 4099,
-      "milliseconds": 136633.33333333334,
-      "sample_48k": 6558400,
-      "action": "结果锁定",
-      "sfx": "Click"
-    },
-    {
-      "task_id": "A02",
-      "slot_start": 4111,
-      "local_frame": 12,
-      "global_frame": 4123,
-      "milliseconds": 137433.33333333334,
-      "sample_48k": 6596800,
-      "action": "结构入场",
-      "sfx": "Whoosh"
-    },
-    {
-      "task_id": "A02",
-      "slot_start": 4111,
-      "local_frame": 76,
-      "global_frame": 4187,
-      "milliseconds": 139566.66666666666,
-      "sample_48k": 6699200,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
-    },
-    {
-      "task_id": "A02",
-      "slot_start": 4111,
-      "local_frame": 141,
-      "global_frame": 4252,
-      "milliseconds": 141733.33333333334,
-      "sample_48k": 6803200,
-      "action": "结果锁定",
-      "sfx": "Click"
-    },
-    {
-      "task_id": "A02",
-      "slot_start": 4264,
-      "local_frame": 12,
-      "global_frame": 4276,
-      "milliseconds": 142533.33333333334,
-      "sample_48k": 6841600,
-      "action": "结构入场",
-      "sfx": "Whoosh"
-    },
-    {
-      "task_id": "A02",
-      "slot_start": 4264,
-      "local_frame": 131,
-      "global_frame": 4395,
-      "milliseconds": 146500.0,
-      "sample_48k": 7032000,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
-    },
-    {
-      "task_id": "A02",
-      "slot_start": 4264,
-      "local_frame": 251,
-      "global_frame": 4515,
-      "milliseconds": 150500.0,
-      "sample_48k": 7224000,
-      "action": "结果锁定",
-      "sfx": "Click"
-    },
-    {
-      "task_id": "A03",
-      "slot_start": 1592,
-      "local_frame": 12,
-      "global_frame": 1604,
-      "milliseconds": 53466.666666666664,
-      "sample_48k": 2566400,
-      "action": "结构入场",
-      "sfx": "Whoosh"
-    },
-    {
-      "task_id": "A03",
-      "slot_start": 1592,
-      "local_frame": 187,
-      "global_frame": 1779,
-      "milliseconds": 59300.0,
-      "sample_48k": 2846400,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
-    },
-    {
-      "task_id": "A03",
-      "slot_start": 1592,
-      "local_frame": 363,
-      "global_frame": 1955,
-      "milliseconds": 65166.666666666664,
-      "sample_48k": 3128000,
-      "action": "结果锁定",
-      "sfx": "Click"
-    },
-    {
-      "task_id": "A04",
-      "slot_start": 6141,
-      "local_frame": 12,
-      "global_frame": 6153,
-      "milliseconds": 205100.0,
-      "sample_48k": 9844800,
-      "action": "结构入场",
-      "sfx": "Whoosh"
-    },
-    {
-      "task_id": "A04",
-      "slot_start": 6141,
-      "local_frame": 135,
-      "global_frame": 6276,
-      "milliseconds": 209200.0,
-      "sample_48k": 10041600,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
-    },
-    {
-      "task_id": "A04",
-      "slot_start": 6141,
-      "local_frame": 258,
-      "global_frame": 6399,
-      "milliseconds": 213300.0,
-      "sample_48k": 10238400,
-      "action": "结果锁定",
-      "sfx": "Click"
-    },
-    {
-      "task_id": "A04",
-      "slot_start": 6411,
-      "local_frame": 12,
-      "global_frame": 6423,
-      "milliseconds": 214100.0,
-      "sample_48k": 10276800,
-      "action": "结构入场",
-      "sfx": "Whoosh"
-    },
-    {
-      "task_id": "A04",
-      "slot_start": 6411,
-      "local_frame": 51,
-      "global_frame": 6462,
-      "milliseconds": 215400.0,
-      "sample_48k": 10339200,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
-    },
-    {
-      "task_id": "A04",
-      "slot_start": 6411,
-      "local_frame": 90,
-      "global_frame": 6501,
-      "milliseconds": 216700.0,
-      "sample_48k": 10401600,
-      "action": "结果锁定",
-      "sfx": "Click"
-    },
-    {
-      "task_id": "A04",
-      "slot_start": 6513,
-      "local_frame": 12,
-      "global_frame": 6525,
-      "milliseconds": 217500.0,
-      "sample_48k": 10440000,
-      "action": "结构入场",
-      "sfx": "Whoosh"
-    },
-    {
-      "task_id": "A04",
-      "slot_start": 6513,
-      "local_frame": 92,
-      "global_frame": 6605,
-      "milliseconds": 220166.66666666666,
-      "sample_48k": 10568000,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
-    },
-    {
-      "task_id": "A04",
-      "slot_start": 6513,
-      "local_frame": 172,
-      "global_frame": 6685,
-      "milliseconds": 222833.33333333334,
-      "sample_48k": 10696000,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "task_id": "A06",
+      "slot_start": 561,
+      "anchor": "明天还在架子上",
+      "visual_event": "日期翻页后商品仍在",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
       "slot_start": 1068,
-      "local_frame": 12,
-      "global_frame": 1080,
-      "milliseconds": 36000.0,
-      "sample_48k": 1728000,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "anchor": "下午以后和周末",
+      "visual_event": "高峰客流块挤入狭口",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
       "slot_start": 1068,
-      "local_frame": 142,
-      "global_frame": 1210,
-      "milliseconds": 40333.333333333336,
-      "sample_48k": 1936000,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "anchor": "排队的时候走掉一个",
+      "visual_event": "一枚顾客块脱离队列",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
       "slot_start": 1068,
-      "local_frame": 272,
-      "global_frame": 1340,
-      "milliseconds": 44666.666666666664,
-      "sample_48k": 2144000,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "anchor": "空着的时候又没人来",
+      "visual_event": "低峰时间格逐格熄灭",
+      "sound": "低沉短音",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_insert_3537",
-      "slot_start": 3537,
-      "local_frame": 12,
-      "global_frame": 3549,
-      "milliseconds": 118300.0,
-      "sample_48k": 5678400,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "task_id": "A05",
+      "slot_start": 1068,
+      "anchor": "两头都在漏",
+      "visual_event": "两条不同损失路径并列",
+      "sound": "机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_insert_3537",
-      "slot_start": 3537,
-      "local_frame": 37,
-      "global_frame": 3574,
-      "milliseconds": 119133.33333333333,
-      "sample_48k": 5718400,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "task_id": "A03",
+      "slot_start": 1592,
+      "anchor": "机票早订的便宜",
+      "visual_event": "飞机时间仓展开提前购买滑块",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_insert_3537",
-      "slot_start": 3537,
-      "local_frame": 62,
-      "global_frame": 3599,
-      "milliseconds": 119966.66666666667,
-      "sample_48k": 5758400,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "task_id": "A03",
+      "slot_start": 1592,
+      "anchor": "KTV下午场便宜",
+      "visual_event": "KTV低峰格接住预约块",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_insert_5104",
-      "slot_start": 5104,
-      "local_frame": 12,
-      "global_frame": 5116,
-      "milliseconds": 170533.33333333334,
-      "sample_48k": 8185600,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "task_id": "A03",
+      "slot_start": 1592,
+      "anchor": "电影院上午场便宜",
+      "visual_event": "影院上午格接住座位块",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_insert_5104",
-      "slot_start": 5104,
-      "local_frame": 35,
-      "global_frame": 5139,
-      "milliseconds": 171300.0,
-      "sample_48k": 8222400,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "task_id": "A01",
+      "slot_start": 2651,
+      "anchor": "两把椅子",
+      "visual_event": "两把椅子容量基座并排展开",
+      "sound": "机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_insert_5104",
-      "slot_start": 5104,
-      "local_frame": 58,
-      "global_frame": 5162,
-      "milliseconds": 172066.66666666666,
-      "sample_48k": 8259200,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "task_id": "A01",
+      "slot_start": 2651,
+      "anchor": "二十个头",
+      "visual_event": "接待量停在20格",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_insert_561",
-      "slot_start": 561,
-      "local_frame": 12,
-      "global_frame": 573,
-      "milliseconds": 19100.0,
-      "sample_48k": 916800,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "task_id": "A01",
+      "slot_start": 2651,
+      "anchor": "一个头四十五",
+      "visual_event": "45元单价卡落位",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_insert_561",
-      "slot_start": 561,
-      "local_frame": 40,
-      "global_frame": 601,
-      "milliseconds": 20033.333333333332,
-      "sample_48k": 961600,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "task_id": "A01",
+      "slot_start": 2651,
+      "anchor": "二十八个",
+      "visual_event": "接待轨扩到28格",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_insert_561",
-      "slot_start": 561,
-      "local_frame": 68,
-      "global_frame": 629,
-      "milliseconds": 20966.666666666668,
-      "sample_48k": 1006400,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "task_id": "A01",
+      "slot_start": 2651,
+      "anchor": "各让五块",
+      "visual_event": "预约优惠5元卡独立落位",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_open",
-      "slot_start": 120,
-      "local_frame": 12,
-      "global_frame": 132,
-      "milliseconds": 4400.0,
-      "sample_48k": 211200,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "task_id": "A01",
+      "slot_start": 2651,
+      "anchor": "多收二百六",
+      "visual_event": "口播估算260卡单独显现，不构造等式",
+      "sound": "轻Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_open",
-      "slot_start": 120,
-      "local_frame": 30,
-      "global_frame": 150,
-      "milliseconds": 5000.0,
-      "sample_48k": 240000,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "task_id": "A01",
+      "slot_start": 2651,
+      "anchor": "一个月七八千",
+      "visual_event": "月度口播区间卡与口径说明出现",
+      "sound": "轻Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_open",
-      "slot_start": 120,
-      "local_frame": 48,
-      "global_frame": 168,
-      "milliseconds": 5600.0,
-      "sample_48k": 268800,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "task_id": "A02",
+      "slot_start": 3611,
+      "anchor": "饭店",
+      "visual_event": "饭店模块和桌面时间格展开",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 3611,
+      "anchor": "下午三点路过",
+      "visual_event": "桌面低峰格空缺",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 3611,
+      "anchor": "健身教练",
+      "visual_event": "教练课表翻到前景",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 3611,
+      "anchor": "上午的课没人约",
+      "visual_event": "上午空格显露，晚间拥挤格并列",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 4111,
+      "anchor": "补牙的",
+      "visual_event": "牙科预约格展开",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 4111,
+      "anchor": "洗车的",
+      "visual_event": "洗车空档格展开",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 4111,
+      "anchor": "教琴的",
+      "visual_event": "教琴课时格展开",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 4111,
+      "anchor": "订球场的",
+      "visual_event": "球场时段格展开",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 4264,
+      "anchor": "你自己接活也一样",
+      "visual_event": "时间城翻转到个人服务档期",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 4264,
+      "anchor": "拍照的",
+      "visual_event": "摄影档期卡打开",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 4264,
+      "anchor": "做家教的",
+      "visual_event": "家教档期卡打开",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 4264,
+      "anchor": "你的档期就是你的椅子",
+      "visual_event": "两张档期卡合到可查询入口",
+      "sound": "机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 6141,
+      "anchor": "问自己两句话",
+      "visual_event": "两张问题卡展开",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 6141,
+      "anchor": "今天没卖掉",
+      "visual_event": "商品与时段分列",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 6141,
+      "anchor": "明天就不算数了",
+      "visual_event": "过期时段碎裂，商品保留",
+      "sound": "轻碎裂",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 6411,
+      "anchor": "钟点",
+      "visual_event": "钟点卡落位",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 6411,
+      "anchor": "位置",
+      "visual_event": "位置卡落位",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 6411,
+      "anchor": "档期",
+      "visual_event": "档期卡落位",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 6513,
+      "anchor": "第二句",
+      "visual_event": "第二问卡翻开",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 6513,
+      "anchor": "客人看得见吗",
+      "visual_event": "查询视窗对准空档",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 6513,
+      "anchor": "看不见",
+      "visual_event": "隐藏空档保持灰色",
+      "sound": "低沉Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 6513,
+      "anchor": "只能碰",
+      "visual_event": "盲选路径撞上已满格",
+      "sound": "轻碰撞",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     }
   ],
-  "metrics": {
-    "continuous_A_runs": 8,
-    "P_percent": 17.24,
-    "A_percent": 39.929,
-    "max_P_frames": 235,
-    "A_tasks": 9,
-    "A_slots": 13,
-    "A_limit_status": "reference_not_cap_user_confirmed"
+  "statistics": {
+    "frames": {
+      "P": 1228,
+      "G": 1155,
+      "R": 2065,
+      "A": 2617
+    },
+    "percent": {
+      "P": 17.381,
+      "G": 16.348,
+      "R": 29.229,
+      "A": 37.042
+    },
+    "max_continuous_p_frames": 235,
+    "a_tasks": 6,
+    "a_slots": 10,
+    "a_continuous_runs": 6,
+    "a_ratio_policy": "参考下限不封顶；指定段落全部视觉化、P占比与连续时长优先"
+  },
+  "generation_duration_policy": {
+    "model": "MiniMax-H3",
+    "request_seconds": "4–15整数秒，覆盖成片所需时长",
+    "preferred_editorial_frames": [
+      120,
+      165
+    ],
+    "complete_action_exceptions": [
+      180,
+      210
+    ],
+    "source_in_out": "实际产物检查后登记，不伪造",
+    "cross_medium_tail": "不以代码动画接续G三维物理尾态",
+    "r61_visual_engine": "三合一视觉引擎：①巫师《让画面有第二层意思》+《视觉语言百科v2.2》（口播即创作输入，不限制具体物件与材质，由AI自主构思）；②R5.3/R5.4五步连续动作补强（初态→可见触发与接触→变化前沿推进→次级反应→结果停留）；③高密度细节门槛（正式生图与视频提示词每条≥200中文字符，写足前中后景尺度参照、材质纹理、光影与物理接触）。"
   }
 }

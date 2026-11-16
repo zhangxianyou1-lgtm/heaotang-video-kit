@@ -6,19 +6,14 @@
   "slots": [
     {
       "start_frame": 0,
-      "end_frame": 120,
-      "mode": "G",
-      "task_id": "G01a",
-      "quote": "“山里的好果子，城里人买不到，村里人卖不掉。”",
-      "action": "整体概念：镜头撞碎蜜罐“农家”标签并钻入瓶内，罐体内部立即展开整座青山、果林和采收节点；光网沿农户、批次与采收路径点亮，巨大山体最终通过瓶口连向顾客手机。标签字由可控文字层完成。 本子镜动作：撞碎蜜罐标签进入瓶内，青山在瓶内展开，果林沿坡面生长。"
-    },
-    {
-      "start_frame": 120,
       "end_frame": 180,
-      "mode": "A",
-      "task_id": "A_open",
-      "quote": "“山里的好果子，城里人买不到，村里人卖不掉。”；“你在网上买过农家土蜂蜜，一尝跟超市一个味。”",
-      "action": "Claude引用前一G镜尾帧和分层素材，以2.5D代码动画继续结果变化；不发起新的LibTV生成任务、不重复触发。接完整山体，采收光网连接农户与批次，光路从瓶口汇向手机。"
+      "mode": "G",
+      "task_id": "G01",
+      "quote": "“山里的好果子，城里人买不到，村里人卖不掉。”；“山里的好果子，城里人买不到，村里人卖不掉。”；“你在网上买过农家土蜂蜜，一尝跟超市一个味。”",
+      "action": "0–1秒，镜头撞碎蜜罐表面的泛化标签，穿入罐体；1–3秒，罐内青山、果林依次展开；3–5秒，采收节点与农户记录通过光路连接，镜头沿路径穿过山体；5–6秒，光路从瓶口汇向顾客手机，停在可追溯来路的结构结果。六秒空间变化全部在同一条H3视频内完成；农家文字与批次标签用可控叠层，不让模型生成密集文字。",
+      "duration_exception_reason": "六秒完整首镜：触发、主变化与结果全部由同一条三维视频完成，避免跨媒介透视拼缝。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 6
     },
     {
       "start_frame": 180,
@@ -82,7 +77,9 @@
       "mode": "G",
       "task_id": "G02a",
       "quote": "“背着电脑在山上跑了十来天……一样一样拍下来，记下来。”",
-      "action": "整体概念：山体剖面分层展开，背电脑的记录者在采收节点按下记录后，照片框与农户节点被光线钉住；节点沿山坡逐级接通，汇入蜜罐同一批次。 本子镜动作：山体沿等高线分层抬起，背电脑记录者站在首个采收节点。"
+      "action": "整体概念：山体剖面分层展开，背电脑的记录者在采收节点按下记录后，照片框与农户节点被光线钉住；节点沿山坡逐级接通，汇入蜜罐同一批次。 本子镜动作：山体沿等高线分层抬起，背电脑记录者站在首个采收节点。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 4
     },
     {
       "start_frame": 1775,
@@ -90,7 +87,9 @@
       "mode": "G",
       "task_id": "G02b",
       "quote": "“背着电脑在山上跑了十来天……一样一样拍下来，记下来。”",
-      "action": "整体概念：山体剖面分层展开，背电脑的记录者在采收节点按下记录后，照片框与农户节点被光线钉住；节点沿山坡逐级接通，汇入蜜罐同一批次。 本子镜动作：记录者按下记录，照片框从节点弹出，农户与日期占位卡落入同框。"
+      "action": "整体概念：山体剖面分层展开，背电脑的记录者在采收节点按下记录后，照片框与农户节点被光线钉住；节点沿山坡逐级接通，汇入蜜罐同一批次。 本子镜动作：记录者按下记录，照片框从节点弹出，农户与日期占位卡落入同框。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 4
     },
     {
       "start_frame": 1895,
@@ -98,7 +97,9 @@
       "mode": "G",
       "task_id": "G02c",
       "quote": "“背着电脑在山上跑了十来天……一样一样拍下来，记下来。”",
-      "action": "整体概念：山体剖面分层展开，背电脑的记录者在采收节点按下记录后，照片框与农户节点被光线钉住；节点沿山坡逐级接通，汇入蜜罐同一批次。 本子镜动作：第二采收节点被点亮，照片框沿坡道接力，前一节点保持已记录状态。"
+      "action": "整体概念：山体剖面分层展开，背电脑的记录者在采收节点按下记录后，照片框与农户节点被光线钉住；节点沿山坡逐级接通，汇入蜜罐同一批次。 本子镜动作：第二采收节点被点亮，照片框沿坡道接力，前一节点保持已记录状态。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 4
     },
     {
       "start_frame": 2015,
@@ -106,18 +107,12 @@
       "mode": "G",
       "task_id": "G02d",
       "quote": "“背着电脑在山上跑了十来天……一样一样拍下来，记下来。”",
-      "action": "整体概念：山体剖面分层展开，背电脑的记录者在采收节点按下记录后，照片框与农户节点被光线钉住；节点沿山坡逐级接通，汇入蜜罐同一批次。 本子镜动作：山体全部采收路径合并到同一批次入口，蜜罐从入口上方浮起。"
+      "action": "接前一同源G尾态，已记录的采收节点沿山体连成批次路径，光网汇入悬空蜜罐。汇入与罐体稳定均在本条四秒G内结束，随后直接切真实来源记录页面，不跨媒介延续光网。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 4
     },
     {
       "start_frame": 2135,
-      "end_frame": 2198,
-      "mode": "A",
-      "task_id": "A_insert_2135",
-      "quote": "“背着电脑在山上跑了十来天……一样一样拍下来，记下来。”",
-      "action": "Claude引用前一G镜尾帧和分层素材，以2.5D代码动画继续结果变化；不发起新的LibTV生成任务、不重复触发。光网收拢入罐底批次码，匹配切下一段真实扫码界面。"
-    },
-    {
-      "start_frame": 2198,
       "end_frame": 2475,
       "mode": "R",
       "task_id": "R01",
@@ -130,7 +125,9 @@
       "mode": "G",
       "task_id": "G03a",
       "quote": "“不敢信的是……农家那两个字。你肯信的是这一罐到底是谁家的。”",
-      "action": "整体概念：泛泛标签形成巨大薄壳，镜头穿透后壳体碎裂，内部显出可追溯到采收节点的山体骨架；同一码作为路径终点收拢。 本子镜动作：农家标签扩成薄壳，镜头穿入时壳体崩裂，内部山体骨架显露。"
+      "action": "整体概念：泛泛标签形成巨大薄壳，镜头穿透后壳体碎裂，内部显出可追溯到采收节点的山体骨架；同一码作为路径终点收拢。 本子镜动作：农家标签扩成薄壳，镜头穿入时壳体崩裂，内部山体骨架显露。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 4
     },
     {
       "start_frame": 2595,
@@ -138,7 +135,9 @@
       "mode": "G",
       "task_id": "G03b",
       "quote": "“不敢信的是……农家那两个字。你肯信的是这一罐到底是谁家的。”",
-      "action": "整体概念：泛泛标签形成巨大薄壳，镜头穿透后壳体碎裂，内部显出可追溯到采收节点的山体骨架；同一码作为路径终点收拢。 本子镜动作：承接山体，来源节点按采收路径连接至同一码，路径逐段锁定。"
+      "action": "整体概念：泛泛标签形成巨大薄壳，镜头穿透后壳体碎裂，内部显出可追溯到采收节点的山体骨架；同一码作为路径终点收拢。 本子镜动作：承接山体，来源节点按采收路径连接至同一码，路径逐段锁定。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 6
     },
     {
       "start_frame": 2751,
@@ -170,7 +169,9 @@
       "mode": "G",
       "task_id": "G04a",
       "quote": "“村里种地的都是老人……点一排按钮……不会点，也懒得点。”",
-      "action": "整体概念：手机上的按钮阵列长成陡峭台阶，老人的手指被层层弹起的门槛挡在入口；镜头穿到后面，空账格仍是一片真空。 本子镜动作：手机按钮变成立体台阶，老人手指靠近时第一道门槛抬升。"
+      "action": "整体概念：手机上的按钮阵列长成陡峭台阶，老人的手指被层层弹起的门槛挡在入口；镜头穿到后面，空账格仍是一片真空。 本子镜动作：手机按钮变成立体台阶，老人手指靠近时第一道门槛抬升。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 4
     },
     {
       "start_frame": 3624,
@@ -178,23 +179,17 @@
       "mode": "G",
       "task_id": "G04b",
       "quote": "“村里种地的都是老人……点一排按钮……不会点，也懒得点。”",
-      "action": "整体概念：手机上的按钮阵列长成陡峭台阶，老人的手指被层层弹起的门槛挡在入口；镜头穿到后面，空账格仍是一片真空。 本子镜动作：手指继续靠近，后续台阶接连竖起，记账入口被推向远处。"
+      "action": "接前一同源G尾态，手指继续靠近，后续台阶接连竖起，入口被推向远处；本镜末尾让阻隔状态稳定可辨。随后直接切真实旧版记账界面，不由代码穿越三维台阶。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 4
     },
     {
       "start_frame": 3744,
-      "end_frame": 3794,
-      "mode": "A",
-      "task_id": "A_insert_3744",
-      "quote": "“村里种地的都是老人……点一排按钮……不会点，也懒得点。”",
-      "action": "Claude引用前一G镜尾帧和分层素材，以2.5D代码动画继续结果变化；不发起新的LibTV生成任务、不重复触发。沿台阶缝隙穿到后方，空账格显露为真空，切入语音模式解法。"
-    },
-    {
-      "start_frame": 3794,
       "end_frame": 3878,
       "mode": "R",
       "task_id": "R02",
-      "quote": "“他把记账改成了张嘴说。”",
-      "action": "切换语音模式，多层按钮收拢为单一按住说话控件，开始录音。"
+      "quote": "“不会点，也懒得点……他把记账改成了张嘴说。”",
+      "action": "独立录制旧版多按钮记账页，光标在多个入口间犹豫但未提交；听到“改成了张嘴说”时切换到单一按住说话控件并开始录音。按真实关键词落点完成切换，页面状态独立于前镜三维台阶。"
     },
     {
       "start_frame": 3878,
@@ -312,9 +307,9 @@
       "start_frame": 6946,
       "end_frame": 7044,
       "mode": "A",
-      "task_id": "A_insert_6946",
+      "task_id": "A06",
       "quote": "“东西本来就好，缺的只是让人看见的那一层。”",
-      "action": "Claude以独立2.5D代码图形完成此短时槽，非LibTV生成镜头。开头蜜罐内部山体光网从瓶口展开成透明可见层，果实与出处连成完整结构，匹配切真人最后五秒。"
+      "action": "独立2.5D来源关系图：果实图标旁依次出现制作者、材料、日期三层可查记录，透明信息层展开后连接到商品入口；最后停在“好东西＋可查来路”。自有图形构图，不重建或接续蜜罐三维空间。"
     },
     {
       "start_frame": 7044,
@@ -329,401 +324,410 @@
     {
       "task_id": "A01",
       "slot_start": 591,
-      "local_frame": 12,
-      "global_frame": 603,
-      "milliseconds": 20100.0,
-      "sample_48k": 964800,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "anchor": "种果子种茶",
+      "visual_event": "果子、茶叶先从山村沙盘升起",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A01",
       "slot_start": 591,
-      "local_frame": 103,
-      "global_frame": 694,
-      "milliseconds": 23133.333333333332,
-      "sample_48k": 1110400,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "anchor": "红米蜂蜜红糖",
+      "visual_event": "三类货物依次补入阵列",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A01",
       "slot_start": 591,
-      "local_frame": 195,
-      "global_frame": 786,
-      "milliseconds": 26200.0,
-      "sample_48k": 1257600,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "anchor": "东西是真好",
+      "visual_event": "产品阵列稳定但对外路径未接通",
+      "sound": "机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A01",
       "slot_start": 798,
-      "local_frame": 12,
-      "global_frame": 810,
-      "milliseconds": 27000.0,
-      "sample_48k": 1296000,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "anchor": "这果子有什么好处",
+      "visual_event": "问题卡落到缺失说明的入口",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A01",
       "slot_start": 798,
-      "local_frame": 136,
-      "global_frame": 934,
-      "milliseconds": 31133.333333333332,
-      "sample_48k": 1494400,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "anchor": "没人答得上来",
+      "visual_event": "答复槽为空",
+      "sound": "低沉Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A01",
       "slot_start": 798,
-      "local_frame": 260,
-      "global_frame": 1058,
-      "milliseconds": 35266.666666666664,
-      "sample_48k": 1692800,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "anchor": "上网搜不到",
+      "visual_event": "查询门保持关闭",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A01",
+      "slot_start": 798,
+      "anchor": "搜到了也不敢信",
+      "visual_event": "来源证据槽留空，信任门未接通",
+      "sound": "机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A01",
       "slot_start": 1070,
-      "local_frame": 12,
-      "global_frame": 1082,
-      "milliseconds": 36066.666666666664,
-      "sample_48k": 1731200,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "anchor": "账也乱",
+      "visual_event": "账页散开",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A01",
       "slot_start": 1070,
-      "local_frame": 71,
-      "global_frame": 1141,
-      "milliseconds": 38033.333333333336,
-      "sample_48k": 1825600,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "anchor": "好几个人",
+      "visual_event": "记录分到不同人员岛屿",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A01",
       "slot_start": 1070,
-      "local_frame": 131,
-      "global_frame": 1201,
-      "milliseconds": 40033.333333333336,
-      "sample_48k": 1921600,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "anchor": "好几台电脑里",
+      "visual_event": "电脑与孤立账页并列",
+      "sound": "机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A02",
       "slot_start": 2871,
-      "local_frame": 12,
-      "global_frame": 2883,
-      "milliseconds": 96100.0,
-      "sample_48k": 4612800,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "anchor": "给村里做个卖货的小程序",
+      "visual_event": "三层业务基座展开",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A02",
       "slot_start": 2871,
-      "local_frame": 207,
-      "global_frame": 3078,
-      "milliseconds": 102600.0,
-      "sample_48k": 4924800,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "anchor": "七样货",
+      "visual_event": "商品层展开七个品类槽",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A02",
       "slot_start": 2871,
-      "local_frame": 403,
-      "global_frame": 3274,
-      "milliseconds": 109133.33333333333,
-      "sample_48k": 5238400,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "anchor": "每样能扫码看来路",
+      "visual_event": "批次键把商品接到来路层",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A03",
-      "slot_start": 6196,
-      "local_frame": 12,
-      "global_frame": 6208,
-      "milliseconds": 206933.33333333334,
-      "sample_48k": 9932800,
-      "action": "结构入场",
-      "sfx": "Whoosh"
-    },
-    {
-      "task_id": "A03",
-      "slot_start": 6196,
-      "local_frame": 119,
-      "global_frame": 6315,
-      "milliseconds": 210500.0,
-      "sample_48k": 10104000,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
-    },
-    {
-      "task_id": "A03",
-      "slot_start": 6196,
-      "local_frame": 227,
-      "global_frame": 6423,
-      "milliseconds": 214100.0,
-      "sample_48k": 10276800,
-      "action": "结果锁定",
-      "sfx": "Click"
-    },
-    {
-      "task_id": "A03",
-      "slot_start": 6435,
-      "local_frame": 12,
-      "global_frame": 6447,
-      "milliseconds": 214900.0,
-      "sample_48k": 10315200,
-      "action": "结构入场",
-      "sfx": "Whoosh"
-    },
-    {
-      "task_id": "A03",
-      "slot_start": 6435,
-      "local_frame": 113,
-      "global_frame": 6548,
-      "milliseconds": 218266.66666666666,
-      "sample_48k": 10476800,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
-    },
-    {
-      "task_id": "A03",
-      "slot_start": 6435,
-      "local_frame": 215,
-      "global_frame": 6650,
-      "milliseconds": 221666.66666666666,
-      "sample_48k": 10640000,
-      "action": "结果锁定",
-      "sfx": "Click"
-    },
-    {
-      "task_id": "A03",
-      "slot_start": 6662,
-      "local_frame": 12,
-      "global_frame": 6674,
-      "milliseconds": 222466.66666666666,
-      "sample_48k": 10678400,
-      "action": "结构入场",
-      "sfx": "Whoosh"
-    },
-    {
-      "task_id": "A03",
-      "slot_start": 6662,
-      "local_frame": 97,
-      "global_frame": 6759,
-      "milliseconds": 225300.0,
-      "sample_48k": 10814400,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
-    },
-    {
-      "task_id": "A03",
-      "slot_start": 6662,
-      "local_frame": 183,
-      "global_frame": 6845,
-      "milliseconds": 228166.66666666666,
-      "sample_48k": 10952000,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "task_id": "A02",
+      "slot_start": 2871,
+      "anchor": "农户在后台记账",
+      "visual_event": "记账层插入并与批次键锁定",
+      "sound": "机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
       "slot_start": 5289,
-      "local_frame": 12,
-      "global_frame": 5301,
-      "milliseconds": 176700.0,
-      "sample_48k": 8481600,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "anchor": "从前散在几个人手里",
+      "visual_event": "孤立账页再次分列",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
       "slot_start": 5289,
-      "local_frame": 87,
-      "global_frame": 5376,
-      "milliseconds": 179200.0,
-      "sample_48k": 8601600,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "anchor": "现在谁问管家",
+      "visual_event": "查询卡落入统一索引",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
       "slot_start": 5289,
-      "local_frame": 162,
-      "global_frame": 5451,
-      "milliseconds": 181700.0,
-      "sample_48k": 8721600,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "anchor": "都能答得上",
+      "visual_event": "回答沿出处路径弹出且可回查",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
       "slot_start": 5463,
-      "local_frame": 12,
-      "global_frame": 5475,
-      "milliseconds": 182500.0,
-      "sample_48k": 8760000,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "anchor": "一年几百块的服务器",
+      "visual_event": "年费估算卡落入投入侧",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
       "slot_start": 5463,
-      "local_frame": 193,
-      "global_frame": 5656,
-      "milliseconds": 188533.33333333334,
-      "sample_48k": 9049600,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "anchor": "一个暑假",
+      "visual_event": "时间成本块独立入秤",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
       "slot_start": 5463,
-      "local_frame": 375,
-      "global_frame": 5838,
-      "milliseconds": 194600.0,
-      "sample_48k": 9340800,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "anchor": "少说一两万",
+      "visual_event": "外包报价区间卡出现在对照侧",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_insert_2135",
-      "slot_start": 2135,
-      "local_frame": 12,
-      "global_frame": 2147,
-      "milliseconds": 71566.66666666667,
-      "sample_48k": 3435200,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "task_id": "A05",
+      "slot_start": 5463,
+      "anchor": "别的镇的人也来问",
+      "visual_event": "城镇咨询节点伸出，不显示成交",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_insert_2135",
-      "slot_start": 2135,
-      "local_frame": 31,
-      "global_frame": 2166,
-      "milliseconds": 72200.0,
-      "sample_48k": 3465600,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "task_id": "A03",
+      "slot_start": 6196,
+      "anchor": "做辣酱的",
+      "visual_event": "辣酱来源卡展开",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_insert_2135",
-      "slot_start": 2135,
-      "local_frame": 51,
-      "global_frame": 2186,
-      "milliseconds": 72866.66666666667,
-      "sample_48k": 3497600,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "task_id": "A03",
+      "slot_start": 6196,
+      "anchor": "烤蛋糕的",
+      "visual_event": "蛋糕来源卡展开",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_insert_3744",
-      "slot_start": 3744,
-      "local_frame": 12,
-      "global_frame": 3756,
-      "milliseconds": 125200.0,
-      "sample_48k": 6009600,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "task_id": "A03",
+      "slot_start": 6196,
+      "anchor": "养蜂的",
+      "visual_event": "蜂蜜来源卡展开",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_insert_3744",
-      "slot_start": 3744,
-      "local_frame": 25,
-      "global_frame": 3769,
-      "milliseconds": 125633.33333333333,
-      "sample_48k": 6030400,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "task_id": "A03",
+      "slot_start": 6196,
+      "anchor": "这东西怎么来的",
+      "visual_event": "材料、制作者、日期连接产品",
+      "sound": "机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_insert_3744",
-      "slot_start": 3744,
-      "local_frame": 38,
-      "global_frame": 3782,
-      "milliseconds": 126066.66666666667,
-      "sample_48k": 6051200,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "task_id": "A03",
+      "slot_start": 6435,
+      "anchor": "你接活也一样",
+      "visual_event": "来源矩阵翻到服务项目",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_insert_6946",
+      "task_id": "A03",
+      "slot_start": 6435,
+      "anchor": "给谁干过",
+      "visual_event": "匿名客户与项目卡连接",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 6435,
+      "anchor": "干得怎么样",
+      "visual_event": "交付证据卡打开",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 6435,
+      "anchor": "下一个客户才敢信你",
+      "visual_event": "询问路径回到证据",
+      "sound": "机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 6662,
+      "anchor": "交上去的数",
+      "visual_event": "数字块进入报告",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 6662,
+      "anchor": "从哪张表来的",
+      "visual_event": "向后拉出来源表与行位置",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 6662,
+      "anchor": "标清楚",
+      "visual_event": "引用标签锁定",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A06",
       "slot_start": 6946,
-      "local_frame": 12,
-      "global_frame": 6958,
-      "milliseconds": 231933.33333333334,
-      "sample_48k": 11132800,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "anchor": "东西本来就好",
+      "visual_event": "果实图标居中",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_insert_6946",
+      "task_id": "A06",
       "slot_start": 6946,
-      "local_frame": 49,
-      "global_frame": 6995,
-      "milliseconds": 233166.66666666666,
-      "sample_48k": 11192000,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
-    },
-    {
-      "task_id": "A_insert_6946",
-      "slot_start": 6946,
-      "local_frame": 86,
-      "global_frame": 7032,
-      "milliseconds": 234400.0,
-      "sample_48k": 11251200,
-      "action": "结果锁定",
-      "sfx": "Click"
-    },
-    {
-      "task_id": "A_open",
-      "slot_start": 120,
-      "local_frame": 12,
-      "global_frame": 132,
-      "milliseconds": 4400.0,
-      "sample_48k": 211200,
-      "action": "结构入场",
-      "sfx": "Whoosh"
-    },
-    {
-      "task_id": "A_open",
-      "slot_start": 120,
-      "local_frame": 30,
-      "global_frame": 150,
-      "milliseconds": 5000.0,
-      "sample_48k": 240000,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
-    },
-    {
-      "task_id": "A_open",
-      "slot_start": 120,
-      "local_frame": 48,
-      "global_frame": 168,
-      "milliseconds": 5600.0,
-      "sample_48k": 268800,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "anchor": "让人看见的那一层",
+      "visual_event": "可查来路信息层展开并连接入口",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     }
   ],
-  "metrics": {
-    "continuous_A_runs": 8,
-    "P_percent": 12.636,
-    "A_percent": 35.168,
-    "max_P_frames": 180,
-    "A_tasks": 9,
-    "A_slots": 13,
-    "A_limit_status": "reference_not_cap_user_confirmed"
+  "statistics": {
+    "frames": {
+      "P": 909,
+      "G": 1176,
+      "R": 2752,
+      "A": 2357
+    },
+    "percent": {
+      "P": 12.636,
+      "G": 16.347,
+      "R": 38.254,
+      "A": 32.763
+    },
+    "max_continuous_p_frames": 180,
+    "a_tasks": 6,
+    "a_slots": 10,
+    "a_continuous_runs": 5,
+    "a_ratio_policy": "参考下限不封顶；指定段落全部视觉化、P占比与连续时长优先"
+  },
+  "generation_duration_policy": {
+    "model": "MiniMax-H3",
+    "request_seconds": "4–15整数秒，覆盖成片所需时长",
+    "preferred_editorial_frames": [
+      120,
+      165
+    ],
+    "complete_action_exceptions": [
+      180,
+      210
+    ],
+    "source_in_out": "实际产物检查后登记，不伪造",
+    "cross_medium_tail": "不以代码动画接续G三维物理尾态",
+    "r61_visual_engine": "三合一视觉引擎：①巫师《让画面有第二层意思》+《视觉语言百科v2.2》（口播即创作输入，不限制具体物件与材质，由AI自主构思）；②R5.3/R5.4五步连续动作补强（初态→可见触发与接触→变化前沿推进→次级反应→结果停留）；③高密度细节门槛（正式生图与视频提示词每条≥200中文字符，写足前中后景尺度参照、材质纹理、光影与物理接触）。"
   }
 }

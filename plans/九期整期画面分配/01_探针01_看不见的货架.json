@@ -5,21 +5,15 @@
   "slots": [
     {
       "start_frame": 0,
-      "end_frame": 120,
-      "mode": "G",
-      "task_id": "G01a",
-      "quote": "楼下五金店就有的灯泡……白等了一天。",
-      "action": "实体五金货架逐格坍缩成半透明网格，视线穿墙；3.5秒扫描束掠过，货架重新凝实，价格库存标签弹出。标签9.5元、有货用可控DOM叠加。主变化：触发、空间穿透与结构破坏。",
-      "old_section": 1
-    },
-    {
-      "start_frame": 120,
       "end_frame": 180,
-      "mode": "A",
-      "task_id": "A_open",
+      "mode": "G",
+      "task_id": "G01",
       "quote": "楼下五金店就有的灯泡……白等了一天。",
-      "action": "以G01a实际尾帧为底图，Claude制作可控2.5D结果接续，不再调用LibTV生成：引用G01a扫描后的尾帧，货架完成凝实，9.5元与有货标签由可控图层落定；保持明亮可见的结果，不重新触发坍缩。",
-      "old_section": 1
+      "action": "0–1.5秒：实体五金货架逐格变成半透明网格；1.5–3.5秒：顾客视线穿过货架而无法选中灯泡；3.5–5.2秒：扫描光掠过，货架在同一3D空间内逐格恢复实体；5.2–6秒：保持恢复后的货架与灯泡位置，9.5元｜有货由可控图层跟踪叠加。整镜由H3连续完成物理变化，不切换为代码绘制的货架。",
+      "old_section": 1,
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 6,
+      "duration_exception_reason": "用户外审裁定：6秒首镜一次完成完整3D主变化与结果，避免跨媒介尾帧拼缝。"
     },
     {
       "start_frame": 180,
@@ -54,7 +48,7 @@
       "mode": "R",
       "task_id": "R_preview",
       "quote": "就因为这个……少卖九千……别人搜得到吗？",
-      "action": "拍照选图→候选条目→人工填价→发布后顾客端查到；取最后发布到可查的3秒高光，角标“流程预览”。",
+      "action": "拍照选图→候选条目→人工填价→发布后顾客端查到；取最后发布到可查的3秒高光，角标“流程预览”。；保留演示环境操作｜实际耗时依核对速度而定与本店小程序内搜索标识。",
       "old_section": 3
     },
     {
@@ -72,7 +66,7 @@
       "mode": "R",
       "task_id": "R01",
       "quote": "你现在买东西，先掏手机搜。搜得到的才算有。",
-      "action": "在商品目录输入灯泡，结果从空白变为可查条目，展示信息改变选择",
+      "action": "在商品目录输入灯泡，结果从空白变为可查条目，展示信息改变选择；搜索框旁常驻本店小程序内搜索。",
       "old_section": 4
     },
     {
@@ -82,7 +76,9 @@
       "task_id": "G03a",
       "quote": "连锁店的货都在手机上……两百米……你搜不到，它就等于没有。",
       "action": "货架向巨大手机空间伸展，店内灯泡与屏内空格并排出现；本子镜触发主变化。",
-      "old_section": 5
+      "old_section": 5,
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 4
     },
     {
       "start_frame": 930,
@@ -91,7 +87,9 @@
       "task_id": "G03b",
       "quote": "连锁店的货都在手机上……两百米……你搜不到，它就等于没有。",
       "action": "连锁商品阵列亮起，近处五金店变成半透明线框；引用上一子镜尾帧，保持同源场景、光向与运动方向。",
-      "old_section": 5
+      "old_section": 5,
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 4
     },
     {
       "start_frame": 1050,
@@ -100,7 +98,9 @@
       "task_id": "G03c",
       "quote": "连锁店的货都在手机上……两百米……你搜不到，它就等于没有。",
       "action": "顾客视线越过线框，锁定远端有条目的同款灯泡；引用上一子镜尾帧，保持同源场景、光向与运动方向。",
-      "old_section": 5
+      "old_section": 5,
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 4
     },
     {
       "start_frame": 1170,
@@ -108,26 +108,23 @@
       "mode": "G",
       "task_id": "G04a",
       "quote": "这一单丢了，老板都不知道。你根本没进他的门。",
-      "action": "购物意向光球被空白入口弹开，越过老板头顶流向另一端亮着的商品；以分屏揭露老板看不到的损失；主变化在150帧内完成，保留真实尾帧供后续代码动画接力。",
-      "old_section": 6
+      "action": "购物意向光球被空白入口弹开，越过老板头顶流向远端亮起的商品，并在5秒内完成落位；同框揭示近处老板看不到的损失。",
+      "old_section": 6,
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 5
     },
     {
       "start_frame": 1320,
-      "end_frame": 1380,
-      "mode": "A",
-      "task_id": "A_tail_G04",
-      "quote": "这一单丢了，老板都不知道。你根本没进他的门。",
-      "action": "以G04a实际尾帧为底图，Claude用2.5D图层让已流向远端商品的光球完成落位，远端入口亮起、近处入口保持空白，停在机会流失结果；不重演弹离动作。",
-      "old_section": 6
-    },
-    {
-      "start_frame": 1380,
       "end_frame": 1680,
       "mode": "R",
       "task_id": "R01",
-      "quote": "那样小东西，是一个看货的小程序……有什么货，多少钱，还有没有……",
-      "action": "实际商品页依次展开品名、价格、库存，切换库存状态后再查询核验",
-      "old_section": 7
+      "quote": "这一单丢了，老板都不知道。你根本没进他的门。；那样小东西，是一个看货的小程序……有什么货，多少钱，还有没有……",
+      "action": "独立切入顾客端商品详情，先以可见信息回应老板不知道丢单，再依次展开品名、价格、库存，切换库存后查询核验；搜索框旁常驻本店小程序内搜索，不承接前镜光球运动。",
+      "old_section": 7,
+      "source_sections": [
+        6,
+        7
+      ]
     },
     {
       "start_frame": 1680,
@@ -144,7 +141,7 @@
       "mode": "R",
       "task_id": "R01",
       "quote": "小店照着做，页面就长这样……螺口灯泡，九块五，有货……下午来拿。",
-      "action": "输入演示联系方式，点击预留灯泡，确认下午自取，状态变为待取货",
+      "action": "输入演示联系方式，点击预留灯泡，确认下午自取，状态变为待取货；搜索框旁常驻本店小程序内搜索。",
       "old_section": 9
     },
     {
@@ -154,7 +151,9 @@
       "task_id": "G05a",
       "quote": "晚上十点老板睡了……你照样下单……货多卖了。",
       "action": "夜色掠过休眠店铺，卷帘门成为前景屏障；本子镜触发主变化。",
-      "old_section": 10
+      "old_section": 10,
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 5
     },
     {
       "start_frame": 2625,
@@ -163,7 +162,9 @@
       "task_id": "G05b",
       "quote": "晚上十点老板睡了……你照样下单……货多卖了。",
       "action": "订单光束穿门进入待办格，待办格弹性张开接住请求；引用上一子镜尾帧，保持同源场景、光向与运动方向。",
-      "old_section": 10
+      "old_section": 10,
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 5
     },
     {
       "start_frame": 2760,
@@ -171,7 +172,7 @@
       "mode": "A",
       "task_id": "A02",
       "quote": "一天多三单，一单一百块，一个月就是九千。",
-      "action": "三枚订单积木乘100元客单，再铺成30天网格，9000元营业额估算从网格中升起",
+      "action": "三枚订单积木落位；灯泡、管材、五金配件汇入日常综合购物篮，显示假设平均100元/单；再展开30天网格，3×100×30与9000元机会营业额估算同框。角标：机会营业额估算：3单/天 × 100元均价 × 30天。9.5元灯泡卡保持独立，不与综合均价混同。",
       "old_section": 11
     },
     {
@@ -180,7 +181,7 @@
       "mode": "R",
       "task_id": "R02",
       "quote": "几百样货怎么搬上去……手机对着货架拍，AI认出品名和规格，价钱他自己填。",
-      "action": "选货架照片，识别候选品名规格，人工改正错项并填价，提交前逐项确认",
+      "action": "选货架照片，识别候选品名规格，人工改正错项并填价，提交前逐项确认；顶部常驻演示环境操作｜实际耗时依核对速度而定。",
       "old_section": 12
     },
     {
@@ -189,7 +190,7 @@
       "mode": "R",
       "task_id": "R02",
       "quote": "我拍一排给你看，十几样货，一分钟上架。",
-      "action": "点击发布，顾客端搜索同批条目并逐项核对；保留完整操作日志验证十几样与一分钟",
+      "action": "点击发布，顾客端搜索同批条目并逐项核对；保留完整操作日志验证十几样与一分钟；顶部常驻演示环境操作｜实际耗时依核对速度而定。",
       "old_section": 13
     },
     {
@@ -199,7 +200,9 @@
       "task_id": "G06a",
       "quote": "从前你半夜想起灯泡坏了……现在一搜，楼下有，九块五，明早下楼拿。",
       "action": "搜索光束进入首镜同一透明货架，扫描同款灯泡；本子镜触发主变化。",
-      "old_section": 14
+      "old_section": 14,
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 6
     },
     {
       "start_frame": 3945,
@@ -208,7 +211,9 @@
       "task_id": "G06b",
       "quote": "从前你半夜想起灯泡坏了……现在一搜，楼下有，九块五，明早下楼拿。",
       "action": "货架格逐层凝实，灯泡位置向屏幕顶出；可控图层落入9.5元预留卡，接下一段多行业矩阵；引用上一子镜尾帧，保持同源场景、光向与运动方向。",
-      "old_section": 14
+      "old_section": 14,
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 6
     },
     {
       "start_frame": 4110,
@@ -297,7 +302,7 @@
       "mode": "R",
       "task_id": "R01",
       "quote": "搜不到，你的货架就还是看不见的。搜得到，再看两样……价钱……今天有没有。",
-      "action": "在目录搜灯泡，点击核对价钱和今日库存，两项通过后才显示可预留",
+      "action": "在目录搜灯泡，点击核对价钱和今日库存，两项通过后才显示可预留；搜索框旁常驻本店小程序内搜索。",
       "old_section": 24
     },
     {
@@ -306,7 +311,7 @@
       "mode": "R",
       "task_id": "R04",
       "quote": "你不开店也一样……把你的名字、你干的活搜一遍……",
-      "action": "在演示服务目录输入虚构姓名与技能，检查服务描述、价格与可联系入口是否齐全",
+      "action": "在演示服务目录输入虚构姓名与技能，检查服务描述、价格与可联系入口是否齐全；搜索框旁常驻本店小程序内搜索。",
       "old_section": 25
     },
     {
@@ -331,312 +336,301 @@
   "statistics": {
     "frames": {
       "P": 1050,
-      "G": 1230,
-      "R": 2580,
-      "A": 2850
+      "G": 1290,
+      "R": 2640,
+      "A": 2730
     },
     "percent": {
       "P": 13.619,
-      "G": 15.953,
-      "R": 33.463,
-      "A": 36.965
+      "G": 16.732,
+      "R": 34.241,
+      "A": 35.409
     },
     "max_continuous_p_frames": 270,
-    "a_tasks": 7,
-    "a_ratio_policy": "20–25%为参考，按用户裁定允许超出；指定内容完整视觉化优先"
+    "a_tasks": 5,
+    "a_ratio_policy": "20–25%为保底参考而非上限；指定段落完整视觉化优先"
   },
   "sfx_events": [
     {
-      "task_id": "A_open",
-      "slot_start": 120,
-      "local_frame": 12,
-      "global_frame": 132,
-      "milliseconds": 4400.0,
-      "sample_48k": 211200,
-      "sfx": "Whoosh",
-      "action": "前镜余动接续"
-    },
-    {
-      "task_id": "A_open",
-      "slot_start": 120,
-      "local_frame": 30,
-      "global_frame": 150,
-      "milliseconds": 5000.0,
-      "sample_48k": 240000,
-      "sfx": "Click/Pop",
-      "action": "结果图层落位"
-    },
-    {
-      "task_id": "A_open",
-      "slot_start": 120,
-      "local_frame": 48,
-      "global_frame": 168,
-      "milliseconds": 5600.0,
-      "sample_48k": 268800,
-      "sfx": "机械落定",
-      "action": "结果确认"
-    },
-    {
-      "task_id": "A_tail_G04",
-      "slot_start": 1320,
-      "local_frame": 12,
-      "global_frame": 1332,
-      "milliseconds": 44400.0,
-      "sample_48k": 2131200,
-      "sfx": "Whoosh",
-      "action": "前镜余动接续"
-    },
-    {
-      "task_id": "A_tail_G04",
-      "slot_start": 1320,
-      "local_frame": 30,
-      "global_frame": 1350,
-      "milliseconds": 45000.0,
-      "sample_48k": 2160000,
-      "sfx": "Click/Pop",
-      "action": "结果图层落位"
-    },
-    {
-      "task_id": "A_tail_G04",
-      "slot_start": 1320,
-      "local_frame": 48,
-      "global_frame": 1368,
-      "milliseconds": 45600.0,
-      "sample_48k": 2188800,
-      "sfx": "机械落定",
-      "action": "结果确认"
+      "task_id": "A01",
+      "slot_start": 1680,
+      "anchor": "点外卖",
+      "visual_event": "外卖菜单从街区升起",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A01",
       "slot_start": 1680,
-      "local_frame": 12,
-      "global_frame": 1692,
-      "milliseconds": 56400.0,
-      "sample_48k": 2707200,
-      "sfx": "Whoosh"
+      "anchor": "买药",
+      "visual_event": "药店库存卡与菜单并列升起",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A01",
       "slot_start": 1680,
-      "local_frame": 210,
-      "global_frame": 1890,
-      "milliseconds": 63000.0,
-      "sample_48k": 3024000,
-      "sfx": "Click/Pop"
-    },
-    {
-      "task_id": "A01",
-      "slot_start": 1680,
-      "local_frame": 408,
-      "global_frame": 2088,
-      "milliseconds": 69600.0,
-      "sample_48k": 3340800,
-      "sfx": "机械落定"
+      "anchor": "五金店没跟上",
+      "visual_event": "五金店空白入口标红，搜索路径中断",
+      "sound": "短促Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A02",
       "slot_start": 2760,
-      "local_frame": 12,
-      "global_frame": 2772,
-      "milliseconds": 92400.0,
-      "sample_48k": 4435200,
-      "sfx": "Whoosh"
+      "anchor": "一天多三单",
+      "visual_event": "三枚订单积木逐一落位",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A02",
       "slot_start": 2760,
-      "local_frame": 180,
-      "global_frame": 2940,
-      "milliseconds": 98000.0,
-      "sample_48k": 4704000,
-      "sfx": "Click/Pop"
+      "anchor": "一单一百块",
+      "visual_event": "灯泡、管材、配件汇入综合购物篮，显示假设平均100元/单，乘号展开",
+      "sound": "机械展开声",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A02",
       "slot_start": 2760,
-      "local_frame": 348,
-      "global_frame": 3108,
-      "milliseconds": 103600.0,
-      "sample_48k": 4972800,
-      "sfx": "机械落定"
+      "anchor": "一个月就是九千",
+      "visual_event": "30天网格铺满，3×100×30与9000元机会营业额估算同框锁定",
+      "sound": "机械落定声",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A03",
       "slot_start": 4110,
-      "local_frame": 12,
-      "global_frame": 4122,
-      "milliseconds": 137400.0,
-      "sample_48k": 6595200,
-      "sfx": "Whoosh"
+      "anchor": "文具店",
+      "visual_event": "文具店格从街道升起",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A03",
       "slot_start": 4110,
-      "local_frame": 150,
-      "global_frame": 4260,
-      "milliseconds": 142000.0,
-      "sample_48k": 6816000,
-      "sfx": "Click/Pop"
-    },
-    {
-      "task_id": "A03",
-      "slot_start": 4110,
-      "local_frame": 288,
-      "global_frame": 4398,
-      "milliseconds": 146600.0,
-      "sample_48k": 7036800,
-      "sfx": "机械落定"
+      "anchor": "卡纸",
+      "visual_event": "卡纸落入查询格，未上架路径与补齐后的路径对照",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A03",
       "slot_start": 4410,
-      "local_frame": 12,
-      "global_frame": 4422,
-      "milliseconds": 147400.0,
-      "sample_48k": 7075200,
-      "sfx": "Whoosh"
+      "anchor": "菜摊",
+      "visual_event": "菜摊与当日库存格升起",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A03",
       "slot_start": 4410,
-      "local_frame": 165,
-      "global_frame": 4575,
-      "milliseconds": 152500.0,
-      "sample_48k": 7320000,
-      "sfx": "Click/Pop"
+      "anchor": "活鱼",
+      "visual_event": "鱼形库存条从未知转为可查询",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A03",
       "slot_start": 4410,
-      "local_frame": 318,
-      "global_frame": 4728,
-      "milliseconds": 157600.0,
-      "sample_48k": 7564800,
-      "sfx": "机械落定"
+      "anchor": "花店",
+      "visual_event": "花店格接入街区",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 4410,
+      "anchor": "有什么花",
+      "visual_event": "花束选择及预订时段展开",
+      "sound": "轻Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A03",
       "slot_start": 4740,
-      "local_frame": 12,
-      "global_frame": 4752,
-      "milliseconds": 158400.0,
-      "sample_48k": 7603200,
-      "sfx": "Whoosh"
+      "anchor": "修车的",
+      "visual_event": "维修服务格升起",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A03",
       "slot_start": 4740,
-      "local_frame": 225,
-      "global_frame": 4965,
-      "milliseconds": 165500.0,
-      "sample_48k": 7944000,
-      "sfx": "Click/Pop"
+      "anchor": "配钥匙的",
+      "visual_event": "钥匙格接入",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A03",
       "slot_start": 4740,
-      "local_frame": 438,
-      "global_frame": 5178,
-      "milliseconds": 172600.0,
-      "sample_48k": 8284800,
-      "sfx": "机械落定"
+      "anchor": "卖宠物粮的",
+      "visual_event": "宠物粮库存格接入",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 4740,
+      "anchor": "自己接活的",
+      "visual_event": "商品货架翻为技能、服务与档期卡",
+      "sound": "机械翻页声",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
       "slot_start": 5190,
-      "local_frame": 12,
-      "global_frame": 5202,
-      "milliseconds": 173400.0,
-      "sample_48k": 8323200,
-      "sfx": "Whoosh"
+      "anchor": "仓库里明明有货",
+      "visual_event": "底层库存箱亮起",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
       "slot_start": 5190,
-      "local_frame": 135,
-      "global_frame": 5325,
-      "milliseconds": 177500.0,
-      "sample_48k": 8520000,
-      "sfx": "Click/Pop"
+      "anchor": "销售查不到",
+      "visual_event": "上层查询返回空白，数据通道断口显现",
+      "sound": "短促Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
       "slot_start": 5190,
-      "local_frame": 258,
-      "global_frame": 5448,
-      "milliseconds": 181600.0,
-      "sample_48k": 8716800,
-      "sfx": "机械落定"
+      "anchor": "说没有",
+      "visual_event": "空白响应落在销售端；停于断点，不伪造修复成功",
+      "sound": "机械落定声",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
       "slot_start": 6120,
-      "local_frame": 12,
-      "global_frame": 6132,
-      "milliseconds": 204400.0,
-      "sample_48k": 9811200,
-      "sfx": "Whoosh"
+      "anchor": "村里的果子、茶叶、蜂蜜",
+      "visual_event": "三类产地货卡依次接入小程序",
+      "sound": "连续轻Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
       "slot_start": 6120,
-      "local_frame": 180,
-      "global_frame": 6300,
-      "milliseconds": 210000.0,
-      "sample_48k": 10080000,
-      "sfx": "Click/Pop"
-    },
-    {
-      "task_id": "A05",
-      "slot_start": 6120,
-      "local_frame": 348,
-      "global_frame": 6468,
-      "milliseconds": 215600.0,
-      "sample_48k": 10348800,
-      "sfx": "机械落定"
+      "anchor": "别的镇的人来问他",
+      "visual_event": "邻镇询问入口连入案例节点",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
       "slot_start": 6480,
-      "local_frame": 12,
-      "global_frame": 6492,
-      "milliseconds": 216400.0,
-      "sample_48k": 10387200,
-      "sfx": "Whoosh"
+      "anchor": "实录第 2 期",
+      "visual_event": "案例指路卡落定",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
       "slot_start": 6480,
-      "local_frame": 120,
-      "global_frame": 6600,
-      "milliseconds": 220000.0,
-      "sample_48k": 10560000,
-      "sfx": "Click/Pop"
+      "anchor": "从前上万",
+      "visual_event": "历史报价口径卡展开",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
       "slot_start": 6480,
-      "local_frame": 228,
-      "global_frame": 6708,
-      "milliseconds": 223600.0,
-      "sample_48k": 10732800,
-      "sfx": "机械落定"
+      "anchor": "几千块、几天",
+      "visual_event": "本例范围与工期标签分层出现，标注依范围而定",
+      "sound": "机械落定声",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     }
   ],
-  "g_duration_patch_status": "confirmed_editorial_min4_model_specific_generation_min",
+  "g_duration_patch_status": "H3外审定稿：4秒硬下限；6秒完整首镜；取消跨媒介尾帧拼缝",
   "generation_duration_policy": {
-    "editorial_g_frames": [
+    "model": "MiniMax-H3",
+    "request_seconds": "integer 4–15",
+    "default_editorial_g_frames": [
       120,
       165
     ],
-    "star-video2_generate_interpolate_seconds": [
-      4,
-      15
+    "continuous_action_exception_frames": [
+      180,
+      210
     ],
-    "lib-cinema_AutoTake_seconds": [
-      5,
-      15
-    ],
-    "verification": "主控实时get_model核实，2026-11-17"
+    "exception_requirement": "duration_exception_reason",
+    "fractional_editorial_rule": "ceil duration for request; select complete action at original speed",
+    "verification": "官方duration参数；正式LibTV提交前复核当前入口与首尾帧模式",
+    "r61_visual_engine": "三合一视觉引擎：①巫师《让画面有第二层意思》+《视觉语言百科v2.2》（口播即创作输入，不限制具体物件与材质，由AI自主构思）；②R5.3/R5.4五步连续动作补强（初态→可见触发与接触→变化前沿推进→次级反应→结果停留）；③高密度细节门槛（正式生图与视频提示词每条≥200中文字符，写足前中后景尺度参照、材质纹理、光影与物理接触）。"
   }
 }

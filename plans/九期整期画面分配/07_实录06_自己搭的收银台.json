@@ -5,26 +5,21 @@
   "slots": [
     {
       "start_frame": 0,
-      "end_frame": 120,
-      "mode": "G",
-      "task_id": "G01a_0",
-      "quote": "“一款衣服三个颜色五个码，收银软件要你多交钱才记得住。”",
-      "action": "铁锁包住卫衣，2.5秒崩裂，颜色层沿纵深撕开。"
-    },
-    {
-      "start_frame": 120,
       "end_frame": 180,
-      "mode": "A",
-      "task_id": "A_open",
+      "mode": "G",
+      "task_id": "G01",
       "quote": "“一款衣服三个颜色五个码，收银软件要你多交钱才记得住。”",
-      "action": "Claude以G首镜尾帧为构图参考，用可控2.5D几何与代码图层匹配接力：十五座透明库存仓旋转归入3×5阵列，标签由代码叠加。"
+      "action": "0–1.5秒：巨型铁锁压住同一件卫衣；1.5–3秒：铁锁崩开，三种颜色层沿纵深拉开；3–5.3秒：尺码通道展开为三行五列透明库存仓；5.3–6秒：仓阵稳定，黑M与黑L分别亮起。全程同一条3D视频完成，3×5、15类及颜色/尺码用跟踪代码文字叠加；核查实际阵列数量，不能靠模型猜字或用独立2.5D画面补尾。",
+      "duration_exception_reason": "六秒连续首镜在同一三维场景完成冲突、变化与结果，避免跨媒介拼缝",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 6
     },
     {
       "start_frame": 180,
       "end_frame": 360,
       "mode": "P",
       "task_id": "P开局",
-      "quote": "此处沿用原声对应句，不搬动承诺台词",
+      "quote": "“你用软件碰到过吧，想多个功能弹出来一句开通会员。”",
       "action": "真人露脸接住冲突；此6秒保持原声原位置，承诺句原来在后面时继续在后面表达。"
     },
     {
@@ -32,7 +27,7 @@
       "end_frame": 450,
       "mode": "R",
       "task_id": "R预告",
-      "quote": "此处沿用原声对应句，不搬动演示原声",
+      "quote": "“有家服装店，我们帮老板换了一套他自己的……”",
       "action": "预告：复用R04真实提交结果，换货一次使M+1/L−1两行同时变化；角标“后文实操预览”。"
     },
     {
@@ -49,7 +44,9 @@
       "mode": "G",
       "task_id": "G03_603",
       "quote": "“三个颜色，每个颜色五个码……按颜色、尺码分开记库存，得升级再加钱。”",
-      "action": "三色卫衣向三个纵深面展开，铁锁把每个尺码入口拦住，巨物锁与小商品形成反差。"
+      "action": "三色卫衣向三个纵深面展开，铁锁把每个尺码入口拦住，巨物锁与小商品形成反差。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 5
     },
     {
       "start_frame": 753,
@@ -57,7 +54,9 @@
       "mode": "G",
       "task_id": "G03_753",
       "quote": "“三个颜色，每个颜色五个码……按颜色、尺码分开记库存，得升级再加钱。”",
-      "action": "沿前镜尾态进入锁内，五条尺码通道逐层亮起，三色商品沿各自轨道分流，揭露需要分开记的结构。"
+      "action": "沿前镜尾态进入锁内，五条尺码通道逐层亮起，三色商品沿各自轨道分流，揭露需要分开记的结构。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 5
     },
     {
       "start_frame": 903,
@@ -65,7 +64,9 @@
       "mode": "G",
       "task_id": "G03_903",
       "quote": "“三个颜色，每个颜色五个码……按颜色、尺码分开记库存，得升级再加钱。”",
-      "action": "承接通道尾态，付费闸门落下挡住分码查询，所有精确颜色/尺码和升级提示由代码叠加；切到下一镜总库存球。"
+      "action": "承接通道尾态，付费闸门落下挡住分码查询，所有精确颜色/尺码和升级提示由代码叠加；切到下一镜总库存球。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 4
     },
     {
       "start_frame": 1023,
@@ -73,15 +74,17 @@
       "mode": "G",
       "task_id": "G02_1023",
       "quote": "“不分开记就是一笔糊涂账……老板得去翻货架。”",
-      "action": "库存总数球突然膨胀挡住L码查询入口，球面裂开露出内部未分码仓海。"
+      "action": "库存总数球突然膨胀挡住L码查询入口，球面裂开露出内部未分码仓海。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 4
     },
     {
       "start_frame": 1143,
       "end_frame": 1212,
-      "mode": "A",
-      "task_id": "A_bridge",
+      "mode": "R",
+      "task_id": "R旧版尺码查询",
       "quote": "“不分开记就是一笔糊涂账……老板得去翻货架。”",
-      "action": "Claude匹配上一G尾帧的空间与运动方向，以2.5D代码动画完成短结果槽：沿裂缝穿入仓海，探照光折返仍找不到L码入口；短收束在缺少分类标识的通道。"
+      "action": "明确切到旧版软件功能演示：预填同款L码，点击查询，返回“仅有总库存／未区分尺码”，无法给出L码答案；结果保持至切真人。不延续前一G的仓库空间，角标“旧版逻辑复现”。"
     },
     {
       "start_frame": 1212,
@@ -213,11 +216,19 @@
     },
     {
       "start_frame": 5369,
-      "end_frame": 5718,
+      "end_frame": 5579,
       "mode": "P",
       "task_id": "P07",
-      "quote": "“一个月199，跟原来的年费差不了太多……归他自己……想改……”",
-      "action": "真人明确199元与原年费差不了太多；价值在自主修改，保留这句商业边界。"
+      "quote": "“一个月199，跟原来的年费差不了太多……他图的是这套东西归他自己。”",
+      "action": "真人明确199元与原年费差不了太多，点出核心价值在于系统归自己所有。"
+    },
+    {
+      "start_frame": 5579,
+      "end_frame": 5718,
+      "mode": "R",
+      "task_id": "P07补充",
+      "quote": "“往后想改，跟AI说一句就行。”",
+      "action": "可操作页面承接原句：打开本店字段修改演示页，输入新增栏位指令并预览即时生效界面；角标“演示环境操作”。"
     },
     {
       "start_frame": 5718,
@@ -271,297 +282,295 @@
   "sfx_events": [
     {
       "task_id": "A01",
-      "local_frame": 0,
-      "global_frame": 1618,
-      "sample_offset": 2588800,
-      "event": "结构入场 Whoosh",
-      "slot_id": "A01_01",
-      "slot_start": 1618
+      "slot_start": 1618,
+      "anchor": "黑色M码一个格",
+      "visual_event": "黑M仓从总量结构中分离",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A01",
-      "local_frame": 204,
-      "global_frame": 1822,
-      "sample_offset": 2915200,
-      "event": "主要状态变化 Click/Pop",
-      "slot_id": "A01_01",
-      "slot_start": 1618
+      "slot_start": 1618,
+      "anchor": "黑色L码一个格",
+      "visual_event": "黑L仓并列分离",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A01",
-      "local_frame": 391,
-      "global_frame": 2009,
-      "sample_offset": 3214400,
-      "event": "结果锁定 机械落定",
-      "slot_id": "A01_01",
-      "slot_start": 1618
+      "slot_start": 1618,
+      "anchor": "三个颜色五个码15个格",
+      "visual_event": "三行五列库存类别阵列锁定",
+      "sound": "机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A01",
-      "local_frame": 0,
-      "global_frame": 2027,
-      "sample_offset": 3243200,
-      "event": "结构入场 Whoosh",
-      "slot_id": "A01_02",
-      "slot_start": 2027
+      "slot_start": 1618,
+      "anchor": "各管各的库存",
+      "visual_event": "只改变选中仓，其他仓保持",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A01",
-      "local_frame": 148,
-      "global_frame": 2175,
-      "sample_offset": 3480000,
-      "event": "主要状态变化 Click/Pop",
-      "slot_id": "A01_02",
-      "slot_start": 2027
+      "slot_start": 2027,
+      "anchor": "分颜色分尺码记库存",
+      "visual_event": "颜色与尺码标签逐层扣合",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A01",
-      "local_frame": 278,
-      "global_frame": 2305,
-      "sample_offset": 3688000,
-      "event": "结果锁定 机械落定",
-      "slot_id": "A01_02",
-      "slot_start": 2027
+      "slot_start": 2027,
+      "anchor": "每个码单独一个条码",
+      "visual_event": "单个条码与对应仓绑定",
+      "sound": "机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A02",
-      "local_frame": 0,
-      "global_frame": 3240,
-      "sample_offset": 5184000,
-      "event": "结构入场 Whoosh",
-      "slot_id": "A02_01",
-      "slot_start": 3240
+      "slot_start": 3240,
+      "anchor": "同一笔生意两边各记一遍",
+      "visual_event": "同单据进入新旧双账轨道",
+      "sound": "双Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A02",
-      "local_frame": 188,
-      "global_frame": 3428,
-      "sample_offset": 5484800,
-      "event": "主要状态变化 Click/Pop",
-      "slot_id": "A02_01",
-      "slot_start": 3240
+      "slot_start": 3240,
+      "anchor": "第四天对不上了",
+      "visual_event": "第四天记录与前日分离并显差异",
+      "sound": "低Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A02",
-      "local_frame": 359,
-      "global_frame": 3599,
-      "sample_offset": 5758400,
-      "event": "结果锁定 机械落定",
-      "slot_id": "A02_01",
-      "slot_start": 3240
+      "slot_start": 3240,
+      "anchor": "M码比货架上少了两件",
+      "visual_event": "新账M仓下沉两格，差额-2定位",
+      "sound": "机械错位声",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A03",
-      "local_frame": 0,
-      "global_frame": 3772,
-      "sample_offset": 6035200,
-      "event": "结构入场 Whoosh",
-      "slot_id": "A03_01",
-      "slot_start": 3772
+      "slot_start": 3772,
+      "anchor": "拿M码来换L码",
+      "visual_event": "实物M返回、L离开",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A03",
-      "local_frame": 216,
-      "global_frame": 3988,
-      "sample_offset": 6380800,
-      "event": "主要状态变化 Click/Pop",
-      "slot_id": "A03_01",
-      "slot_start": 3772
+      "slot_start": 3772,
+      "anchor": "只记了卖出一件L",
+      "visual_event": "账面仅L减少",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A03",
-      "local_frame": 415,
-      "global_frame": 4187,
-      "sample_offset": 6699200,
-      "event": "结果锁定 机械落定",
-      "slot_id": "A03_01",
-      "slot_start": 3772
+      "slot_start": 3772,
+      "anchor": "退回来的M没加回去",
+      "visual_event": "M入库轨道停住，实物与账面错位",
+      "sound": "低Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 3772,
+      "anchor": "一进一出，两个码都得动",
+      "visual_event": "修正规则后M+1与L−1同事务落定",
+      "sound": "双机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
-      "local_frame": 0,
-      "global_frame": 5142,
-      "sample_offset": 8227200,
-      "event": "结构入场 Whoosh",
-      "slot_id": "A04_01",
-      "slot_start": 5142
+      "slot_start": 5142,
+      "anchor": "月底盘一次货",
+      "visual_event": "月底厚账本压住半天时钟",
+      "sound": "轻机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
-      "local_frame": 113,
-      "global_frame": 5255,
-      "sample_offset": 8408000,
-      "event": "主要状态变化 Click/Pop",
-      "slot_id": "A04_01",
-      "slot_start": 5142
+      "slot_start": 5142,
+      "anchor": "每天晚上对一遍",
+      "visual_event": "日历分成逐日核对页",
+      "sound": "纸页Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
-      "local_frame": 209,
-      "global_frame": 5351,
-      "sample_offset": 8561600,
-      "event": "结果锁定 机械落定",
-      "slot_id": "A04_01",
-      "slot_start": 5142
+      "slot_start": 5142,
+      "anchor": "月底不用再关门",
+      "visual_event": "月底时钟释放至营业轨道",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
-      "local_frame": 0,
-      "global_frame": 5718,
-      "sample_offset": 9148800,
-      "event": "结构入场 Whoosh",
-      "slot_id": "A05_01",
-      "slot_start": 5718
+      "slot_start": 5718,
+      "anchor": "换收银",
+      "visual_event": "收银工作台亮起",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
-      "local_frame": 132,
-      "global_frame": 5850,
-      "sample_offset": 9360000,
-      "event": "主要状态变化 Click/Pop",
-      "slot_id": "A05_01",
-      "slot_start": 5718
+      "slot_start": 5718,
+      "anchor": "换记账",
+      "visual_event": "记账工作台转入",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
-      "local_frame": 246,
-      "global_frame": 5964,
-      "sample_offset": 9542400,
-      "event": "结果锁定 机械落定",
-      "slot_id": "A05_01",
-      "slot_start": 5718
+      "slot_start": 5718,
+      "anchor": "换排课",
+      "visual_event": "排课工作台加入新旧双轨",
+      "sound": "机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
-      "local_frame": 0,
-      "global_frame": 6325,
-      "sample_offset": 10120000,
-      "event": "结构入场 Whoosh",
-      "slot_id": "A05_02",
-      "slot_start": 6325
+      "slot_start": 6325,
+      "anchor": "旧表别扔",
+      "visual_event": "旧表保留为底板",
+      "sound": "轻机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
-      "local_frame": 117,
-      "global_frame": 6442,
-      "sample_offset": 10307200,
-      "event": "主要状态变化 Click/Pop",
-      "slot_id": "A05_02",
-      "slot_start": 6325
+      "slot_start": 6325,
+      "anchor": "两边对着看",
+      "visual_event": "两层同列对齐，差异突出",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
-      "local_frame": 217,
-      "global_frame": 6542,
-      "sample_offset": 10467200,
-      "event": "结果锁定 机械落定",
-      "slot_id": "A05_02",
-      "slot_start": 6325
+      "slot_start": 6560,
+      "anchor": "上个月的真单子",
+      "visual_event": "历史单据进入复算台",
+      "sound": "纸页Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
-      "local_frame": 0,
-      "global_frame": 6560,
-      "sample_offset": 10496000,
-      "event": "结构入场 Whoosh",
-      "slot_id": "A05_03",
-      "slot_start": 6560
-    },
-    {
-      "task_id": "A05",
-      "local_frame": 131,
-      "global_frame": 6691,
-      "sample_offset": 10705600,
-      "event": "主要状态变化 Click/Pop",
-      "slot_id": "A05_03",
-      "slot_start": 6560
-    },
-    {
-      "task_id": "A05",
-      "local_frame": 245,
-      "global_frame": 6805,
-      "sample_offset": 10888000,
-      "event": "结果锁定 机械落定",
-      "slot_id": "A05_03",
-      "slot_start": 6560
-    },
-    {
-      "task_id": "A_open",
-      "local_frame": 0,
-      "global_frame": 120,
-      "sample_offset": 192000,
-      "event": "匹配接力 Whoosh",
-      "slot_id": "A_open",
-      "slot_start": 120
-    },
-    {
-      "task_id": "A_open",
-      "local_frame": 30,
-      "global_frame": 150,
-      "sample_offset": 240000,
-      "event": "次级变化 Pop",
-      "slot_id": "A_open",
-      "slot_start": 120
-    },
-    {
-      "task_id": "A_open",
-      "local_frame": 54,
-      "global_frame": 174,
-      "sample_offset": 278400,
-      "event": "结果锁定 Click",
-      "slot_id": "A_open",
-      "slot_start": 120
-    },
-    {
-      "task_id": "A_bridge",
-      "local_frame": 0,
-      "global_frame": 1143,
-      "sample_offset": 1828800,
-      "event": "匹配接力 Whoosh",
-      "slot_id": "A_bridge",
-      "slot_start": 1143
-    },
-    {
-      "task_id": "A_bridge",
-      "local_frame": 34,
-      "global_frame": 1177,
-      "sample_offset": 1883200,
-      "event": "次级变化 Pop",
-      "slot_id": "A_bridge",
-      "slot_start": 1143
-    },
-    {
-      "task_id": "A_bridge",
-      "local_frame": 63,
-      "global_frame": 1206,
-      "sample_offset": 1929600,
-      "event": "结果锁定 Click",
-      "slot_id": "A_bridge",
-      "slot_start": 1143
+      "slot_start": 6560,
+      "anchor": "跟当时收的钱对一对",
+      "visual_event": "复算结果与旧收款逐位对齐",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     }
   ],
-  "allocation_note": "用户已裁定：指定段落全视觉化优先，A数量占比为保底参考非上限，可用G/R分担。",
+  "allocation_note": "用户外审裁定：6秒完整G首镜；禁止G尾态跨媒介代码补缝；SFX绑定口播语义，词级对齐前全部时间字段为null。原声与总帧数不变。",
   "generation_duration_policy": {
-    "timeline_g_min_frames": 120,
-    "timeline_g_max_frames": 165,
-    "opening": "G[0,120)+A_open[120,180)",
-    "model_minimum": "Read current get_model schema; Seedance 2.0 observed minimum 4s; earlier AutoTake lib-cinema observed minimum 5s. Generate legal length then record source trim when needed."
+    "model": "MiniMax-H3",
+    "request_seconds": "integer 4–15",
+    "preferred_editorial_frames": [
+      120,
+      165
+    ],
+    "complete_shot_exceptions_frames": [
+      180,
+      210
+    ],
+    "exception_required": "duration_exception_reason",
+    "opening_frames": [
+      0,
+      180
+    ],
+    "source_in_out": "pending_media_review",
+    "verification": "官方接口duration参数，2026-11-17；正式提交前核对LibTV当前模型契约",
+    "r61_visual_engine": "三合一视觉引擎：①巫师《让画面有第二层意思》+《视觉语言百科v2.2》（口播即创作输入，不限制具体物件与材质，由AI自主构思）；②R5.3/R5.4五步连续动作补强（初态→可见触发与接触→变化前沿推进→次级反应→结果停留）；③高密度细节门槛（正式生图与视频提示词每条≥200中文字符，写足前中后景尺度参照、材质纹理、光影与物理接触）。"
   },
   "statistics": {
     "frames": {
-      "P": 1643,
-      "G": 660,
-      "R": 2119,
-      "A": 2633
+      "P": 1504,
+      "G": 720,
+      "R": 2327,
+      "A": 2504
     },
     "percent": {
-      "P": 23.288,
-      "G": 9.355,
-      "R": 30.035,
-      "A": 37.321
+      "P": 21.318,
+      "G": 10.206,
+      "R": 32.984,
+      "A": 35.493
     },
-    "a_tasks": 7,
-    "a_slots": 10,
-    "a_continuous_blocks": 8
+    "a_tasks": 5,
+    "a_slots": 8,
+    "a_continuous_blocks": 6,
+    "max_continuous_p_frames": 240
   }
 }

@@ -6,19 +6,14 @@
   "slots": [
     {
       "start_frame": 0,
-      "end_frame": 120,
-      "mode": "G",
-      "task_id": "G01a",
-      "quote": "“店里成单最多的人，丢的单子也是最多的”",
-      "action": "整体概念：顾问工位前巨石消息气泡瀑布砸下，层层叠起封住通路；墙外三个发光客户形体撞墙、倒计时归零后消散。问题词与3000元报名牌由可控文字层贴附，数量为视觉隐喻。 本子镜动作：巨石消息瀑布砸下，沿顾问桌前叠成高墙，三个发光客户停在墙外。"
-    },
-    {
-      "start_frame": 120,
       "end_frame": 180,
-      "mode": "A",
-      "task_id": "A_open",
-      "quote": "“店里成单最多的人，丢的单子也是最多的”；“你发信息问价钱……半个小时没人回，去了别家……没回你的就是他”",
-      "action": "Claude引用前一G镜尾帧和分层素材，以2.5D代码动画继续结果变化；不发起新的LibTV生成任务、不重复触发。客户撞墙，三枚倒计时牌归零，客户形体消散；顾问仍在墙内处理消息。"
+      "mode": "G",
+      "task_id": "G01",
+      "quote": "“店里成单最多的人，丢的单子也是最多的”；“店里成单最多的人，丢的单子也是最多的”；“你发信息问价钱……半个小时没人回，去了别家……没回你的就是他”",
+      "action": "0–1.5秒，灰色巨石消息从上方砸向顾问工位；1.5–3秒，巨石层层堆成高墙，三个发光客户抵达墙外；3–5秒，客户撞墙后倒计时耗尽，形体先失去亮度再消散；5–6秒，镜头拉开，墙内顾问仍忙于重复消息，墙外机会已空。全程同一条H3三维视频；问题词、倒计时与3000元由可控图层跟踪，非真实客户数量或已丢订单证据。",
+      "duration_exception_reason": "六秒完整首镜：触发、主变化与结果全部由同一条三维视频完成，避免跨媒介透视拼缝。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 6
     },
     {
       "start_frame": 180,
@@ -42,7 +37,9 @@
       "mode": "G",
       "task_id": "G02a",
       "quote": "“你上班的地方也有……拿什么帮他……十条里八条重复”",
-      "action": "整体概念：顾问桌面裂开为高耸消息峡谷，八条灰色重复问题河道挤住两条金色决策通道；顾问仍在工作，重点表现结构堵塞。 本子镜动作：桌面裂开为峡谷，八条灰色问题河道涌入顾问工位。"
+      "action": "整体概念：顾问桌面裂开为高耸消息峡谷，八条灰色重复问题河道挤住两条金色决策通道；顾问仍在工作，重点表现结构堵塞。 本子镜动作：桌面裂开为峡谷，八条灰色问题河道涌入顾问工位。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 4
     },
     {
       "start_frame": 570,
@@ -50,7 +47,9 @@
       "mode": "G",
       "task_id": "G02b",
       "quote": "“你上班的地方也有……拿什么帮他……十条里八条重复”",
-      "action": "整体概念：顾问桌面裂开为高耸消息峡谷，八条灰色重复问题河道挤住两条金色决策通道；顾问仍在工作，重点表现结构堵塞。 本子镜动作：承接河道涌入，两条金色决策通道被挤窄，客户光块卡在入口。"
+      "action": "整体概念：顾问桌面裂开为高耸消息峡谷，八条灰色重复问题河道挤住两条金色决策通道；顾问仍在工作，重点表现结构堵塞。 本子镜动作：承接河道涌入，两条金色决策通道被挤窄，客户光块卡在入口。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 5
     },
     {
       "start_frame": 708,
@@ -138,7 +137,9 @@
       "mode": "G",
       "task_id": "G03a",
       "quote": "“回不完……再招人……招不到，生意就只能这么大”",
-      "action": "整体概念：顾问工位复制的虚影在招人入口前破碎，唯一工位被待答卡持续淹没，待成交通道被压到狭窄；表达产能上限。 本子镜动作：唯一工位上方出现招人门，第二工位虚影尝试从门中落下。"
+      "action": "整体概念：顾问工位复制的虚影在招人入口前破碎，唯一工位被待答卡持续淹没，待成交通道被压到狭窄；表达产能上限。 本子镜动作：唯一工位上方出现招人门，第二工位虚影尝试从门中落下。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 4
     },
     {
       "start_frame": 3739,
@@ -146,7 +147,9 @@
       "mode": "G",
       "task_id": "G03b",
       "quote": "“回不完……再招人……招不到，生意就只能这么大”",
-      "action": "整体概念：顾问工位复制的虚影在招人入口前破碎，唯一工位被待答卡持续淹没，待成交通道被压到狭窄；表达产能上限。 本子镜动作：虚影破碎，原工位被待答卡继续堆高，成交通道受到明显挤压。"
+      "action": "整体概念：顾问工位复制的虚影在招人入口前破碎，唯一工位被待答卡持续淹没，待成交通道被压到狭窄；表达产能上限。 本子镜动作：虚影破碎，原工位被待答卡继续堆高，成交通道受到明显挤压。",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 5
     },
     {
       "start_frame": 3863,
@@ -232,9 +235,9 @@
       "start_frame": 6770,
       "end_frame": 6876,
       "mode": "A",
-      "task_id": "A_insert_6770",
+      "task_id": "A06",
       "quote": "“最能干的那个人……不该花在回同一句话上……AI该先接走的”",
-      "action": "Claude以独立2.5D代码图形完成此短时槽，非LibTV生成镜头。开头巨石墙从中间打开，灰色消息被辅助轨带走，顾问桌前留下清晰决策通路，匹配切真人收束。"
+      "action": "独立2.5D客服路由图从两条清楚分开的轨道展开：重复问题进入助理轨，决策卡进入顾问确认台。随最后判断把顾问确认台抬到前景。自有图形构图，不复原首镜巨石墙或接续三维尾态。"
     },
     {
       "start_frame": 6876,
@@ -249,341 +252,443 @@
     {
       "task_id": "A01",
       "slot_start": 708,
-      "local_frame": 12,
-      "global_frame": 720,
-      "milliseconds": 24000.0,
-      "sample_48k": 1152000,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "anchor": "多少钱",
+      "visual_event": "问价卡进入工位",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A01",
       "slot_start": 708,
-      "local_frame": 185,
-      "global_frame": 893,
-      "milliseconds": 29766.666666666668,
-      "sample_48k": 1428800,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "anchor": "几点开门",
+      "visual_event": "营业时间卡进入工位",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A01",
       "slot_start": 708,
-      "local_frame": 358,
-      "global_frame": 1066,
-      "milliseconds": 35533.333333333336,
-      "sample_48k": 1705600,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "anchor": "适合几岁",
+      "visual_event": "年龄适配卡进入工位",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A01",
+      "slot_start": 708,
+      "anchor": "真想买的你在后面排队",
+      "visual_event": "报名卡排在重复卡之后",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A01",
+      "slot_start": 708,
+      "anchor": "你就走了",
+      "visual_event": "报名卡离开队列",
+      "sound": "轻滑动",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A02",
       "slot_start": 1372,
-      "local_frame": 12,
-      "global_frame": 1384,
-      "milliseconds": 46133.333333333336,
-      "sample_48k": 2214400,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "anchor": "重复的问题他先答",
+      "visual_event": "灰色问题进入助理轨",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A02",
       "slot_start": 1372,
-      "local_frame": 131,
-      "global_frame": 1503,
-      "milliseconds": 50100.0,
-      "sample_48k": 2404800,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "anchor": "要拍板的",
+      "visual_event": "决策卡切向顾问",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A02",
       "slot_start": 1372,
-      "local_frame": 251,
-      "global_frame": 1623,
-      "milliseconds": 54100.0,
-      "sample_48k": 2596800,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "anchor": "要成交的转给他",
+      "visual_event": "报名卡送入顾问确认台",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 1372,
+      "anchor": "是多了个帮手",
+      "visual_event": "助理轨与顾问台并列稳定",
+      "sound": "机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A02",
       "slot_start": 1635,
-      "local_frame": 12,
-      "global_frame": 1647,
-      "milliseconds": 54900.0,
-      "sample_48k": 2635200,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "anchor": "银行的客服电话",
+      "visual_event": "路由图翻为客服菜单",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A02",
       "slot_start": 1635,
-      "local_frame": 243,
-      "global_frame": 1878,
-      "milliseconds": 62600.0,
-      "sample_48k": 3004800,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "anchor": "查余额按一",
+      "visual_event": "余额查询进入自动轨",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A02",
       "slot_start": 1635,
-      "local_frame": 475,
-      "global_frame": 2110,
-      "milliseconds": 70333.33333333333,
-      "sample_48k": 3376000,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "anchor": "挂失按二",
+      "visual_event": "挂失菜单进入自动轨",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 1635,
+      "anchor": "办不了的转人工",
+      "visual_event": "复杂问题进入人工轨",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 1635,
+      "anchor": "把人留给难办的事",
+      "visual_event": "人工确认台突出",
+      "sound": "机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A03",
       "slot_start": 3358,
-      "local_frame": 12,
-      "global_frame": 3370,
-      "milliseconds": 112333.33333333333,
-      "sample_48k": 5392000,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "anchor": "一个月走掉三个",
+      "visual_event": "三张机会客户卡逐个离队",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A03",
       "slot_start": 3358,
-      "local_frame": 130,
-      "global_frame": 3488,
-      "milliseconds": 116266.66666666667,
-      "sample_48k": 5580800,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "anchor": "一个课包三千",
+      "visual_event": "各卡关联3000元示例金额",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A03",
       "slot_start": 3358,
-      "local_frame": 249,
-      "global_frame": 3607,
-      "milliseconds": 120233.33333333333,
-      "sample_48k": 5771200,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "anchor": "就是九千",
+      "visual_event": "3×3000=9000估算结果落位",
+      "sound": "机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
       "slot_start": 3863,
-      "local_frame": 12,
-      "global_frame": 3875,
-      "milliseconds": 129166.66666666667,
-      "sample_48k": 6200000,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "anchor": "装修公司",
+      "visual_event": "工地模块升起",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
       "slot_start": 3863,
-      "local_frame": 156,
-      "global_frame": 4019,
-      "milliseconds": 133966.66666666666,
-      "sample_48k": 6430400,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "anchor": "设计师在工地上",
+      "visual_event": "服务轨保持占用，问价卡在外圈",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
       "slot_start": 3863,
-      "local_frame": 300,
-      "global_frame": 4163,
-      "milliseconds": 138766.66666666666,
-      "sample_48k": 6660800,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "anchor": "已经约了别家",
+      "visual_event": "客户卡改变选择路径",
+      "sound": "轻滑动",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
       "slot_start": 4175,
-      "local_frame": 12,
-      "global_frame": 4187,
-      "milliseconds": 139566.66666666666,
-      "sample_48k": 6699200,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "anchor": "理发店",
+      "visual_event": "矩阵翻到理发模块",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
       "slot_start": 4175,
-      "local_frame": 80,
-      "global_frame": 4255,
-      "milliseconds": 141833.33333333334,
-      "sample_48k": 6808000,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "anchor": "今天还能不能染",
+      "visual_event": "询问卡进入等待层",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
       "slot_start": 4175,
-      "local_frame": 149,
-      "global_frame": 4324,
-      "milliseconds": 144133.33333333334,
-      "sample_48k": 6918400,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "anchor": "手上正染这一个",
+      "visual_event": "服务轨占用与待答卡并列",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
       "slot_start": 4336,
-      "local_frame": 12,
-      "global_frame": 4348,
-      "milliseconds": 144933.33333333334,
-      "sample_48k": 6956800,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "anchor": "诊所前台",
+      "visual_event": "前台模块进入矩阵",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
       "slot_start": 4336,
-      "local_frame": 83,
-      "global_frame": 4419,
-      "milliseconds": 147300.0,
-      "sample_48k": 7070400,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
-    },
-    {
-      "task_id": "A04",
-      "slot_start": 4336,
-      "local_frame": 154,
-      "global_frame": 4490,
-      "milliseconds": 149666.66666666666,
-      "sample_48k": 7184000,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "anchor": "今天张医生在不在",
+      "visual_event": "坐诊问题叠高，排班格显露",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
       "slot_start": 4502,
-      "local_frame": 12,
-      "global_frame": 4514,
-      "milliseconds": 150466.66666666666,
-      "sample_48k": 7222400,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "anchor": "财务",
+      "visual_event": "报销模块展开",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
       "slot_start": 4502,
-      "local_frame": 223,
-      "global_frame": 4725,
-      "milliseconds": 157500.0,
-      "sample_48k": 7560000,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "anchor": "报销怎么填",
+      "visual_event": "重复问法沿回环走一圈",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A04",
       "slot_start": 4502,
-      "local_frame": 434,
-      "global_frame": 4936,
-      "milliseconds": 164533.33333333334,
-      "sample_48k": 7897600,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "anchor": "老员工",
+      "visual_event": "新人问答模块展开",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 4502,
+      "anchor": "自己接活的人",
+      "visual_event": "自由职业模块展开",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 4502,
+      "anchor": "那五个问题",
+      "visual_event": "五类示例问题分组并连接答复轨",
+      "sound": "机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
       "slot_start": 5591,
-      "local_frame": 12,
-      "global_frame": 5603,
-      "milliseconds": 186766.66666666666,
-      "sample_48k": 8964800,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "anchor": "他答一句",
+      "visual_event": "创建一张草稿规则卡",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
       "slot_start": 5591,
-      "local_frame": 137,
-      "global_frame": 5728,
-      "milliseconds": 190933.33333333334,
-      "sample_48k": 9164800,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
+      "anchor": "记一条",
+      "visual_event": "草稿进入待确认抽屉",
+      "sound": "Pop",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
       "task_id": "A05",
       "slot_start": 5591,
-      "local_frame": 262,
-      "global_frame": 5853,
-      "milliseconds": 195100.0,
-      "sample_48k": 9364800,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "anchor": "挨条过一遍",
+      "visual_event": "审核指针逐条前进",
+      "sound": "Click",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_insert_6770",
+      "task_id": "A05",
+      "slot_start": 5591,
+      "anchor": "点了头才放进去",
+      "visual_event": "确认章落下后启用",
+      "sound": "机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A05",
+      "slot_start": 5591,
+      "anchor": "拿不准的一律转给他",
+      "visual_event": "不确定卡弹回人工轨",
+      "sound": "轻滑动",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A06",
       "slot_start": 6770,
-      "local_frame": 12,
-      "global_frame": 6782,
-      "milliseconds": 226066.66666666666,
-      "sample_48k": 10851200,
-      "action": "结构入场",
-      "sfx": "Whoosh"
+      "anchor": "回同一句话上",
+      "visual_event": "重复问题并入助理轨",
+      "sound": "Whoosh",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     },
     {
-      "task_id": "A_insert_6770",
+      "task_id": "A06",
       "slot_start": 6770,
-      "local_frame": 53,
-      "global_frame": 6823,
-      "milliseconds": 227433.33333333334,
-      "sample_48k": 10916800,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
-    },
-    {
-      "task_id": "A_insert_6770",
-      "slot_start": 6770,
-      "local_frame": 94,
-      "global_frame": 6864,
-      "milliseconds": 228800.0,
-      "sample_48k": 10982400,
-      "action": "结果锁定",
-      "sfx": "Click"
-    },
-    {
-      "task_id": "A_open",
-      "slot_start": 120,
-      "local_frame": 12,
-      "global_frame": 132,
-      "milliseconds": 4400.0,
-      "sample_48k": 211200,
-      "action": "结构入场",
-      "sfx": "Whoosh"
-    },
-    {
-      "task_id": "A_open",
-      "slot_start": 120,
-      "local_frame": 30,
-      "global_frame": 150,
-      "milliseconds": 5000.0,
-      "sample_48k": 240000,
-      "action": "主体重组/关键状态落定",
-      "sfx": "Pop"
-    },
-    {
-      "task_id": "A_open",
-      "slot_start": 120,
-      "local_frame": 48,
-      "global_frame": 168,
-      "milliseconds": 5600.0,
-      "sample_48k": 268800,
-      "action": "结果锁定",
-      "sfx": "Click"
+      "anchor": "AI该先接走的",
+      "visual_event": "顾问确认台抬到前景，助理轨保持工作",
+      "sound": "机械落定",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
     }
   ],
-  "metrics": {
-    "continuous_A_runs": 7,
-    "P_percent": 19.684,
-    "A_percent": 41.361,
-    "max_P_frames": 300,
-    "A_tasks": 7,
-    "A_slots": 11,
-    "A_limit_status": "reference_not_cap_user_confirmed"
+  "statistics": {
+    "frames": {
+      "P": 1383,
+      "G": 682,
+      "R": 2115,
+      "A": 2846
+    },
+    "percent": {
+      "P": 19.684,
+      "G": 9.707,
+      "R": 30.102,
+      "A": 40.507
+    },
+    "max_continuous_p_frames": 300,
+    "a_tasks": 6,
+    "a_slots": 10,
+    "a_continuous_runs": 6,
+    "a_ratio_policy": "参考下限不封顶；指定段落全部视觉化、P占比与连续时长优先"
+  },
+  "generation_duration_policy": {
+    "model": "MiniMax-H3",
+    "request_seconds": "4–15整数秒，覆盖成片所需时长",
+    "preferred_editorial_frames": [
+      120,
+      165
+    ],
+    "complete_action_exceptions": [
+      180,
+      210
+    ],
+    "source_in_out": "实际产物检查后登记，不伪造",
+    "cross_medium_tail": "不以代码动画接续G三维物理尾态",
+    "r61_visual_engine": "三合一视觉引擎：①巫师《让画面有第二层意思》+《视觉语言百科v2.2》（口播即创作输入，不限制具体物件与材质，由AI自主构思）；②R5.3/R5.4五步连续动作补强（初态→可见触发与接触→变化前沿推进→次级反应→结果停留）；③高密度细节门槛（正式生图与视频提示词每条≥200中文字符，写足前中后景尺度参照、材质纹理、光影与物理接触）。"
   }
 }

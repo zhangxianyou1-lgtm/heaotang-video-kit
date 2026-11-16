@@ -310,5 +310,15 @@
         "default": 5
       }
     }
-  ]
+  ],
+  "h3_official_documentation": {
+    "checked_date": "2026-11-17",
+    "url": "https://platform.minimax.io/docs/api-reference/video-generation-v2-create",
+    "model": "MiniMax-H3",
+    "duration_type": "integer",
+    "minimum": 4,
+    "maximum": 15,
+    "h3_max_minimum": 5,
+    "verification": "documentation only; no generation submitted"
+  }
 }
