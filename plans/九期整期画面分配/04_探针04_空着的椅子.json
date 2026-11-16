@@ -1,0 +1,609 @@
+{
+  "title": "探针04_空着的椅子",
+  "total_frames": 7065,
+  "timing_basis": "existing",
+  "fps": 30,
+  "slots": [
+    {
+      "start_frame": 0,
+      "end_frame": 120,
+      "mode": "G",
+      "task_id": "G01a",
+      "quote": "“你嫌人多转身就走……可到了下午，他的椅子又空着。”",
+      "action": "整体概念：黄金时间带从同一把皮椅表面抬起、强行剥离并扭转卷曲；钟声落点撕裂成金色碎片，碎片在半空解体消散，最后只留完整空椅。15:00–16:00／45元由可控文字层跟随时间带。 本子镜动作：黄金带抬离椅面并卷曲，4秒落点开始撕裂；带上时间金额由代码层跟踪。"
+    },
+    {
+      "start_frame": 120,
+      "end_frame": 180,
+      "mode": "G",
+      "task_id": "G01b",
+      "quote": "“你嫌人多转身就走……可到了下午，他的椅子又空着。”",
+      "action": "整体概念：黄金时间带从同一把皮椅表面抬起、强行剥离并扭转卷曲；钟声落点撕裂成金色碎片，碎片在半空解体消散，最后只留完整空椅。15:00–16:00／45元由可控文字层跟随时间带。 本子镜动作：承接悬空裂带，碎片加速散开并消隐，镜头结果落在完整空椅。"
+    },
+    {
+      "start_frame": 180,
+      "end_frame": 360,
+      "mode": "P",
+      "task_id": "P01",
+      "quote": "“你嫌人多转身就走……可到了下午，他的椅子又空着。”；“饭店下午三点的桌子、健身教练上午的课……钱怎么漏的，怎么捡回来……”",
+      "action": "真人露脸连接原声问题与后文承诺；此固定露脸窗口不移动原台词。"
+    },
+    {
+      "start_frame": 360,
+      "end_frame": 450,
+      "mode": "R",
+      "task_id": "R01预告",
+      "quote": "“饭店下午三点的桌子、健身教练上午的课……钱怎么漏的，怎么捡回来……”",
+      "action": "同一预约页点选周二15点，省5元标签亮起，确认后该格从可约变为已预约；标“稍后演示”。"
+    },
+    {
+      "start_frame": 450,
+      "end_frame": 561,
+      "mode": "R",
+      "task_id": "R01",
+      "quote": "“饭店下午三点的桌子、健身教练上午的课……钱怎么漏的，怎么捡回来……”",
+      "action": "展示周二与周六两个时间格，光标悬停可约格，承诺处把预约结果与后文操作接上。"
+    },
+    {
+      "start_frame": 561,
+      "end_frame": 641,
+      "mode": "G",
+      "task_id": "G02",
+      "quote": "“货今天卖不掉，明天还在架子上。”",
+      "action": "货架商品化作坚实立方体留在原位；相邻椅面时间薄片被风卷走，形成有形库存与逝去时段的尺度对照。"
+    },
+    {
+      "start_frame": 641,
+      "end_frame": 793,
+      "mode": "G",
+      "task_id": "G03",
+      "quote": "“椅子今天下午空着，这个钟头就没了，明天补不回来。”",
+      "action": "回扣首镜但推进到消失之后：碎片落到次日日历前穿透成尘，空椅上次日新时间带浮起，昨天空出的那段无法装回。"
+    },
+    {
+      "start_frame": 793,
+      "end_frame": 956,
+      "mode": "G",
+      "task_id": "G04",
+      "quote": "“跟飞机一个道理……空着的座位就再也卖不出去。”",
+      "action": "一把空椅的扶手伸展成客机座舱剖面，成排空座随起飞轨迹抬离售票窗口，未售时间券在窗外崩散。"
+    },
+    {
+      "start_frame": 956,
+      "end_frame": 1068,
+      "mode": "P",
+      "task_id": "P02",
+      "quote": "“可客人不知道哪儿有空，只能碰。”",
+      "action": "真人直视观众抛出“可客人不知道哪儿有空”的矛盾，保留自然表情。"
+    },
+    {
+      "start_frame": 1068,
+      "end_frame": 1352,
+      "mode": "A",
+      "task_id": "A05",
+      "quote": "“一碰全碰到了下午以后和周末……两头都在漏。”",
+      "action": "2.5D双轨时间台左右展开：周末客流块在狭口碰撞溢出，周二空时槽一格格熄灭；两边损失沿不同路径汇入同一缺口。"
+    },
+    {
+      "start_frame": 1352,
+      "end_frame": 1444,
+      "mode": "R",
+      "task_id": "R01",
+      "quote": "“补上他的东西很小，一个预约的页面。”",
+      "action": "从空时槽切入可交互预约页，展开周历，展示服务项目与可选时间。"
+    },
+    {
+      "start_frame": 1444,
+      "end_frame": 1592,
+      "mode": "R",
+      "task_id": "R01",
+      "quote": "“哪个钟点有空，客人在手机上看得见，自己挑。”",
+      "action": "实点日期筛选，灰格保持不可点、空档按钮响应，停在周二可约状态。"
+    },
+    {
+      "start_frame": 1592,
+      "end_frame": 1967,
+      "mode": "A",
+      "task_id": "A03",
+      "quote": "“大公司早就会了……机票早订的便宜……KTV下午场……电影院上午场……”",
+      "action": "飞机、KTV、电影院三座等轴测时间仓依次翻转；提前购买滑块推动价格牌，低峰空格接住预约块，三例收拢到同一时间库存结构。"
+    },
+    {
+      "start_frame": 1967,
+      "end_frame": 2242,
+      "mode": "R",
+      "task_id": "R01",
+      "quote": "“你早就见过这把空椅子……理发店照着做，让客人提前约，约的便宜五块。”",
+      "action": "同一预约页显示普通价与提前预约优惠，选周二让优惠减少5元，再展示确认前摘要。"
+    },
+    {
+      "start_frame": 2242,
+      "end_frame": 2651,
+      "mode": "R",
+      "task_id": "R01",
+      "quote": "“周六下午……约满了；周二下午三点……可约，省五块……客人自己就往空着的钟点里挪。”",
+      "action": "连续操作：点击周六已满格得到禁用反馈，转周二15点可约格，确认省5元，提交后更新容量；页面与前15秒预告同源。"
+    },
+    {
+      "start_frame": 2651,
+      "end_frame": 3057,
+      "mode": "A",
+      "task_id": "A01",
+      "quote": "“两把椅子……二十个头，一个头四十五……二十八个……各让五块……多收二百六，一个月七八千。”",
+      "action": "2.5D两把椅子的接待量轨道从20格展开至28格；45元单价、预约优惠5元、口播多收260元与月七八千分区依次落定。收入采用“口播估算，非核算结果”角标；保持非等式展示。"
+    },
+    {
+      "start_frame": 3057,
+      "end_frame": 3177,
+      "mode": "G",
+      "task_id": "G05a",
+      "quote": "“从前……老板……刷手机；现在那一格约满了……椅子没多添一把，人没多请一个。”",
+      "action": "整体概念：前景预约页占满周二时槽，镜头越过屏幕后方两把巨大透明椅子的内部：空时格逐一被客流光块填入，椅数与员工数固定，随后时间带由破碎变成完整闭环。 本子镜动作：前景预约页立起成巨大透明门，周二时槽从空白亮起。"
+    },
+    {
+      "start_frame": 3177,
+      "end_frame": 3297,
+      "mode": "G",
+      "task_id": "G05b",
+      "quote": "“从前……老板……刷手机；现在那一格约满了……椅子没多添一把，人没多请一个。”",
+      "action": "整体概念：前景预约页占满周二时槽，镜头越过屏幕后方两把巨大透明椅子的内部：空时格逐一被客流光块填入，椅数与员工数固定，随后时间带由破碎变成完整闭环。 本子镜动作：接前镜尾态，门内两把透明椅子伸出各自时间轨道。"
+    },
+    {
+      "start_frame": 3297,
+      "end_frame": 3417,
+      "mode": "G",
+      "task_id": "G05c",
+      "quote": "“从前……老板……刷手机；现在那一格约满了……椅子没多添一把，人没多请一个。”",
+      "action": "整体概念：前景预约页占满周二时槽，镜头越过屏幕后方两把巨大透明椅子的内部：空时格逐一被客流光块填入，椅数与员工数固定，随后时间带由破碎变成完整闭环。 本子镜动作：预约块沿两条轨道滑入，同一把椅子的空时格被逐次填亮。"
+    },
+    {
+      "start_frame": 3417,
+      "end_frame": 3537,
+      "mode": "G",
+      "task_id": "G05d",
+      "quote": "“从前……老板……刷手机；现在那一格约满了……椅子没多添一把，人没多请一个。”",
+      "action": "整体概念：前景预约页占满周二时槽，镜头越过屏幕后方两把巨大透明椅子的内部：空时格逐一被客流光块填入，椅数与员工数固定，随后时间带由破碎变成完整闭环。 本子镜动作：保持两椅布局，原先破碎的时间带随客流块进入逐段闭合。"
+    },
+    {
+      "start_frame": 3537,
+      "end_frame": 3611,
+      "mode": "G",
+      "task_id": "G05e",
+      "quote": "“从前……老板……刷手机；现在那一格约满了……椅子没多添一把，人没多请一个。”",
+      "action": "整体概念：前景预约页占满周二时槽，镜头越过屏幕后方两把巨大透明椅子的内部：空时格逐一被客流光块填入，椅数与员工数固定，随后时间带由破碎变成完整闭环。 本子镜动作：两条完整时间环锁定，与页面已预约结果同框停留。"
+    },
+    {
+      "start_frame": 3611,
+      "end_frame": 4111,
+      "mode": "A",
+      "task_id": "A02",
+      "quote": "“现在换你家店看……饭店……健身教练……同一把椅子。”",
+      "action": "饭店桌面和教练课表在同一等轴测时间城依次翻转：晚高峰格挤满，下午或上午空格下坠；优惠滑块将一部分预约块导入空格。"
+    },
+    {
+      "start_frame": 4111,
+      "end_frame": 4264,
+      "mode": "A",
+      "task_id": "A02",
+      "quote": "“补牙的，洗车的，教琴的，订球场的……都是。”",
+      "action": "同一时间城连续弹出牙科、洗车、教琴、球场四个立体格，分别将空位压平为可预约钟点，动作按口播逐项接力。"
+    },
+    {
+      "start_frame": 4264,
+      "end_frame": 4527,
+      "mode": "A",
+      "task_id": "A02",
+      "quote": "“你自己接活也一样……你的档期就是你的椅子，别人看不见你哪天有空就不来问了。”",
+      "action": "时间城翻面成为摄影与家教档期，两条个人日历展开；隐藏档期呈灰空洞，公开后客户选择标记落入可用格。"
+    },
+    {
+      "start_frame": 4527,
+      "end_frame": 4749,
+      "mode": "R",
+      "task_id": "R02",
+      "quote": "“你不是老板，也用得上……你就是店里头一个看出这笔钱的人。”",
+      "action": "可交互空档估算器输入现有椅数和闲时，突出“同资源、看空档”的结果区域，便于向老板解释。"
+    },
+    {
+      "start_frame": 4749,
+      "end_frame": 4984,
+      "mode": "P",
+      "task_id": "P03",
+      "quote": "“这么简单，这些店以前怎么不干？航空公司有订票系统，街边的理发店没有。”",
+      "action": "真人替观众反问为何过去不做，语气落在大小店工具门槛差异。"
+    },
+    {
+      "start_frame": 4984,
+      "end_frame": 5104,
+      "mode": "G",
+      "task_id": "G06a",
+      "quote": "“客人只能打电话问……理发师一手拿剪刀，一手接。”",
+      "action": "整体概念：巨型来电线缆从手机伸出缠住剪刀，营业时间带被每次铃声扯断一截；同店前景手机与后景空椅形成忙而有空的反差。 本子镜动作：来电线缆猛然伸出手机并缠住剪刀，时间带被拉直。"
+    },
+    {
+      "start_frame": 5104,
+      "end_frame": 5174,
+      "mode": "G",
+      "task_id": "G06b",
+      "quote": "“客人只能打电话问……理发师一手拿剪刀，一手接。”",
+      "action": "整体概念：巨型来电线缆从手机伸出缠住剪刀，营业时间带被每次铃声扯断一截；同店前景手机与后景空椅形成忙而有空的反差。 本子镜动作：接拉直状态，铃声扯下一截时间带，前景电话与后景空椅同时显露。"
+    },
+    {
+      "start_frame": 5174,
+      "end_frame": 5368,
+      "mode": "P",
+      "task_id": "P04",
+      "quote": "“搁在前几年，请人定做，开口就是两三万，小店舍不得。”",
+      "action": "真人讲过去定制报价的门槛，角标“报价为口播估算”。"
+    },
+    {
+      "start_frame": 5368,
+      "end_frame": 5684,
+      "mode": "R",
+      "task_id": "R03",
+      "quote": "“这两年变了……说我给你做个预约页吧……全程跟AI说人话，三天做完。”",
+      "action": "可交互需求演示逐项录入服务、容量、时段，切至同一预约页面逐项核对；三天是叙事标注而非录屏计时。"
+    },
+    {
+      "start_frame": 5684,
+      "end_frame": 5850,
+      "mode": "P",
+      "task_id": "P05",
+      "quote": "“他这三天怎么干呢，栽在哪儿，实录第十一期讲了全过程。”",
+      "action": "真人指路实录11，保留当面讲“栽在哪儿”的提问感。"
+    },
+    {
+      "start_frame": 5850,
+      "end_frame": 5960,
+      "mode": "R",
+      "task_id": "R01",
+      "quote": "“你看，你和店中间，原来就差这么一个页面。”",
+      "action": "同一页面由服务入口进入周历，再确认周二空档，回扣人与店之间的接口。"
+    },
+    {
+      "start_frame": 5960,
+      "end_frame": 6141,
+      "mode": "P",
+      "task_id": "P06",
+      "quote": "“从前做不起，现在AI帮着做，两三千块，三天就有。”",
+      "action": "真人说明今天的工具门槛，金额与工期按案例估算角标显示。"
+    },
+    {
+      "start_frame": 6141,
+      "end_frame": 6411,
+      "mode": "A",
+      "task_id": "A04",
+      "quote": "“怎么找你那把椅子……我这儿有什么东西，今天没卖掉，明天就不算数了？”",
+      "action": "两步诊断卡从平面折成立体秤台；第一问卡翻起，商品块留存而钟点块倒计时碎裂，观众看到什么会过期。"
+    },
+    {
+      "start_frame": 6411,
+      "end_frame": 6513,
+      "mode": "A",
+      "task_id": "A04",
+      "quote": "“钟点、位置、档期都算。”",
+      "action": "钟点、位置、档期三个实体卡依次弹入诊断台第一栏，弹性碰撞后稳定排列。"
+    },
+    {
+      "start_frame": 6513,
+      "end_frame": 6697,
+      "mode": "A",
+      "task_id": "A04",
+      "quote": "“第二句，他空着的时候，客人看得见吗？看不见，他就只能碰。”",
+      "action": "第二问卡翻开形成手机视窗，隐藏空档穿过视窗后显形，选择路径由乱撞转为指向可约格。"
+    },
+    {
+      "start_frame": 6697,
+      "end_frame": 6805,
+      "mode": "R",
+      "task_id": "R01",
+      "quote": "“你把他摆到他手机上，让他自己挑。”",
+      "action": "实点发布可约时段，在顾客端刷新并选择同一空档，展示状态联动。"
+    },
+    {
+      "start_frame": 6805,
+      "end_frame": 6906,
+      "mode": "R",
+      "task_id": "R01",
+      "quote": "“早挑的便宜一点，就这么一件事。”",
+      "action": "点击提前预约优惠开关，价格摘要减少5元并保留结果，衔接最终反问。"
+    },
+    {
+      "start_frame": 6906,
+      "end_frame": 6915,
+      "mode": "R",
+      "task_id": "R01",
+      "quote": "“下回你去剪头，看一眼那把空着的椅子……你知道他一个月值多少钱了？”",
+      "action": "延续上一槽预约优惠结果，保持同一画面可读停留9帧，再切回真人最后五秒。"
+    },
+    {
+      "start_frame": 6915,
+      "end_frame": 7065,
+      "mode": "P",
+      "task_id": "P尾",
+      "quote": "“下回你去剪头，看一眼那把空着的椅子……你知道他一个月值多少钱了？”",
+      "action": "真人直视观众完成原声最后五秒，保留自然尾态。"
+    }
+  ],
+  "sfx_events": [
+    {
+      "task_id": "A01",
+      "slot_start": 2651,
+      "local_frame": 12,
+      "global_frame": 2663,
+      "milliseconds": 88766.66666666667,
+      "sample_48k": 4260800,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A01",
+      "slot_start": 2651,
+      "local_frame": 203,
+      "global_frame": 2854,
+      "milliseconds": 95133.33333333333,
+      "sample_48k": 4566400,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A01",
+      "slot_start": 2651,
+      "local_frame": 394,
+      "global_frame": 3045,
+      "milliseconds": 101500.0,
+      "sample_48k": 4872000,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 3611,
+      "local_frame": 12,
+      "global_frame": 3623,
+      "milliseconds": 120766.66666666667,
+      "sample_48k": 5796800,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 3611,
+      "local_frame": 250,
+      "global_frame": 3861,
+      "milliseconds": 128700.0,
+      "sample_48k": 6177600,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 3611,
+      "local_frame": 488,
+      "global_frame": 4099,
+      "milliseconds": 136633.33333333334,
+      "sample_48k": 6558400,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 4111,
+      "local_frame": 12,
+      "global_frame": 4123,
+      "milliseconds": 137433.33333333334,
+      "sample_48k": 6596800,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 4111,
+      "local_frame": 76,
+      "global_frame": 4187,
+      "milliseconds": 139566.66666666666,
+      "sample_48k": 6699200,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 4111,
+      "local_frame": 141,
+      "global_frame": 4252,
+      "milliseconds": 141733.33333333334,
+      "sample_48k": 6803200,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 4264,
+      "local_frame": 12,
+      "global_frame": 4276,
+      "milliseconds": 142533.33333333334,
+      "sample_48k": 6841600,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 4264,
+      "local_frame": 131,
+      "global_frame": 4395,
+      "milliseconds": 146500.0,
+      "sample_48k": 7032000,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 4264,
+      "local_frame": 251,
+      "global_frame": 4515,
+      "milliseconds": 150500.0,
+      "sample_48k": 7224000,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 1592,
+      "local_frame": 12,
+      "global_frame": 1604,
+      "milliseconds": 53466.666666666664,
+      "sample_48k": 2566400,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 1592,
+      "local_frame": 187,
+      "global_frame": 1779,
+      "milliseconds": 59300.0,
+      "sample_48k": 2846400,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 1592,
+      "local_frame": 363,
+      "global_frame": 1955,
+      "milliseconds": 65166.666666666664,
+      "sample_48k": 3128000,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 6141,
+      "local_frame": 12,
+      "global_frame": 6153,
+      "milliseconds": 205100.0,
+      "sample_48k": 9844800,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 6141,
+      "local_frame": 135,
+      "global_frame": 6276,
+      "milliseconds": 209200.0,
+      "sample_48k": 10041600,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 6141,
+      "local_frame": 258,
+      "global_frame": 6399,
+      "milliseconds": 213300.0,
+      "sample_48k": 10238400,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 6411,
+      "local_frame": 12,
+      "global_frame": 6423,
+      "milliseconds": 214100.0,
+      "sample_48k": 10276800,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 6411,
+      "local_frame": 51,
+      "global_frame": 6462,
+      "milliseconds": 215400.0,
+      "sample_48k": 10339200,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 6411,
+      "local_frame": 90,
+      "global_frame": 6501,
+      "milliseconds": 216700.0,
+      "sample_48k": 10401600,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 6513,
+      "local_frame": 12,
+      "global_frame": 6525,
+      "milliseconds": 217500.0,
+      "sample_48k": 10440000,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 6513,
+      "local_frame": 92,
+      "global_frame": 6605,
+      "milliseconds": 220166.66666666666,
+      "sample_48k": 10568000,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 6513,
+      "local_frame": 172,
+      "global_frame": 6685,
+      "milliseconds": 222833.33333333334,
+      "sample_48k": 10696000,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A05",
+      "slot_start": 1068,
+      "local_frame": 12,
+      "global_frame": 1080,
+      "milliseconds": 36000.0,
+      "sample_48k": 1728000,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A05",
+      "slot_start": 1068,
+      "local_frame": 142,
+      "global_frame": 1210,
+      "milliseconds": 40333.333333333336,
+      "sample_48k": 1936000,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A05",
+      "slot_start": 1068,
+      "local_frame": 272,
+      "global_frame": 1340,
+      "milliseconds": 44666.666666666664,
+      "sample_48k": 2144000,
+      "action": "结果锁定",
+      "sfx": "Click"
+    }
+  ],
+  "metrics": {
+    "continuous_A_runs": 5,
+    "P_percent": 17.24,
+    "A_percent": 35.909,
+    "max_P_frames": 235,
+    "A_tasks": 5,
+    "A_slots": 9,
+    "A_limit_status": "reference_not_cap_user_confirmed"
+  }
+}

@@ -1,0 +1,442 @@
+{
+  "title": "实录06《自己搭的收银台》",
+  "total_frames": 7055,
+  "timing_basis": "existing",
+  "slots": [
+    {
+      "start_frame": 0,
+      "end_frame": 120,
+      "mode": "G",
+      "task_id": "G01a_0",
+      "quote": "“一款衣服三个颜色五个码，收银软件要你多交钱才记得住。”",
+      "action": "铁锁包住卫衣，2.5秒崩裂，颜色层沿纵深撕开。"
+    },
+    {
+      "start_frame": 120,
+      "end_frame": 180,
+      "mode": "G",
+      "task_id": "G01b_120",
+      "quote": "“一款衣服三个颜色五个码，收银软件要你多交钱才记得住。”",
+      "action": "承接前镜尾帧：十五座透明库存仓旋转归入3×5阵列，标签由代码叠加。"
+    },
+    {
+      "start_frame": 180,
+      "end_frame": 360,
+      "mode": "P",
+      "task_id": "P开局",
+      "quote": "此处沿用原声对应句，不搬动承诺台词",
+      "action": "真人露脸接住冲突；此6秒保持原声原位置，承诺句原来在后面时继续在后面表达。"
+    },
+    {
+      "start_frame": 360,
+      "end_frame": 450,
+      "mode": "R",
+      "task_id": "R预告",
+      "quote": "此处沿用原声对应句，不搬动演示原声",
+      "action": "预告：复用R04真实提交结果，换货一次使M+1/L−1两行同时变化；角标“后文实操预览”。"
+    },
+    {
+      "start_frame": 450,
+      "end_frame": 603,
+      "mode": "P",
+      "task_id": "P02",
+      "quote": "“有家服装店，我们帮老板换了一套他自己的……换一套东西之前先干什么。”",
+      "action": "真人说清亲历身份及看完能学到的谨慎切换方法。"
+    },
+    {
+      "start_frame": 603,
+      "end_frame": 753,
+      "mode": "G",
+      "task_id": "G03_603",
+      "quote": "“三个颜色，每个颜色五个码……按颜色、尺码分开记库存，得升级再加钱。”",
+      "action": "三色卫衣向三个纵深面展开，铁锁把每个尺码入口拦住，巨物锁与小商品形成反差。"
+    },
+    {
+      "start_frame": 753,
+      "end_frame": 903,
+      "mode": "G",
+      "task_id": "G03_753",
+      "quote": "“三个颜色，每个颜色五个码……按颜色、尺码分开记库存，得升级再加钱。”",
+      "action": "沿前镜尾态进入锁内，五条尺码通道逐层亮起，三色商品沿各自轨道分流，揭露需要分开记的结构。"
+    },
+    {
+      "start_frame": 903,
+      "end_frame": 1023,
+      "mode": "G",
+      "task_id": "G03_903",
+      "quote": "“三个颜色，每个颜色五个码……按颜色、尺码分开记库存，得升级再加钱。”",
+      "action": "承接通道尾态，付费闸门落下挡住分码查询，所有精确颜色/尺码和升级提示由代码叠加；切到下一镜总库存球。"
+    },
+    {
+      "start_frame": 1023,
+      "end_frame": 1143,
+      "mode": "G",
+      "task_id": "G02_1023",
+      "quote": "“不分开记就是一笔糊涂账……老板得去翻货架。”",
+      "action": "库存总数球突然膨胀挡住L码查询入口，球面裂开露出内部未分码仓海。"
+    },
+    {
+      "start_frame": 1143,
+      "end_frame": 1212,
+      "mode": "G",
+      "task_id": "G02_1143",
+      "quote": "“不分开记就是一笔糊涂账……老板得去翻货架。”",
+      "action": "沿裂缝穿入仓海，探照光折返仍找不到L码入口；短收束在缺少分类标识的通道。"
+    },
+    {
+      "start_frame": 1212,
+      "end_frame": 1452,
+      "mode": "P",
+      "task_id": "P03",
+      "quote": "“这一单是我们帮他做的……阿里云，一个月199……归他自己。”",
+      "action": "真人明确这单由我们帮做、服务器每月199和代码归属"
+    },
+    {
+      "start_frame": 1452,
+      "end_frame": 1618,
+      "mode": "R",
+      "task_id": "P03补充",
+      "quote": "“这一单是我们帮他做的……阿里云，一个月199……归他自己。”",
+      "action": "可操作页面承接原句：真人明确这单由我们帮做、服务器每月199和代码归属；后半切可操作项目文件树展开、配置页展示归属示意，不伪造云账单。"
+    },
+    {
+      "start_frame": 1618,
+      "end_frame": 2027,
+      "mode": "A",
+      "task_id": "A01",
+      "quote": "“黑色M码一个格，黑色L码一个格，三个颜色五个码15个格，各管各的库存。”",
+      "action": "十五仓从总量球内部轰然展开成3行×5列，黑M与黑L仓分离弹出，单仓库存脉冲改变，其余保持；15表示类别而非新增15件衣服。"
+    },
+    {
+      "start_frame": 2027,
+      "end_frame": 2323,
+      "mode": "A",
+      "task_id": "A01",
+      "quote": "“同一款分颜色分尺码记库存，每个码单独一个条码。”",
+      "action": "同款、颜色、尺码三层立体标签咬合到唯一条码；镜头沿条码轨道穿入对应仓，建立一色一码独立记账规则。"
+    },
+    {
+      "start_frame": 2323,
+      "end_frame": 2728,
+      "mode": "R",
+      "task_id": "R01",
+      "quote": "“收银、进货、每天卖了多少、哪个码快断了……探针第二期讲过。”",
+      "action": "可操作收银页依次打开收银、进货、日销、断码提醒四个入口，每次点击有真实数据响应；末尾显示探针02指路。"
+    },
+    {
+      "start_frame": 2728,
+      "end_frame": 3027,
+      "mode": "R",
+      "task_id": "R02",
+      "quote": "“这件有没有L码……钻进库房翻半天……手机上一查就有。”",
+      "action": "输入同款L码或扫描示例条码，展开精确库存与库位；前后同一商品，查询结果保持当前交易状态。"
+    },
+    {
+      "start_frame": 3027,
+      "end_frame": 3240,
+      "mode": "P",
+      "task_id": "P04",
+      "quote": "“最离不开的那一栏……搭完没急着换。”",
+      "action": "真人说最离不开的业务字段，并强调搭完没急着换。"
+    },
+    {
+      "start_frame": 3240,
+      "end_frame": 3617,
+      "mode": "A",
+      "task_id": "A02",
+      "quote": "“同一笔生意两边各记……第四天对不上了……M码比货架上少了两件。”",
+      "action": "新旧两本立体账册并排铺成轨道，同笔单据同时入轨；第四天新账M仓下沉两格，旧账与实物平台仍齐平，差额-2从裂缝弹出。"
+    },
+    {
+      "start_frame": 3617,
+      "end_frame": 3772,
+      "mode": "P",
+      "task_id": "P05",
+      "quote": "“你猜差在哪儿？一笔一笔往回翻，是换货。”",
+      "action": "真人抬杠设问：差在哪儿；末尾定位换货这一笔。"
+    },
+    {
+      "start_frame": 3772,
+      "end_frame": 4205,
+      "mode": "A",
+      "task_id": "A03",
+      "quote": "“拿M码来换L码……只记卖出L……M没加回去……一进一出，两个码都得动。”",
+      "action": "实物上轨M退回、L离开；账面下轨只放走L，M轨卡住形成强烈垂直错位。重置同一笔初态，规则齿轮补入后双轨咬合，M+1和L−1同步落定。"
+    },
+    {
+      "start_frame": 4205,
+      "end_frame": 4334,
+      "mode": "R",
+      "task_id": "R03",
+      "quote": "“改完再对，一件不差，才把旧的停了。”",
+      "action": "可操作对账页复核实物与账面一致，确认后关闭旧系统演示标签；保留检查明细。"
+    },
+    {
+      "start_frame": 4334,
+      "end_frame": 4537,
+      "mode": "P",
+      "task_id": "P06",
+      "quote": "“要是头一天就换……月底一盘，库存全乱。”",
+      "action": "真人提醒头一天就替换的风险，接下来的实操检验这一点。"
+    },
+    {
+      "start_frame": 4537,
+      "end_frame": 4756,
+      "mode": "R",
+      "task_id": "R04",
+      "quote": "“我扫一单换货……L码少一件，M码多一件，屏幕上两行一起动。”",
+      "action": "完整扫描换货：初态M8/L4，确认同一事务，提交后M9/L3两行同时更新；保留操作记录，前15秒预览复用这条结果镜头。"
+    },
+    {
+      "start_frame": 4756,
+      "end_frame": 4949,
+      "mode": "R",
+      "task_id": "R02",
+      "quote": "“有没有L码……一扫就知道，不用再钻库房。”",
+      "action": "沿用已更新的同款L码，扫描显示3件，并展开库位；不重置回4件。"
+    },
+    {
+      "start_frame": 4949,
+      "end_frame": 5142,
+      "mode": "R",
+      "task_id": "R01",
+      "quote": "“哪个码卖得快……补货不用再凭感觉。”",
+      "action": "打开分码销量与库存，定位低库存格并点击进入补货建议详情，让数字支持补货判断。"
+    },
+    {
+      "start_frame": 5142,
+      "end_frame": 5369,
+      "mode": "A",
+      "task_id": "A04",
+      "quote": "“原来月底盘一次……现在每天晚上对一遍……”",
+      "action": "厚重月底盘货账本砸下压住半天时钟，裂成逐日晚间小账页；小账页轮流对齐库存，月底时间块被释放到正常营业轨道。"
+    },
+    {
+      "start_frame": 5369,
+      "end_frame": 5718,
+      "mode": "P",
+      "task_id": "P07",
+      "quote": "“一个月199，跟原来的年费差不了太多……归他自己……想改……”",
+      "action": "真人明确199元与原年费差不了太多；价值在自主修改，保留这句商业边界。"
+    },
+    {
+      "start_frame": 5718,
+      "end_frame": 5982,
+      "mode": "A",
+      "task_id": "A05",
+      "quote": "“换收银、换记账、换排课……先干一件事。”",
+      "action": "收银、记账、排课三座等轴测工作台转盘相继亮起，同一笔记录在新旧双轨分流，为并跑一周建立可迁移结构。"
+    },
+    {
+      "start_frame": 5982,
+      "end_frame": 6325,
+      "mode": "R",
+      "task_id": "R03",
+      "quote": "“并着跑一个礼拜……对不上的那一笔，就是新东西没懂你的地方。”",
+      "action": "以同笔换货数据并排核对七日记录，点击差额返回漏记退货的业务规则；一致后再展示停旧按钮。"
+    },
+    {
+      "start_frame": 6325,
+      "end_frame": 6560,
+      "mode": "A",
+      "task_id": "A05",
+      "quote": "“头几天旧表别扔，两边对着看。”",
+      "action": "办公室新旧两张表立体叠层展开，相同输入穿过两层结果列，差异行向前弹出，旧表保留为对照底板。"
+    },
+    {
+      "start_frame": 6560,
+      "end_frame": 6823,
+      "mode": "A",
+      "task_id": "A05",
+      "quote": "“拿上个月的真单子算一遍，跟当时收的钱对一对。”",
+      "action": "报价单和旧收款记录从转盘两侧碰合，同一数量与单价重算，结果逐位对齐，差异处被放大后回到原条件。"
+    },
+    {
+      "start_frame": 6823,
+      "end_frame": 6905,
+      "mode": "R",
+      "task_id": "R03",
+      "quote": "“让他敢把旧的停掉的，是那一个礼拜的对账。”",
+      "action": "复核一周记录并打开一致明细，确认后停用旧系统演示页；与前面错误、修复保持同一数据链。"
+    },
+    {
+      "start_frame": 6905,
+      "end_frame": 7055,
+      "mode": "P",
+      "task_id": "P收尾",
+      "quote": "“你换什么东西，都值得先对这一个礼拜。”",
+      "action": "真人保留最后5秒原话与自然尾态，原声不变。"
+    }
+  ],
+  "sfx_events": [
+    {
+      "task_id": "A01_01",
+      "local_frame": 0,
+      "global_frame": 1618,
+      "sample_offset": 2588800,
+      "event": "结构入场 Whoosh"
+    },
+    {
+      "task_id": "A01_01",
+      "local_frame": 204,
+      "global_frame": 1822,
+      "sample_offset": 2915200,
+      "event": "主要状态变化 Click/Pop"
+    },
+    {
+      "task_id": "A01_01",
+      "local_frame": 391,
+      "global_frame": 2009,
+      "sample_offset": 3214400,
+      "event": "结果锁定 机械落定"
+    },
+    {
+      "task_id": "A01_02",
+      "local_frame": 0,
+      "global_frame": 2027,
+      "sample_offset": 3243200,
+      "event": "结构入场 Whoosh"
+    },
+    {
+      "task_id": "A01_02",
+      "local_frame": 148,
+      "global_frame": 2175,
+      "sample_offset": 3480000,
+      "event": "主要状态变化 Click/Pop"
+    },
+    {
+      "task_id": "A01_02",
+      "local_frame": 278,
+      "global_frame": 2305,
+      "sample_offset": 3688000,
+      "event": "结果锁定 机械落定"
+    },
+    {
+      "task_id": "A02_01",
+      "local_frame": 0,
+      "global_frame": 3240,
+      "sample_offset": 5184000,
+      "event": "结构入场 Whoosh"
+    },
+    {
+      "task_id": "A02_01",
+      "local_frame": 188,
+      "global_frame": 3428,
+      "sample_offset": 5484800,
+      "event": "主要状态变化 Click/Pop"
+    },
+    {
+      "task_id": "A02_01",
+      "local_frame": 359,
+      "global_frame": 3599,
+      "sample_offset": 5758400,
+      "event": "结果锁定 机械落定"
+    },
+    {
+      "task_id": "A03_01",
+      "local_frame": 0,
+      "global_frame": 3772,
+      "sample_offset": 6035200,
+      "event": "结构入场 Whoosh"
+    },
+    {
+      "task_id": "A03_01",
+      "local_frame": 216,
+      "global_frame": 3988,
+      "sample_offset": 6380800,
+      "event": "主要状态变化 Click/Pop"
+    },
+    {
+      "task_id": "A03_01",
+      "local_frame": 415,
+      "global_frame": 4187,
+      "sample_offset": 6699200,
+      "event": "结果锁定 机械落定"
+    },
+    {
+      "task_id": "A04_01",
+      "local_frame": 0,
+      "global_frame": 5142,
+      "sample_offset": 8227200,
+      "event": "结构入场 Whoosh"
+    },
+    {
+      "task_id": "A04_01",
+      "local_frame": 113,
+      "global_frame": 5255,
+      "sample_offset": 8408000,
+      "event": "主要状态变化 Click/Pop"
+    },
+    {
+      "task_id": "A04_01",
+      "local_frame": 209,
+      "global_frame": 5351,
+      "sample_offset": 8561600,
+      "event": "结果锁定 机械落定"
+    },
+    {
+      "task_id": "A05_01",
+      "local_frame": 0,
+      "global_frame": 5718,
+      "sample_offset": 9148800,
+      "event": "结构入场 Whoosh"
+    },
+    {
+      "task_id": "A05_01",
+      "local_frame": 132,
+      "global_frame": 5850,
+      "sample_offset": 9360000,
+      "event": "主要状态变化 Click/Pop"
+    },
+    {
+      "task_id": "A05_01",
+      "local_frame": 246,
+      "global_frame": 5964,
+      "sample_offset": 9542400,
+      "event": "结果锁定 机械落定"
+    },
+    {
+      "task_id": "A05_02",
+      "local_frame": 0,
+      "global_frame": 6325,
+      "sample_offset": 10120000,
+      "event": "结构入场 Whoosh"
+    },
+    {
+      "task_id": "A05_02",
+      "local_frame": 117,
+      "global_frame": 6442,
+      "sample_offset": 10307200,
+      "event": "主要状态变化 Click/Pop"
+    },
+    {
+      "task_id": "A05_02",
+      "local_frame": 217,
+      "global_frame": 6542,
+      "sample_offset": 10467200,
+      "event": "结果锁定 机械落定"
+    },
+    {
+      "task_id": "A05_03",
+      "local_frame": 0,
+      "global_frame": 6560,
+      "sample_offset": 10496000,
+      "event": "结构入场 Whoosh"
+    },
+    {
+      "task_id": "A05_03",
+      "local_frame": 131,
+      "global_frame": 6691,
+      "sample_offset": 10705600,
+      "event": "主要状态变化 Click/Pop"
+    },
+    {
+      "task_id": "A05_03",
+      "local_frame": 245,
+      "global_frame": 6805,
+      "sample_offset": 10888000,
+      "event": "结果锁定 机械落定"
+    }
+  ],
+  "allocation_note": "用户已裁定：指定段落全视觉化优先，A数量占比为保底参考非上限，可用G/R分担。"
+}

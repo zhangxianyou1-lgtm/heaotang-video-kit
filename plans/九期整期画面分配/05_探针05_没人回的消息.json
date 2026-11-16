@@ -1,0 +1,529 @@
+{
+  "title": "探针05_没人回的消息",
+  "total_frames": 7026,
+  "timing_basis": "existing",
+  "fps": 30,
+  "slots": [
+    {
+      "start_frame": 0,
+      "end_frame": 120,
+      "mode": "G",
+      "task_id": "G01a",
+      "quote": "“店里成单最多的人，丢的单子也是最多的”",
+      "action": "整体概念：顾问工位前巨石消息气泡瀑布砸下，层层叠起封住通路；墙外三个发光客户形体撞墙、倒计时归零后消散。问题词与3000元报名牌由可控文字层贴附，数量为视觉隐喻。 本子镜动作：巨石消息瀑布砸下，沿顾问桌前叠成高墙，三个发光客户停在墙外。"
+    },
+    {
+      "start_frame": 120,
+      "end_frame": 180,
+      "mode": "G",
+      "task_id": "G01b",
+      "quote": "“店里成单最多的人，丢的单子也是最多的”；“你发信息问价钱……半个小时没人回，去了别家……没回你的就是他”",
+      "action": "整体概念：顾问工位前巨石消息气泡瀑布砸下，层层叠起封住通路；墙外三个发光客户形体撞墙、倒计时归零后消散。问题词与3000元报名牌由可控文字层贴附，数量为视觉隐喻。 本子镜动作：客户撞墙，三枚倒计时牌归零，客户形体消散；顾问仍在墙内处理消息。"
+    },
+    {
+      "start_frame": 180,
+      "end_frame": 360,
+      "mode": "P",
+      "task_id": "P01",
+      "quote": "“你发信息问价钱……半个小时没人回，去了别家……没回你的就是他”；“你上班的地方也有……拿什么帮他……十条里八条重复”",
+      "action": "真人露脸连接原声问题与后文承诺；此固定露脸窗口不移动原台词。"
+    },
+    {
+      "start_frame": 360,
+      "end_frame": 450,
+      "mode": "R",
+      "task_id": "R01预告",
+      "quote": "“你上班的地方也有……拿什么帮他……十条里八条重复”",
+      "action": "输入晚十点问价后得到课程示例回答，再点击“想报名”，状态实际转入李姐待处理；标“稍后演示”。"
+    },
+    {
+      "start_frame": 450,
+      "end_frame": 570,
+      "mode": "G",
+      "task_id": "G02a",
+      "quote": "“你上班的地方也有……拿什么帮他……十条里八条重复”",
+      "action": "整体概念：顾问桌面裂开为高耸消息峡谷，八条灰色重复问题河道挤住两条金色决策通道；顾问仍在工作，重点表现结构堵塞。 本子镜动作：桌面裂开为峡谷，八条灰色问题河道涌入顾问工位。"
+    },
+    {
+      "start_frame": 570,
+      "end_frame": 708,
+      "mode": "G",
+      "task_id": "G02b",
+      "quote": "“你上班的地方也有……拿什么帮他……十条里八条重复”",
+      "action": "整体概念：顾问桌面裂开为高耸消息峡谷，八条灰色重复问题河道挤住两条金色决策通道；顾问仍在工作，重点表现结构堵塞。 本子镜动作：承接河道涌入，两条金色决策通道被挤窄，客户光块卡在入口。"
+    },
+    {
+      "start_frame": 708,
+      "end_frame": 1078,
+      "mode": "A",
+      "task_id": "A01",
+      "quote": "“多少钱，几点开门，适合几岁……不是他不行……真想买的……等久了……走了”",
+      "action": "等轴测消息城里问价、营业时间、年龄三类巨石卡接连撞入单一工位；报名卡倒计时缩短，等待通道崩落，三类问题在前景清楚可读。"
+    },
+    {
+      "start_frame": 1078,
+      "end_frame": 1372,
+      "mode": "P",
+      "task_id": "P02",
+      "quote": "“李姐愁……老板也愁……配一个AI助理”",
+      "action": "真人替双方说困境并提出配助理的解法，保持顾问的专业地位。"
+    },
+    {
+      "start_frame": 1372,
+      "end_frame": 1635,
+      "mode": "A",
+      "task_id": "A02",
+      "quote": "“重复的问题他先答……要成交的转给他……没被换掉，是多了个帮手”",
+      "action": "与A01同一消息城侧面打开AI分流闸，灰色重复卡转入辅助轨道，金色成交卡径直进入顾问工位；顾问座位保持在控制中心。"
+    },
+    {
+      "start_frame": 1635,
+      "end_frame": 2122,
+      "mode": "A",
+      "task_id": "A02",
+      "quote": "“打银行客服电话……办不了的转人工……把人留给难办的事”",
+      "action": "消息城翻转为银行客服路由：余额、挂失卡走自动处理轨，复杂问题穿过人工闸；结构再折回小店，视觉完成同机制迁移。"
+    },
+    {
+      "start_frame": 2122,
+      "end_frame": 2446,
+      "mode": "R",
+      "task_id": "R02",
+      "quote": "“小店也能有……两万多……两个多月，不满意”",
+      "action": "在同一可交互客服演示中输入五岁问题，查看泛介绍结果与问题标签的错位；两万多、两个月作为案例角标。"
+    },
+    {
+      "start_frame": 2446,
+      "end_frame": 2671,
+      "mode": "R",
+      "task_id": "R02",
+      "quote": "“我孩子五岁能上什么班？……全是官网上那套介绍”",
+      "action": "点击回复展开详情，清楚看到五岁课程问题对应了泛官网介绍，随后打开“反馈答非所问”入口。"
+    },
+    {
+      "start_frame": 2671,
+      "end_frame": 2942,
+      "mode": "P",
+      "task_id": "P03",
+      "quote": "“不知道李姐平时怎么回答……八年的课程顾问，聊了两天”",
+      "action": "真人指出知识来自八年顾问的经验，保留“毛病出在哪儿”的解释与转折。"
+    },
+    {
+      "start_frame": 2942,
+      "end_frame": 3094,
+      "mode": "R",
+      "task_id": "R03",
+      "quote": "“理出150来条规则……接进AI，前后三天”",
+      "action": "规则管理演示页显示150条示例规则，实际筛选一条课程问法，打开草稿、确认人及启用状态，连接前段经验访谈与后段问价实操。"
+    },
+    {
+      "start_frame": 3094,
+      "end_frame": 3358,
+      "mode": "R",
+      "task_id": "R01",
+      "quote": "“我拿两条消息试给你看……晚上十点问价……想报名……转给李姐”",
+      "action": "连续输入问价与报名意向，前者命中已确认示例规则，后者转人工；显示同一会话的状态流转与待处理结果。"
+    },
+    {
+      "start_frame": 3358,
+      "end_frame": 3619,
+      "mode": "A",
+      "task_id": "A03",
+      "quote": "“一个月走掉三个，一个课包三千，就是九千”",
+      "action": "三位机会客户的立体卡从队列滑落，每张对应3000元课包，3×3000=9000在落点锁定；旁边保留“潜在收入估算”角标。"
+    },
+    {
+      "start_frame": 3619,
+      "end_frame": 3739,
+      "mode": "G",
+      "task_id": "G03a",
+      "quote": "“回不完……再招人……招不到，生意就只能这么大”",
+      "action": "整体概念：顾问工位复制的虚影在招人入口前破碎，唯一工位被待答卡持续淹没，待成交通道被压到狭窄；表达产能上限。 本子镜动作：唯一工位上方出现招人门，第二工位虚影尝试从门中落下。"
+    },
+    {
+      "start_frame": 3739,
+      "end_frame": 3863,
+      "mode": "G",
+      "task_id": "G03b",
+      "quote": "“回不完……再招人……招不到，生意就只能这么大”",
+      "action": "整体概念：顾问工位复制的虚影在招人入口前破碎，唯一工位被待答卡持续淹没，待成交通道被压到狭窄；表达产能上限。 本子镜动作：虚影破碎，原工位被待答卡继续堆高，成交通道受到明显挤压。"
+    },
+    {
+      "start_frame": 3863,
+      "end_frame": 4175,
+      "mode": "A",
+      "task_id": "A04",
+      "quote": "“装修公司……设计师在工地上，晚上才回……已经约了别家”",
+      "action": "装修工地从立体沙盘升起，设计师手中任务轨道不断，问价卡被困在外圈；客户卡转投别家，路径在前景清楚变色。"
+    },
+    {
+      "start_frame": 4175,
+      "end_frame": 4336,
+      "mode": "A",
+      "task_id": "A04",
+      "quote": "“理发店……还能不能染……手上正染这一个”",
+      "action": "沙盘翻转成理发工作位，染发双手被服务轨占用，询问能否染发的卡停在等待层，保持同一堵塞结构。"
+    },
+    {
+      "start_frame": 4336,
+      "end_frame": 4502,
+      "mode": "A",
+      "task_id": "A04",
+      "quote": "“诊所前台……今天张医生在不在”",
+      "action": "诊所前台模块撞入同一矩阵，重复问坐诊时间的气泡叠高，工作人员与当天排班信息之间形成瓶颈。"
+    },
+    {
+      "start_frame": 4502,
+      "end_frame": 4948,
+      "mode": "A",
+      "task_id": "A04",
+      "quote": "“财务……老员工……客户那五个问题……说不定你就是那个李姐”",
+      "action": "矩阵连续转出财务、老员工、自由职业者三格；报销、入职、五个常见问题形成回环，问题环从人物肩头解开后汇入可复用答复轨。"
+    },
+    {
+      "start_frame": 4948,
+      "end_frame": 5248,
+      "mode": "P",
+      "task_id": "P04",
+      "quote": "“像要把李姐换掉，正相反……肯开口……先讲清楚……他的位置不动”",
+      "action": "真人明确“正相反、位置不动”的立场；超过十秒的后半段接规则审核实操，保持整段原声连续。"
+    },
+    {
+      "start_frame": 5248,
+      "end_frame": 5591,
+      "mode": "R",
+      "task_id": "R03",
+      "quote": "“像要把李姐换掉，正相反……肯开口……先讲清楚……他的位置不动”",
+      "action": "规则后台实操：打开访谈记录，逐条核对顾问的答复，点击确认后才启用；屏幕保留顾问确认人字段，延续本段人的位置不动。"
+    },
+    {
+      "start_frame": 5591,
+      "end_frame": 5865,
+      "mode": "A",
+      "task_id": "A05",
+      "quote": "“他答一句，记一条……挨条过……点了头才放进去……拿不准的转给他”",
+      "action": "顾问确认台在知识抽屉上方展开：答一句生成草稿卡，逐条审核后盖章启用，拿不准的卡弹回人工槽，确认权留在人手里。"
+    },
+    {
+      "start_frame": 5865,
+      "end_frame": 6147,
+      "mode": "R",
+      "task_id": "R03",
+      "quote": "“别指望装上就灵……答错过两回……答错一句，补一条”",
+      "action": "在规则后台打开两条示例错误反馈，编辑一条新问法并保存，回到聊天页复测命中；记录状态从待补充到已复测。"
+    },
+    {
+      "start_frame": 6147,
+      "end_frame": 6335,
+      "mode": "P",
+      "task_id": "P05",
+      "quote": "“你是李姐也别怕……最烦的那几句……要拍板的还是你”",
+      "action": "真人直接对李姐说“要拍板的还是你”，强调人拥有决定权。"
+    },
+    {
+      "start_frame": 6335,
+      "end_frame": 6770,
+      "mode": "R",
+      "task_id": "R03",
+      "quote": "“从前再请一个熟手……八千……现在配个助理……实录第二十期”",
+      "action": "可交互成本对照填写熟手月薪8000与助理一次建设费用字段，后者保留案例估算说明；切到150条规则来源索引与实录20指路卡。"
+    },
+    {
+      "start_frame": 6770,
+      "end_frame": 6876,
+      "mode": "G",
+      "task_id": "G04",
+      "quote": "“最能干的那个人……不该花在回同一句话上……AI该先接走的”",
+      "action": "开头巨石墙从中间打开，灰色消息被辅助轨带走，顾问桌前留下清晰决策通路，匹配切真人收束。"
+    },
+    {
+      "start_frame": 6876,
+      "end_frame": 7026,
+      "mode": "P",
+      "task_id": "P尾",
+      "quote": "“最能干的那个人……不该花在回同一句话上……AI该先接走的”",
+      "action": "真人直视观众完成原声最后五秒，保留自然尾态。"
+    }
+  ],
+  "sfx_events": [
+    {
+      "task_id": "A01",
+      "slot_start": 708,
+      "local_frame": 12,
+      "global_frame": 720,
+      "milliseconds": 24000.0,
+      "sample_48k": 1152000,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A01",
+      "slot_start": 708,
+      "local_frame": 185,
+      "global_frame": 893,
+      "milliseconds": 29766.666666666668,
+      "sample_48k": 1428800,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A01",
+      "slot_start": 708,
+      "local_frame": 358,
+      "global_frame": 1066,
+      "milliseconds": 35533.333333333336,
+      "sample_48k": 1705600,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 1372,
+      "local_frame": 12,
+      "global_frame": 1384,
+      "milliseconds": 46133.333333333336,
+      "sample_48k": 2214400,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 1372,
+      "local_frame": 131,
+      "global_frame": 1503,
+      "milliseconds": 50100.0,
+      "sample_48k": 2404800,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 1372,
+      "local_frame": 251,
+      "global_frame": 1623,
+      "milliseconds": 54100.0,
+      "sample_48k": 2596800,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 1635,
+      "local_frame": 12,
+      "global_frame": 1647,
+      "milliseconds": 54900.0,
+      "sample_48k": 2635200,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 1635,
+      "local_frame": 243,
+      "global_frame": 1878,
+      "milliseconds": 62600.0,
+      "sample_48k": 3004800,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 1635,
+      "local_frame": 475,
+      "global_frame": 2110,
+      "milliseconds": 70333.33333333333,
+      "sample_48k": 3376000,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 3358,
+      "local_frame": 12,
+      "global_frame": 3370,
+      "milliseconds": 112333.33333333333,
+      "sample_48k": 5392000,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 3358,
+      "local_frame": 130,
+      "global_frame": 3488,
+      "milliseconds": 116266.66666666667,
+      "sample_48k": 5580800,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 3358,
+      "local_frame": 249,
+      "global_frame": 3607,
+      "milliseconds": 120233.33333333333,
+      "sample_48k": 5771200,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 3863,
+      "local_frame": 12,
+      "global_frame": 3875,
+      "milliseconds": 129166.66666666667,
+      "sample_48k": 6200000,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 3863,
+      "local_frame": 156,
+      "global_frame": 4019,
+      "milliseconds": 133966.66666666666,
+      "sample_48k": 6430400,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 3863,
+      "local_frame": 300,
+      "global_frame": 4163,
+      "milliseconds": 138766.66666666666,
+      "sample_48k": 6660800,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 4175,
+      "local_frame": 12,
+      "global_frame": 4187,
+      "milliseconds": 139566.66666666666,
+      "sample_48k": 6699200,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 4175,
+      "local_frame": 80,
+      "global_frame": 4255,
+      "milliseconds": 141833.33333333334,
+      "sample_48k": 6808000,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 4175,
+      "local_frame": 149,
+      "global_frame": 4324,
+      "milliseconds": 144133.33333333334,
+      "sample_48k": 6918400,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 4336,
+      "local_frame": 12,
+      "global_frame": 4348,
+      "milliseconds": 144933.33333333334,
+      "sample_48k": 6956800,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 4336,
+      "local_frame": 83,
+      "global_frame": 4419,
+      "milliseconds": 147300.0,
+      "sample_48k": 7070400,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 4336,
+      "local_frame": 154,
+      "global_frame": 4490,
+      "milliseconds": 149666.66666666666,
+      "sample_48k": 7184000,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 4502,
+      "local_frame": 12,
+      "global_frame": 4514,
+      "milliseconds": 150466.66666666666,
+      "sample_48k": 7222400,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 4502,
+      "local_frame": 223,
+      "global_frame": 4725,
+      "milliseconds": 157500.0,
+      "sample_48k": 7560000,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 4502,
+      "local_frame": 434,
+      "global_frame": 4936,
+      "milliseconds": 164533.33333333334,
+      "sample_48k": 7897600,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A05",
+      "slot_start": 5591,
+      "local_frame": 12,
+      "global_frame": 5603,
+      "milliseconds": 186766.66666666666,
+      "sample_48k": 8964800,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A05",
+      "slot_start": 5591,
+      "local_frame": 137,
+      "global_frame": 5728,
+      "milliseconds": 190933.33333333334,
+      "sample_48k": 9164800,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A05",
+      "slot_start": 5591,
+      "local_frame": 262,
+      "global_frame": 5853,
+      "milliseconds": 195100.0,
+      "sample_48k": 9364800,
+      "action": "结果锁定",
+      "sfx": "Click"
+    }
+  ],
+  "metrics": {
+    "continuous_A_runs": 5,
+    "P_percent": 19.684,
+    "A_percent": 38.998,
+    "max_P_frames": 300,
+    "A_tasks": 5,
+    "A_slots": 9,
+    "A_limit_status": "reference_not_cap_user_confirmed"
+  }
+}

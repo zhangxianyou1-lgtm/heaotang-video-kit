@@ -1,0 +1,408 @@
+{
+  "title": "拆解01《先问五个问题》",
+  "total_frames": 7031,
+  "timing_basis": "existing",
+  "slots": [
+    {
+      "start_frame": 0,
+      "end_frame": 120,
+      "mode": "G",
+      "task_id": "G01a_0",
+      "quote": "“交回来像那么回事，就是用不了……改了11遍……多说11个字。”",
+      "action": "网页纸牌屋触碰后崩塌，修订计数器快跳至11，页面碎片在空中翻滚。"
+    },
+    {
+      "start_frame": 120,
+      "end_frame": 180,
+      "mode": "G",
+      "task_id": "G01b_120",
+      "quote": "“交回来像那么回事，就是用不了……改了11遍……多说11个字。”",
+      "action": "承接前镜尾帧：碎片倒流，五根需求基石升起，页面重组落稳；字由代码叠加。"
+    },
+    {
+      "start_frame": 180,
+      "end_frame": 360,
+      "mode": "P",
+      "task_id": "P开局",
+      "quote": "此处沿用原声对应句，不搬动承诺台词",
+      "action": "真人露脸接住冲突；此6秒保持原声原位置，承诺句原来在后面时继续在后面表达。"
+    },
+    {
+      "start_frame": 360,
+      "end_frame": 450,
+      "mode": "R",
+      "task_id": "R预告",
+      "quote": "此处沿用原声对应句，不搬动演示原声",
+      "action": "预告：复用R02答完五问后的正确预约页，同一时段第二位成功、周一关闭；角标“后文实操预览”。"
+    },
+    {
+      "start_frame": 450,
+      "end_frame": 547,
+      "mode": "P",
+      "task_id": "P01",
+      "quote": "“你写方案，做表，回客户都用得上……这一条教你。”",
+      "action": "真人接住开头，告诉观众方案、表格、回客户都能用。"
+    },
+    {
+      "start_frame": 547,
+      "end_frame": 735,
+      "mode": "R",
+      "task_id": "R00",
+      "quote": "“先别动手，先问我五个问题……为什么管用？”",
+      "action": "输入完整11字“先别动手，先问我五个问题”，显示提交后进入待问答状态；前15秒先预览容量2的正确结果。"
+    },
+    {
+      "start_frame": 735,
+      "end_frame": 1071,
+      "mode": "A",
+      "task_id": "A01",
+      "quote": "“不知道你那儿的规矩……照着大多数人的样子猜……放到你这儿就是不对。”",
+      "action": "通用页面从平面翻成多层等轴测结构，本店周一关闭、容量2、染发两格三张规则板撞入错误字段，使页面基础错位倾斜；原稿三类错误依次可见。"
+    },
+    {
+      "start_frame": 1071,
+      "end_frame": 1311,
+      "mode": "P",
+      "task_id": "P02",
+      "quote": "“三天给朋友的理发店做了个预约页……他问老板，你用AI就让AI来问你。”",
+      "action": "真人交代方法来源及从问老板到让AI反问自己的迁移，后半切可操作问答页展示同一任务条件。"
+    },
+    {
+      "start_frame": 1311,
+      "end_frame": 1456,
+      "mode": "R",
+      "task_id": "P02补充",
+      "quote": "“三天给朋友的理发店做了个预约页……他问老板，你用AI就让AI来问你。”",
+      "action": "可操作页面承接原句：真人交代方法来源及从问老板到让AI反问自己的迁移，后半切可操作问答页展示同一任务条件。"
+    },
+    {
+      "start_frame": 1456,
+      "end_frame": 1624,
+      "mode": "R",
+      "task_id": "R00",
+      "quote": "“一遍做预约页，一遍写年会方案。”",
+      "action": "在同一演示入口切换预约页与年会方案两种任务，点选后展示不同问题列表，预告两遍演示。"
+    },
+    {
+      "start_frame": 1624,
+      "end_frame": 2062,
+      "mode": "R",
+      "task_id": "R01",
+      "quote": "“给理发店做个预约页……有日期，有钟点，有提交……一用就出事。”",
+      "action": "输入模糊预约需求并打开受控错误版：日期、时段、提交齐全；点一次预约开始检验，页面漂亮与规则正确分开显示。"
+    },
+    {
+      "start_frame": 2062,
+      "end_frame": 2351,
+      "mode": "R",
+      "task_id": "R01",
+      "quote": "“按一个人做了……染发要占两个钟……周一不开门，它照样让你约。”",
+      "action": "连续操作三项错误：第二人被拒、染发只占一格、周一仍能预约；每次真实状态响应均停留，展示可复现错误。"
+    },
+    {
+      "start_frame": 2351,
+      "end_frame": 2471,
+      "mode": "G",
+      "task_id": "G03_2351",
+      "quote": "“改好这一处，那一处又乱了……怀疑是AI笨。”",
+      "action": "页面三个支点互相拉扯，补好一处时另一处塌落，修订纸带从裂口涌出。"
+    },
+    {
+      "start_frame": 2471,
+      "end_frame": 2586,
+      "mode": "G",
+      "task_id": "G03_2471",
+      "quote": "“改好这一处，那一处又乱了……怀疑是AI笨。”",
+      "action": "沿纸带接力形成返工螺旋，页面被卷回起点，突出缺条件导致反复，再匹配切到重新输入。"
+    },
+    {
+      "start_frame": 2586,
+      "end_frame": 2809,
+      "mode": "R",
+      "task_id": "R02",
+      "quote": "“还是那个活……先别动手，先问我五个问题。”",
+      "action": "重新开启同一任务，输入11字后停在问答阶段；先问全五题再填答案，动作记录可复核。"
+    },
+    {
+      "start_frame": 2809,
+      "end_frame": 2980,
+      "mode": "P",
+      "task_id": "P03",
+      "quote": "“这四个字不能省……一边问，一边就做上了。”",
+      "action": "真人明确先别动手四个字的重要性，阻断边问边做的错误顺序。"
+    },
+    {
+      "start_frame": 2980,
+      "end_frame": 3338,
+      "mode": "A",
+      "task_id": "A02",
+      "quote": "“AI不做了，反过来问你……能接几个人……每样活要多久……提醒老板？”",
+      "action": "理发店五问立体卡环逐一展开并一次到齐，容量/时长/迟到/关闭日/通知分别映射时间网格、座位锁、计时器与消息节点。"
+    },
+    {
+      "start_frame": 3338,
+      "end_frame": 3494,
+      "mode": "R",
+      "task_id": "R02",
+      "quote": "“一句一句答完，它再做……头一版就对了八成。”",
+      "action": "逐条答完五问后才打开正确页面，实际检查容量、染发时长和周一关闭，给出可用结果。"
+    },
+    {
+      "start_frame": 3494,
+      "end_frame": 3755,
+      "mode": "P",
+      "task_id": "P04",
+      "quote": "“换个跟开店没关系的活……写一份年会方案。”",
+      "action": "真人转到年会任务，强调方法可迁移而不是照抄理发店参数。"
+    },
+    {
+      "start_frame": 3755,
+      "end_frame": 3882,
+      "mode": "G",
+      "task_id": "G02_3755",
+      "quote": "“三千字，流程预算节目样样都有……不知道多少人、给多少钱、老板爱热闹还是爱省事。”",
+      "action": "方案长卷从屏幕喷涌，纸浪淹没办公桌，原本整齐的栏目形成高耸纸峡谷。"
+    },
+    {
+      "start_frame": 3882,
+      "end_frame": 4009,
+      "mode": "G",
+      "task_id": "G02_3882",
+      "quote": "“三千字，流程预算节目样样都有……不知道多少人、给多少钱、老板爱热闹还是爱省事。”",
+      "action": "沿峡谷穿入，三道空缺槽突然张开，标示人数、预算、场地未知；字由代码叠加。"
+    },
+    {
+      "start_frame": 4009,
+      "end_frame": 4136,
+      "mode": "G",
+      "task_id": "G02_4009",
+      "quote": "“三千字，流程预算节目样样都有……不知道多少人、给多少钱、老板爱热闹还是爱省事。”",
+      "action": "承接空缺槽，五道问题光束切开纸墙、露出条件底座，以提问意象引出下一段年会五问。"
+    },
+    {
+      "start_frame": 4136,
+      "end_frame": 4449,
+      "mode": "A",
+      "task_id": "A02",
+      "quote": "“多少人，预算多少，在哪办，往年怎么办的，老板最在意什么。”",
+      "action": "年会五问卡环展开为人数、预算、场地、往年经验、老板重点五块基石，替换上一组理发店问题；问题齐备后等候逐项回答。"
+    },
+    {
+      "start_frame": 4449,
+      "end_frame": 4595,
+      "mode": "R",
+      "task_id": "R03",
+      "quote": "“一分钟答完……改两处就能用。”",
+      "action": "填入统一示例条件，方案同步改人数对应场地与预算配置，点击两处待改逐项修订，展示具体变化而非单纯压缩字数。"
+    },
+    {
+      "start_frame": 4595,
+      "end_frame": 5084,
+      "mode": "A",
+      "task_id": "A04",
+      "quote": "“做表回客户的邮件也一样……两遍问的东西不一样……缺的不是本事，是你那儿的规矩。”",
+      "action": "表格、邮件、预约页、年会方案四块工作台沿等轴测轨道依次换位；同一提问机制驱动不同字段锁定，点明任务不同而先问相同。"
+    },
+    {
+      "start_frame": 5084,
+      "end_frame": 5418,
+      "mode": "A",
+      "task_id": "A03",
+      "quote": "“给谁用，要哪几样，哪天要，做成什么样子，往后要不要改。”",
+      "action": "五件需求底牌翻转锁定：给谁用、要哪几样、哪天要、做成什么样、往后改不改；底牌下伸出支柱托起任务结构，保留观众读完整项的时间。"
+    },
+    {
+      "start_frame": 5418,
+      "end_frame": 5752,
+      "mode": "P",
+      "task_id": "P05",
+      "quote": "“先拆需求，这一步最值钱……实录第十一期。”",
+      "action": "真人说先拆需求最值钱并指路实录11，保留方法立场。"
+    },
+    {
+      "start_frame": 5752,
+      "end_frame": 5940,
+      "mode": "R",
+      "task_id": "R02",
+      "quote": "“让它一次把五个问题问完……别让它问一句，做一句。”",
+      "action": "复核五问同时齐备后逐条填答的顺序；输入状态与页面结果分阶段显示，最后再触发生成。"
+    },
+    {
+      "start_frame": 5940,
+      "end_frame": 6006,
+      "mode": "P",
+      "task_id": "P06",
+      "quote": "“还有一层，你试过就知道。”",
+      "action": "真人抛出还有一层的转折，引向答不上来的那题。"
+    },
+    {
+      "start_frame": 6006,
+      "end_frame": 6318,
+      "mode": "A",
+      "task_id": "A05",
+      "quote": "“总有一个你答不上来……你自己还没想清楚……返工的根子，就在那儿。”",
+      "action": "五根需求基石中预算一根留空，两版方案在空缺上反复坍塌重组，裂缝路径回溯到未答问题；四项已答稳固，空白留给观众。"
+    },
+    {
+      "start_frame": 6318,
+      "end_frame": 6558,
+      "mode": "P",
+      "task_id": "P07",
+      "quote": "“同样用AI……一遍过……改到半夜……开头那11个字。”",
+      "action": "真人谈一遍过与改到半夜的差别"
+    },
+    {
+      "start_frame": 6558,
+      "end_frame": 6731,
+      "mode": "R",
+      "task_id": "P07补充",
+      "quote": "“同样用AI……一遍过……改到半夜……开头那11个字。”",
+      "action": "可操作页面承接原句：真人谈一遍过与改到半夜的差别；后半切可操作11字提示输入，兑现今晚就试。"
+    },
+    {
+      "start_frame": 6731,
+      "end_frame": 6881,
+      "mode": "R",
+      "task_id": "R00",
+      "quote": "“下一个要交给AI的活……看看它问的五个问题里，哪一个你自己都没想过。”",
+      "action": "新任务输入完整11字，五问齐出，光标停在尚未想清的一题；最后5秒真人收束。"
+    },
+    {
+      "start_frame": 6881,
+      "end_frame": 7031,
+      "mode": "P",
+      "task_id": "P收尾",
+      "quote": "“下一个要交给AI的活……看看它问的五个问题里，哪一个你自己都没想过。”",
+      "action": "真人保留最后5秒原话与自然尾态，原声不变。"
+    }
+  ],
+  "sfx_events": [
+    {
+      "task_id": "A01_01",
+      "local_frame": 0,
+      "global_frame": 735,
+      "sample_offset": 1176000,
+      "event": "结构入场 Whoosh"
+    },
+    {
+      "task_id": "A01_01",
+      "local_frame": 168,
+      "global_frame": 903,
+      "sample_offset": 1444800,
+      "event": "主要状态变化 Click/Pop"
+    },
+    {
+      "task_id": "A01_01",
+      "local_frame": 318,
+      "global_frame": 1053,
+      "sample_offset": 1684800,
+      "event": "结果锁定 机械落定"
+    },
+    {
+      "task_id": "A02_01",
+      "local_frame": 0,
+      "global_frame": 2980,
+      "sample_offset": 4768000,
+      "event": "结构入场 Whoosh"
+    },
+    {
+      "task_id": "A02_01",
+      "local_frame": 179,
+      "global_frame": 3159,
+      "sample_offset": 5054400,
+      "event": "主要状态变化 Click/Pop"
+    },
+    {
+      "task_id": "A02_01",
+      "local_frame": 340,
+      "global_frame": 3320,
+      "sample_offset": 5312000,
+      "event": "结果锁定 机械落定"
+    },
+    {
+      "task_id": "A02_02",
+      "local_frame": 0,
+      "global_frame": 4136,
+      "sample_offset": 6617600,
+      "event": "结构入场 Whoosh"
+    },
+    {
+      "task_id": "A02_02",
+      "local_frame": 156,
+      "global_frame": 4292,
+      "sample_offset": 6867200,
+      "event": "主要状态变化 Click/Pop"
+    },
+    {
+      "task_id": "A02_02",
+      "local_frame": 295,
+      "global_frame": 4431,
+      "sample_offset": 7089600,
+      "event": "结果锁定 机械落定"
+    },
+    {
+      "task_id": "A03_01",
+      "local_frame": 0,
+      "global_frame": 5084,
+      "sample_offset": 8134400,
+      "event": "结构入场 Whoosh"
+    },
+    {
+      "task_id": "A03_01",
+      "local_frame": 167,
+      "global_frame": 5251,
+      "sample_offset": 8401600,
+      "event": "主要状态变化 Click/Pop"
+    },
+    {
+      "task_id": "A03_01",
+      "local_frame": 316,
+      "global_frame": 5400,
+      "sample_offset": 8640000,
+      "event": "结果锁定 机械落定"
+    },
+    {
+      "task_id": "A04_01",
+      "local_frame": 0,
+      "global_frame": 4595,
+      "sample_offset": 7352000,
+      "event": "结构入场 Whoosh"
+    },
+    {
+      "task_id": "A04_01",
+      "local_frame": 244,
+      "global_frame": 4839,
+      "sample_offset": 7742400,
+      "event": "主要状态变化 Click/Pop"
+    },
+    {
+      "task_id": "A04_01",
+      "local_frame": 471,
+      "global_frame": 5066,
+      "sample_offset": 8105600,
+      "event": "结果锁定 机械落定"
+    },
+    {
+      "task_id": "A05_01",
+      "local_frame": 0,
+      "global_frame": 6006,
+      "sample_offset": 9609600,
+      "event": "结构入场 Whoosh"
+    },
+    {
+      "task_id": "A05_01",
+      "local_frame": 156,
+      "global_frame": 6162,
+      "sample_offset": 9859200,
+      "event": "主要状态变化 Click/Pop"
+    },
+    {
+      "task_id": "A05_01",
+      "local_frame": 294,
+      "global_frame": 6300,
+      "sample_offset": 10080000,
+      "event": "结果锁定 机械落定"
+    }
+  ],
+  "allocation_note": "用户已裁定：指定段落全视觉化优先，A数量占比为保底参考非上限，可用G/R分担。"
+}

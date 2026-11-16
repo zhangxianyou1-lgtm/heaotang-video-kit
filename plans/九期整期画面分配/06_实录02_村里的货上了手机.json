@@ -1,0 +1,609 @@
+{
+  "title": "实录02_村里的货上了手机",
+  "total_frames": 7194,
+  "timing_basis": "existing",
+  "fps": 30,
+  "slots": [
+    {
+      "start_frame": 0,
+      "end_frame": 120,
+      "mode": "G",
+      "task_id": "G01a",
+      "quote": "“山里的好果子，城里人买不到，村里人卖不掉。”",
+      "action": "整体概念：镜头撞碎蜜罐“农家”标签并钻入瓶内，罐体内部立即展开整座青山、果林和采收节点；光网沿农户、批次与采收路径点亮，巨大山体最终通过瓶口连向顾客手机。标签字由可控文字层完成。 本子镜动作：撞碎蜜罐标签进入瓶内，青山在瓶内展开，果林沿坡面生长。"
+    },
+    {
+      "start_frame": 120,
+      "end_frame": 180,
+      "mode": "G",
+      "task_id": "G01b",
+      "quote": "“山里的好果子，城里人买不到，村里人卖不掉。”；“你在网上买过农家土蜂蜜，一尝跟超市一个味。”",
+      "action": "整体概念：镜头撞碎蜜罐“农家”标签并钻入瓶内，罐体内部立即展开整座青山、果林和采收节点；光网沿农户、批次与采收路径点亮，巨大山体最终通过瓶口连向顾客手机。标签字由可控文字层完成。 本子镜动作：接完整山体，采收光网连接农户与批次，光路从瓶口汇向手机。"
+    },
+    {
+      "start_frame": 180,
+      "end_frame": 360,
+      "mode": "P",
+      "task_id": "P01",
+      "quote": "“你在网上买过农家土蜂蜜，一尝跟超市一个味。”；“一个回村的大学生……每罐蜜一扫……看完你也知道……”",
+      "action": "真人露脸连接原声问题与后文承诺；此固定露脸窗口不移动原台词。"
+    },
+    {
+      "start_frame": 360,
+      "end_frame": 450,
+      "mode": "R",
+      "task_id": "R02预告",
+      "quote": "“一个回村的大学生……每罐蜜一扫……看完你也知道……”",
+      "action": "语音入账按钮松开后识别“今天采了三十斤”，确认入账，真实DOM列表新增一行30斤；标“稍后演示”。"
+    },
+    {
+      "start_frame": 450,
+      "end_frame": 591,
+      "mode": "R",
+      "task_id": "R01",
+      "quote": "“一个回村的大学生……每罐蜜一扫……看完你也知道……”",
+      "action": "扫码打开蜜罐批次页，来源、农户、日期卡依次进入视窗，让承诺直接落在可查信息。"
+    },
+    {
+      "start_frame": 591,
+      "end_frame": 798,
+      "mode": "A",
+      "task_id": "A01",
+      "quote": "“种果子种茶，还有红米蜂蜜红糖……东西是真好。”",
+      "action": "七样山货在等轴测山村沙盘上弹起，果子、茶叶、红米、蜂蜜、红糖等按口播突出，未点名项保持抽象品类；商品轨道伸向城市却在入口断开。"
+    },
+    {
+      "start_frame": 798,
+      "end_frame": 1070,
+      "mode": "A",
+      "task_id": "A01",
+      "quote": "“游客问一句……没人答得上来……搜到了也不敢信。”",
+      "action": "游客的问题卡沿断轨滑入，来源、品质、购买入口三个空槽弹回；搜索与信任两道门未接通，商品仍停在山内。"
+    },
+    {
+      "start_frame": 1070,
+      "end_frame": 1213,
+      "mode": "A",
+      "task_id": "A01",
+      "quote": "“账也乱，散在好几个人，好几台电脑里。”",
+      "action": "账页从数台电脑和不同人员文件夹飞出，形成互不连通的立体岛屿；批次键试图对接却错开，为后面的统一记录埋钩。"
+    },
+    {
+      "start_frame": 1213,
+      "end_frame": 1655,
+      "mode": "R",
+      "task_id": "R01",
+      "quote": "“花了一个暑假……小程序……每样一个溯源码……最要紧的一步跟写程序没关系。”",
+      "action": "实点商品页、批次页、AI管家三个入口，展示同一商品身份贯穿；末尾暂停在“来源记录”待填区，引出程序之前的工作。"
+    },
+    {
+      "start_frame": 1655,
+      "end_frame": 1775,
+      "mode": "G",
+      "task_id": "G02a",
+      "quote": "“背着电脑在山上跑了十来天……一样一样拍下来，记下来。”",
+      "action": "整体概念：山体剖面分层展开，背电脑的记录者在采收节点按下记录后，照片框与农户节点被光线钉住；节点沿山坡逐级接通，汇入蜜罐同一批次。 本子镜动作：山体沿等高线分层抬起，背电脑记录者站在首个采收节点。"
+    },
+    {
+      "start_frame": 1775,
+      "end_frame": 1895,
+      "mode": "G",
+      "task_id": "G02b",
+      "quote": "“背着电脑在山上跑了十来天……一样一样拍下来，记下来。”",
+      "action": "整体概念：山体剖面分层展开，背电脑的记录者在采收节点按下记录后，照片框与农户节点被光线钉住；节点沿山坡逐级接通，汇入蜜罐同一批次。 本子镜动作：记录者按下记录，照片框从节点弹出，农户与日期占位卡落入同框。"
+    },
+    {
+      "start_frame": 1895,
+      "end_frame": 2015,
+      "mode": "G",
+      "task_id": "G02c",
+      "quote": "“背着电脑在山上跑了十来天……一样一样拍下来，记下来。”",
+      "action": "整体概念：山体剖面分层展开，背电脑的记录者在采收节点按下记录后，照片框与农户节点被光线钉住；节点沿山坡逐级接通，汇入蜜罐同一批次。 本子镜动作：第二采收节点被点亮，照片框沿坡道接力，前一节点保持已记录状态。"
+    },
+    {
+      "start_frame": 2015,
+      "end_frame": 2135,
+      "mode": "G",
+      "task_id": "G02d",
+      "quote": "“背着电脑在山上跑了十来天……一样一样拍下来，记下来。”",
+      "action": "整体概念：山体剖面分层展开，背电脑的记录者在采收节点按下记录后，照片框与农户节点被光线钉住；节点沿山坡逐级接通，汇入蜜罐同一批次。 本子镜动作：山体全部采收路径合并到同一批次入口，蜜罐从入口上方浮起。"
+    },
+    {
+      "start_frame": 2135,
+      "end_frame": 2198,
+      "mode": "G",
+      "task_id": "G02e",
+      "quote": "“背着电脑在山上跑了十来天……一样一样拍下来，记下来。”",
+      "action": "整体概念：山体剖面分层展开，背电脑的记录者在采收节点按下记录后，照片框与农户节点被光线钉住；节点沿山坡逐级接通，汇入蜜罐同一批次。 本子镜动作：光网收拢入罐底批次码，匹配切下一段真实扫码界面。"
+    },
+    {
+      "start_frame": 2198,
+      "end_frame": 2475,
+      "mode": "R",
+      "task_id": "R01",
+      "quote": "“这罐蜜的码……哪座山，哪户人家，哪天摇的……检测报告。”",
+      "action": "扫描演示码，逐项打开山地、农户、采收日期和报告资料入口；报告标演示材料，留出可读时间。"
+    },
+    {
+      "start_frame": 2475,
+      "end_frame": 2595,
+      "mode": "G",
+      "task_id": "G03a",
+      "quote": "“不敢信的是……农家那两个字。你肯信的是这一罐到底是谁家的。”",
+      "action": "整体概念：泛泛标签形成巨大薄壳，镜头穿透后壳体碎裂，内部显出可追溯到采收节点的山体骨架；同一码作为路径终点收拢。 本子镜动作：农家标签扩成薄壳，镜头穿入时壳体崩裂，内部山体骨架显露。"
+    },
+    {
+      "start_frame": 2595,
+      "end_frame": 2751,
+      "mode": "G",
+      "task_id": "G03b",
+      "quote": "“不敢信的是……农家那两个字。你肯信的是这一罐到底是谁家的。”",
+      "action": "整体概念：泛泛标签形成巨大薄壳，镜头穿透后壳体碎裂，内部显出可追溯到采收节点的山体骨架；同一码作为路径终点收拢。 本子镜动作：承接山体，来源节点按采收路径连接至同一码，路径逐段锁定。"
+    },
+    {
+      "start_frame": 2751,
+      "end_frame": 2871,
+      "mode": "P",
+      "task_id": "P02",
+      "quote": "“这活儿不用懂电脑，换你去跑也跑得下来。”",
+      "action": "真人强调这项记录工作不依赖编程，直接把行动能力交给观众。"
+    },
+    {
+      "start_frame": 2871,
+      "end_frame": 3286,
+      "mode": "A",
+      "task_id": "A02",
+      "quote": "“交给AI的头一段话……七样货，每样能扫码看来路，农户在后台记账。”",
+      "action": "三句需求变成2.5D架构：七类商品层展开，扫码来路层落到每件商品下方，农户记账层从后方插入；用批次键把三层锁定。"
+    },
+    {
+      "start_frame": 3286,
+      "end_frame": 3504,
+      "mode": "R",
+      "task_id": "R02",
+      "quote": "“两个礼拜……一个月……后台的账一条都没有。”",
+      "action": "进入旧版多按钮记账界面，打开后台记录列表，筛选一个月后仍为空；界面演示与案例时间说明分开。"
+    },
+    {
+      "start_frame": 3504,
+      "end_frame": 3624,
+      "mode": "G",
+      "task_id": "G04a",
+      "quote": "“村里种地的都是老人……点一排按钮……不会点，也懒得点。”",
+      "action": "整体概念：手机上的按钮阵列长成陡峭台阶，老人的手指被层层弹起的门槛挡在入口；镜头穿到后面，空账格仍是一片真空。 本子镜动作：手机按钮变成立体台阶，老人手指靠近时第一道门槛抬升。"
+    },
+    {
+      "start_frame": 3624,
+      "end_frame": 3744,
+      "mode": "G",
+      "task_id": "G04b",
+      "quote": "“村里种地的都是老人……点一排按钮……不会点，也懒得点。”",
+      "action": "整体概念：手机上的按钮阵列长成陡峭台阶，老人的手指被层层弹起的门槛挡在入口；镜头穿到后面，空账格仍是一片真空。 本子镜动作：手指继续靠近，后续台阶接连竖起，记账入口被推向远处。"
+    },
+    {
+      "start_frame": 3744,
+      "end_frame": 3794,
+      "mode": "G",
+      "task_id": "G04c",
+      "quote": "“村里种地的都是老人……点一排按钮……不会点，也懒得点。”",
+      "action": "整体概念：手机上的按钮阵列长成陡峭台阶，老人的手指被层层弹起的门槛挡在入口；镜头穿到后面，空账格仍是一片真空。 本子镜动作：沿台阶缝隙穿到后方，空账格显露为真空，切入语音模式解法。"
+    },
+    {
+      "start_frame": 3794,
+      "end_frame": 3878,
+      "mode": "R",
+      "task_id": "R02",
+      "quote": "“他把记账改成了张嘴说。”",
+      "action": "切换语音模式，多层按钮收拢为单一按住说话控件，开始录音。"
+    },
+    {
+      "start_frame": 3878,
+      "end_frame": 4344,
+      "mode": "R",
+      "task_id": "R02",
+      "quote": "“按住说一句，今天采了三十斤，记上……阿婆……说完，账上多了一行。”",
+      "action": "按住说“今天采了三十斤”，松开显示识别候选，确认后只写入一条30斤记录，再打开该条详情验证来源；阿婆验收用同次结果回看。"
+    },
+    {
+      "start_frame": 4344,
+      "end_frame": 4404,
+      "mode": "P",
+      "task_id": "P03",
+      "quote": "“这才算做成。”",
+      "action": "真人落“这才算做成”，把评价落在真实可用的结果。"
+    },
+    {
+      "start_frame": 4404,
+      "end_frame": 4697,
+      "mode": "R",
+      "task_id": "R03",
+      "quote": "“问这果子有什么好处……这箱是哪来的……有什么券能用。”",
+      "action": "实点商品来路问题，回答附同一批次引用；再展示可用优惠示例入口，所有信息来自演示数据。"
+    },
+    {
+      "start_frame": 4697,
+      "end_frame": 4903,
+      "mode": "R",
+      "task_id": "R01",
+      "quote": "“现在城里人买得到了……扫一下就知道是哪棵树结的。”",
+      "action": "从管家回答点击来源引用，回到同批次页面并展开采收节点，证明答复可追溯。"
+    },
+    {
+      "start_frame": 4903,
+      "end_frame": 5144,
+      "mode": "R",
+      "task_id": "R04",
+      "quote": "“亲戚塞给你一箱果子，回了城还想吃，扫一下码就能再买。”",
+      "action": "扫描果箱演示码打开同批次商品，选择复购规格并到确认页；保留同箱同码。"
+    },
+    {
+      "start_frame": 5144,
+      "end_frame": 5289,
+      "mode": "P",
+      "task_id": "P04",
+      "quote": "“货挂到手机上能多卖多少，探针第一期算过这笔账。”",
+      "action": "真人用提问语气指路探针01的卖货估算，让收益问题与本篇信任机制分开。"
+    },
+    {
+      "start_frame": 5289,
+      "end_frame": 5463,
+      "mode": "A",
+      "task_id": "A04",
+      "quote": "“村里的账从前散在几个人手里，现在谁问管家它都能答得上。”",
+      "action": "A01分散的账页岛屿被统一批次键吸合成可追溯索引；问题卡落到索引中心，回答沿出处路径弹出并回链原记录。"
+    },
+    {
+      "start_frame": 5463,
+      "end_frame": 5850,
+      "mode": "A",
+      "task_id": "A05",
+      "quote": "“一年几百块的服务器……一个暑假……请人做少说一两万……别的镇的人也来问。”",
+      "action": "等轴测投入天平一侧放服务器年费估算与暑假时间块，另一侧放外包估算；询问复制的城镇节点展开，状态明确停在“咨询”。"
+    },
+    {
+      "start_frame": 5850,
+      "end_frame": 6015,
+      "mode": "P",
+      "task_id": "P05",
+      "quote": "“先别着急找人做小程序，先把来路记下来。”",
+      "action": "真人强调先记来路、再做系统的行动顺序，保持正面提醒。"
+    },
+    {
+      "start_frame": 6015,
+      "end_frame": 6196,
+      "mode": "R",
+      "task_id": "R05",
+      "quote": "“谁做的，用的什么料，哪天做的，拍照也行，记本子也行。”",
+      "action": "实填制作者、材料、日期并上传一张示例照片，保存一条来源记录，再打开详情核对。"
+    },
+    {
+      "start_frame": 6196,
+      "end_frame": 6435,
+      "mode": "A",
+      "task_id": "A03",
+      "quote": "“做辣酱的，烤蛋糕的，养蜂的……客人才肯多掏钱。”",
+      "action": "辣酱罐、蛋糕、蜂箱依次翻成立体来源卡，原料—制作者—日期三层展开并锁定，产品与可核对记录一一相连。"
+    },
+    {
+      "start_frame": 6435,
+      "end_frame": 6662,
+      "mode": "A",
+      "task_id": "A03",
+      "quote": "“给谁干过，干得怎么样，留着底，下一个客户才敢信你。”",
+      "action": "来源矩阵翻到服务行业，项目成果卡与匿名客户、交付记录连成双向轨道，下一位客户的询问沿轨回到证据。"
+    },
+    {
+      "start_frame": 6662,
+      "end_frame": 6857,
+      "mode": "A",
+      "task_id": "A03",
+      "quote": "“交上去的数是从哪张表来的，标清楚，领导才敢用。”",
+      "action": "矩阵翻到办公数据，一枚数字块落入报告后反向拉出来源表与行位置，数据链咬合完成。"
+    },
+    {
+      "start_frame": 6857,
+      "end_frame": 6946,
+      "mode": "P",
+      "task_id": "P06",
+      "quote": "“这个大学生自己说得最透……”",
+      "action": "真人引出案例总结，语气为判断而非新增成绩宣传。"
+    },
+    {
+      "start_frame": 6946,
+      "end_frame": 7044,
+      "mode": "G",
+      "task_id": "G05",
+      "quote": "“东西本来就好，缺的只是让人看见的那一层。”",
+      "action": "开头蜜罐内部山体光网从瓶口展开成透明可见层，果实与出处连成完整结构，匹配切真人最后五秒。"
+    },
+    {
+      "start_frame": 7044,
+      "end_frame": 7194,
+      "mode": "P",
+      "task_id": "P尾",
+      "quote": "“东西本来就好，缺的只是让人看见的那一层。”；“你手上的好东西，差的也是这一层。”",
+      "action": "真人直视观众完成原声最后五秒，保留自然尾态。"
+    }
+  ],
+  "sfx_events": [
+    {
+      "task_id": "A01",
+      "slot_start": 591,
+      "local_frame": 12,
+      "global_frame": 603,
+      "milliseconds": 20100.0,
+      "sample_48k": 964800,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A01",
+      "slot_start": 591,
+      "local_frame": 103,
+      "global_frame": 694,
+      "milliseconds": 23133.333333333332,
+      "sample_48k": 1110400,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A01",
+      "slot_start": 591,
+      "local_frame": 195,
+      "global_frame": 786,
+      "milliseconds": 26200.0,
+      "sample_48k": 1257600,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A01",
+      "slot_start": 798,
+      "local_frame": 12,
+      "global_frame": 810,
+      "milliseconds": 27000.0,
+      "sample_48k": 1296000,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A01",
+      "slot_start": 798,
+      "local_frame": 136,
+      "global_frame": 934,
+      "milliseconds": 31133.333333333332,
+      "sample_48k": 1494400,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A01",
+      "slot_start": 798,
+      "local_frame": 260,
+      "global_frame": 1058,
+      "milliseconds": 35266.666666666664,
+      "sample_48k": 1692800,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A01",
+      "slot_start": 1070,
+      "local_frame": 12,
+      "global_frame": 1082,
+      "milliseconds": 36066.666666666664,
+      "sample_48k": 1731200,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A01",
+      "slot_start": 1070,
+      "local_frame": 71,
+      "global_frame": 1141,
+      "milliseconds": 38033.333333333336,
+      "sample_48k": 1825600,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A01",
+      "slot_start": 1070,
+      "local_frame": 131,
+      "global_frame": 1201,
+      "milliseconds": 40033.333333333336,
+      "sample_48k": 1921600,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 2871,
+      "local_frame": 12,
+      "global_frame": 2883,
+      "milliseconds": 96100.0,
+      "sample_48k": 4612800,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 2871,
+      "local_frame": 207,
+      "global_frame": 3078,
+      "milliseconds": 102600.0,
+      "sample_48k": 4924800,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 2871,
+      "local_frame": 403,
+      "global_frame": 3274,
+      "milliseconds": 109133.33333333333,
+      "sample_48k": 5238400,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 6196,
+      "local_frame": 12,
+      "global_frame": 6208,
+      "milliseconds": 206933.33333333334,
+      "sample_48k": 9932800,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 6196,
+      "local_frame": 119,
+      "global_frame": 6315,
+      "milliseconds": 210500.0,
+      "sample_48k": 10104000,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 6196,
+      "local_frame": 227,
+      "global_frame": 6423,
+      "milliseconds": 214100.0,
+      "sample_48k": 10276800,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 6435,
+      "local_frame": 12,
+      "global_frame": 6447,
+      "milliseconds": 214900.0,
+      "sample_48k": 10315200,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 6435,
+      "local_frame": 113,
+      "global_frame": 6548,
+      "milliseconds": 218266.66666666666,
+      "sample_48k": 10476800,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 6435,
+      "local_frame": 215,
+      "global_frame": 6650,
+      "milliseconds": 221666.66666666666,
+      "sample_48k": 10640000,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 6662,
+      "local_frame": 12,
+      "global_frame": 6674,
+      "milliseconds": 222466.66666666666,
+      "sample_48k": 10678400,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 6662,
+      "local_frame": 97,
+      "global_frame": 6759,
+      "milliseconds": 225300.0,
+      "sample_48k": 10814400,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 6662,
+      "local_frame": 183,
+      "global_frame": 6845,
+      "milliseconds": 228166.66666666666,
+      "sample_48k": 10952000,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 5289,
+      "local_frame": 12,
+      "global_frame": 5301,
+      "milliseconds": 176700.0,
+      "sample_48k": 8481600,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 5289,
+      "local_frame": 87,
+      "global_frame": 5376,
+      "milliseconds": 179200.0,
+      "sample_48k": 8601600,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 5289,
+      "local_frame": 162,
+      "global_frame": 5451,
+      "milliseconds": 181700.0,
+      "sample_48k": 8721600,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A05",
+      "slot_start": 5463,
+      "local_frame": 12,
+      "global_frame": 5475,
+      "milliseconds": 182500.0,
+      "sample_48k": 8760000,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A05",
+      "slot_start": 5463,
+      "local_frame": 193,
+      "global_frame": 5656,
+      "milliseconds": 188533.33333333334,
+      "sample_48k": 9049600,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A05",
+      "slot_start": 5463,
+      "local_frame": 375,
+      "global_frame": 5838,
+      "milliseconds": 194600.0,
+      "sample_48k": 9340800,
+      "action": "结果锁定",
+      "sfx": "Click"
+    }
+  ],
+  "metrics": {
+    "continuous_A_runs": 4,
+    "P_percent": 12.636,
+    "A_percent": 31.401,
+    "max_P_frames": 180,
+    "A_tasks": 5,
+    "A_slots": 9,
+    "A_limit_status": "reference_not_cap_user_confirmed"
+  }
+}
