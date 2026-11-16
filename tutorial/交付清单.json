@@ -26,28 +26,28 @@
     },
     {
       "path": "01_直接复制给AI的启动词.txt",
-      "bytes": 1793,
-      "sha256": "ae4a6f60ebd134c07f8a38e37edfb93e921e51e3de413a189e7e055b80ac97d3"
+      "bytes": 1908,
+      "sha256": "b7c160af3375e59a41fa4370326a846c06a80c4cfb4267a555d98cd0e28c0706"
     },
     {
       "path": "02_收到视频后的完整流程.md",
-      "bytes": 13999,
-      "sha256": "3ae99ffbeed636ac49551ce1cf7e1828112580b97e9ef24d920fcaeea87d1ca4"
+      "bytes": 14114,
+      "sha256": "6b822403539a996425a405a0bd63b400064e1a2ef1c2a49dceee70bc1550a9b6"
     },
     {
       "path": "03_任务与验收模板/Claude动画与BGM任务模板.md",
-      "bytes": 11530,
-      "sha256": "43ea07f68b7c5d2f72f794d0eaa1ee05425e3b44abc96838d5bf01c655990f52"
+      "bytes": 11590,
+      "sha256": "8a9f2babd54b2064bd8b9789a170269e1a158570e4cc82053c1d49b0147ba6b6"
     },
     {
       "path": "03_任务与验收模板/回交与成片验收清单.md",
-      "bytes": 12879,
-      "sha256": "ee4228475dce6da0c8428ac0762bdad6cf958ddc503a79f6c341b3190304bda9"
+      "bytes": 12939,
+      "sha256": "84bfaa69c4e943d5dd2c42bb66ad9394dc3baafcf2fef6fed9fcae84d455b8d5"
     },
     {
       "path": "03_任务与验收模板/生成方案模板.md",
-      "bytes": 6770,
-      "sha256": "c8c179970f05b4f88f4836f128e6d9c8cdc1d3769e24d6b385fd8ea52e9c59d2"
+      "bytes": 6863,
+      "sha256": "00776924e34bf87f674e2f14a311ddfd8e36b5601c5caf8e83024d222622ba48"
     },
     {
       "path": "03_任务与验收模板/项目记录模板.md",
@@ -71,8 +71,8 @@
     },
     {
       "path": "05_创作参考/动作提示词工程_研究综述.md",
-      "bytes": 12191,
-      "sha256": "8e7e1068a4c4bceafb70e535a05975ad1d87c9ee4ab731941fb5e533b88b4a1b"
+      "bytes": 12306,
+      "sha256": "cbb6953ede915d834359a19a5c368ce68805435379395cc259460addfa4aaa6b"
     },
     {
       "path": "05_创作参考/研究来源/00_来源索引.md",
@@ -101,8 +101,8 @@
     },
     {
       "path": "05_创作参考/视觉构思参考.md",
-      "bytes": 8876,
-      "sha256": "8e07fed8e020ff153fc77d9687d442acb59cf6999b8c8bd6188f77f081593621"
+      "bytes": 8991,
+      "sha256": "a23199e6fb6d63c6c9e1aaa3f800bca9ea179484f99cffb7ca6bc909eb495541"
     },
     {
       "path": "05_创作参考/视觉隐喻与口播适配_代码之桥案例.md",
@@ -111,8 +111,8 @@
     },
     {
       "path": "05_创作参考/连续动作设计与视频提示词.md",
-      "bytes": 8684,
-      "sha256": "42ebc11ef2a99f3b22f1f27835fa003751dbf6f564ec9607910c1fe903e1dd8b"
+      "bytes": 8799,
+      "sha256": "41f296eb413d2c819e8eb5e651af78b4943c739cf8c3df11e773548b818526c3"
     },
     {
       "path": "06_新电脑工具与素材检查.md",
@@ -121,8 +121,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 3428,
-      "sha256": "c5099d8c28b28b537ee857551d1cfe98323dee85a414d53db59b9fc1ed4380d7"
+      "bytes": 3543,
+      "sha256": "2465059d4a902d1d6cc7e30b3f29cfff459ce595abbcac4aa96177cfa79a77f3"
     },
     {
       "path": "README.md",
@@ -201,8 +201,8 @@
     },
     {
       "path": "skills/he-aotang-claude-handoff/SKILL.md",
-      "bytes": 4488,
-      "sha256": "514c3518d5e422ac2b9a4155bc409af277249ac45a379eb2e96919592ba74a91"
+      "bytes": 4603,
+      "sha256": "7b5ba9137f8985fe033c793f6e263e3332671b34f8aa52034b590fa31b35860f"
     }
   ]
 }

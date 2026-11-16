@@ -15,10 +15,10 @@
     {
       "start_frame": 120,
       "end_frame": 180,
-      "mode": "G",
-      "task_id": "G01b",
+      "mode": "A",
+      "task_id": "A_open",
       "quote": "楼下五金店就有的灯泡……白等了一天。",
-      "action": "引用G01a扫描后的尾帧，货架完成凝实，9.5元与有货标签由可控图层落定；保持明亮可见的结果，不重新触发坍缩。",
+      "action": "以G01a实际尾帧为底图，Claude制作可控2.5D结果接续，不再调用LibTV生成：引用G01a扫描后的尾帧，货架完成凝实，9.5元与有货标签由可控图层落定；保持明亮可见的结果，不重新触发坍缩。",
       "old_section": 1
     },
     {
@@ -104,20 +104,20 @@
     },
     {
       "start_frame": 1170,
-      "end_frame": 1275,
+      "end_frame": 1320,
       "mode": "G",
       "task_id": "G04a",
       "quote": "这一单丢了，老板都不知道。你根本没进他的门。",
-      "action": "购物意向光球撞向空白入口，被弹离门店；本子镜触发主变化。",
+      "action": "购物意向光球被空白入口弹开，越过老板头顶流向另一端亮着的商品；以分屏揭露老板看不到的损失；主变化在150帧内完成，保留真实尾帧供后续代码动画接力。",
       "old_section": 6
     },
     {
-      "start_frame": 1275,
+      "start_frame": 1320,
       "end_frame": 1380,
-      "mode": "G",
-      "task_id": "G04b",
+      "mode": "A",
+      "task_id": "A_tail_G04",
       "quote": "这一单丢了，老板都不知道。你根本没进他的门。",
-      "action": "镜头越过老板头顶，光球落入远端亮着的商品入口；引用上一子镜尾帧，保持同源场景、光向与运动方向。",
+      "action": "以G04a实际尾帧为底图，Claude用2.5D图层让已流向远端商品的光球完成落位，远端入口亮起、近处入口保持空白，停在机会流失结果；不重演弹离动作。",
       "old_section": 6
     },
     {
@@ -194,7 +194,7 @@
     },
     {
       "start_frame": 3780,
-      "end_frame": 3890,
+      "end_frame": 3945,
       "mode": "G",
       "task_id": "G06a",
       "quote": "从前你半夜想起灯泡坏了……现在一搜，楼下有，九块五，明早下楼拿。",
@@ -202,21 +202,12 @@
       "old_section": 14
     },
     {
-      "start_frame": 3890,
-      "end_frame": 4000,
+      "start_frame": 3945,
+      "end_frame": 4110,
       "mode": "G",
       "task_id": "G06b",
       "quote": "从前你半夜想起灯泡坏了……现在一搜，楼下有，九块五，明早下楼拿。",
-      "action": "货架格逐层凝实，灯泡位置向屏幕顶出；引用上一子镜尾帧，保持同源场景、光向与运动方向。",
-      "old_section": 14
-    },
-    {
-      "start_frame": 4000,
-      "end_frame": 4110,
-      "mode": "G",
-      "task_id": "G06c",
-      "quote": "从前你半夜想起灯泡坏了……现在一搜，楼下有，九块五，明早下楼拿。",
-      "action": "可控图层落入9.5元预留卡，接下一段多行业矩阵；引用上一子镜尾帧，保持同源场景、光向与运动方向。",
+      "action": "货架格逐层凝实，灯泡位置向屏幕顶出；可控图层落入9.5元预留卡，接下一段多行业矩阵；引用上一子镜尾帧，保持同源场景、光向与运动方向。",
       "old_section": 14
     },
     {
@@ -340,18 +331,312 @@
   "statistics": {
     "frames": {
       "P": 1050,
-      "G": 1350,
+      "G": 1230,
       "R": 2580,
-      "A": 2730
+      "A": 2850
     },
     "percent": {
       "P": 13.619,
-      "G": 17.51,
+      "G": 15.953,
       "R": 33.463,
-      "A": 35.409
+      "A": 36.965
     },
     "max_continuous_p_frames": 270,
-    "a_tasks": 5,
+    "a_tasks": 7,
     "a_ratio_policy": "20–25%为参考，按用户裁定允许超出；指定内容完整视觉化优先"
+  },
+  "sfx_events": [
+    {
+      "task_id": "A_open",
+      "slot_start": 120,
+      "local_frame": 12,
+      "global_frame": 132,
+      "milliseconds": 4400.0,
+      "sample_48k": 211200,
+      "sfx": "Whoosh",
+      "action": "前镜余动接续"
+    },
+    {
+      "task_id": "A_open",
+      "slot_start": 120,
+      "local_frame": 30,
+      "global_frame": 150,
+      "milliseconds": 5000.0,
+      "sample_48k": 240000,
+      "sfx": "Click/Pop",
+      "action": "结果图层落位"
+    },
+    {
+      "task_id": "A_open",
+      "slot_start": 120,
+      "local_frame": 48,
+      "global_frame": 168,
+      "milliseconds": 5600.0,
+      "sample_48k": 268800,
+      "sfx": "机械落定",
+      "action": "结果确认"
+    },
+    {
+      "task_id": "A_tail_G04",
+      "slot_start": 1320,
+      "local_frame": 12,
+      "global_frame": 1332,
+      "milliseconds": 44400.0,
+      "sample_48k": 2131200,
+      "sfx": "Whoosh",
+      "action": "前镜余动接续"
+    },
+    {
+      "task_id": "A_tail_G04",
+      "slot_start": 1320,
+      "local_frame": 30,
+      "global_frame": 1350,
+      "milliseconds": 45000.0,
+      "sample_48k": 2160000,
+      "sfx": "Click/Pop",
+      "action": "结果图层落位"
+    },
+    {
+      "task_id": "A_tail_G04",
+      "slot_start": 1320,
+      "local_frame": 48,
+      "global_frame": 1368,
+      "milliseconds": 45600.0,
+      "sample_48k": 2188800,
+      "sfx": "机械落定",
+      "action": "结果确认"
+    },
+    {
+      "task_id": "A01",
+      "slot_start": 1680,
+      "local_frame": 12,
+      "global_frame": 1692,
+      "milliseconds": 56400.0,
+      "sample_48k": 2707200,
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A01",
+      "slot_start": 1680,
+      "local_frame": 210,
+      "global_frame": 1890,
+      "milliseconds": 63000.0,
+      "sample_48k": 3024000,
+      "sfx": "Click/Pop"
+    },
+    {
+      "task_id": "A01",
+      "slot_start": 1680,
+      "local_frame": 408,
+      "global_frame": 2088,
+      "milliseconds": 69600.0,
+      "sample_48k": 3340800,
+      "sfx": "机械落定"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 2760,
+      "local_frame": 12,
+      "global_frame": 2772,
+      "milliseconds": 92400.0,
+      "sample_48k": 4435200,
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 2760,
+      "local_frame": 180,
+      "global_frame": 2940,
+      "milliseconds": 98000.0,
+      "sample_48k": 4704000,
+      "sfx": "Click/Pop"
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 2760,
+      "local_frame": 348,
+      "global_frame": 3108,
+      "milliseconds": 103600.0,
+      "sample_48k": 4972800,
+      "sfx": "机械落定"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 4110,
+      "local_frame": 12,
+      "global_frame": 4122,
+      "milliseconds": 137400.0,
+      "sample_48k": 6595200,
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 4110,
+      "local_frame": 150,
+      "global_frame": 4260,
+      "milliseconds": 142000.0,
+      "sample_48k": 6816000,
+      "sfx": "Click/Pop"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 4110,
+      "local_frame": 288,
+      "global_frame": 4398,
+      "milliseconds": 146600.0,
+      "sample_48k": 7036800,
+      "sfx": "机械落定"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 4410,
+      "local_frame": 12,
+      "global_frame": 4422,
+      "milliseconds": 147400.0,
+      "sample_48k": 7075200,
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 4410,
+      "local_frame": 165,
+      "global_frame": 4575,
+      "milliseconds": 152500.0,
+      "sample_48k": 7320000,
+      "sfx": "Click/Pop"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 4410,
+      "local_frame": 318,
+      "global_frame": 4728,
+      "milliseconds": 157600.0,
+      "sample_48k": 7564800,
+      "sfx": "机械落定"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 4740,
+      "local_frame": 12,
+      "global_frame": 4752,
+      "milliseconds": 158400.0,
+      "sample_48k": 7603200,
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 4740,
+      "local_frame": 225,
+      "global_frame": 4965,
+      "milliseconds": 165500.0,
+      "sample_48k": 7944000,
+      "sfx": "Click/Pop"
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 4740,
+      "local_frame": 438,
+      "global_frame": 5178,
+      "milliseconds": 172600.0,
+      "sample_48k": 8284800,
+      "sfx": "机械落定"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 5190,
+      "local_frame": 12,
+      "global_frame": 5202,
+      "milliseconds": 173400.0,
+      "sample_48k": 8323200,
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 5190,
+      "local_frame": 135,
+      "global_frame": 5325,
+      "milliseconds": 177500.0,
+      "sample_48k": 8520000,
+      "sfx": "Click/Pop"
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 5190,
+      "local_frame": 258,
+      "global_frame": 5448,
+      "milliseconds": 181600.0,
+      "sample_48k": 8716800,
+      "sfx": "机械落定"
+    },
+    {
+      "task_id": "A05",
+      "slot_start": 6120,
+      "local_frame": 12,
+      "global_frame": 6132,
+      "milliseconds": 204400.0,
+      "sample_48k": 9811200,
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A05",
+      "slot_start": 6120,
+      "local_frame": 180,
+      "global_frame": 6300,
+      "milliseconds": 210000.0,
+      "sample_48k": 10080000,
+      "sfx": "Click/Pop"
+    },
+    {
+      "task_id": "A05",
+      "slot_start": 6120,
+      "local_frame": 348,
+      "global_frame": 6468,
+      "milliseconds": 215600.0,
+      "sample_48k": 10348800,
+      "sfx": "机械落定"
+    },
+    {
+      "task_id": "A05",
+      "slot_start": 6480,
+      "local_frame": 12,
+      "global_frame": 6492,
+      "milliseconds": 216400.0,
+      "sample_48k": 10387200,
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A05",
+      "slot_start": 6480,
+      "local_frame": 120,
+      "global_frame": 6600,
+      "milliseconds": 220000.0,
+      "sample_48k": 10560000,
+      "sfx": "Click/Pop"
+    },
+    {
+      "task_id": "A05",
+      "slot_start": 6480,
+      "local_frame": 228,
+      "global_frame": 6708,
+      "milliseconds": 223600.0,
+      "sample_48k": 10732800,
+      "sfx": "机械落定"
+    }
+  ],
+  "g_duration_patch_status": "confirmed_editorial_min4_model_specific_generation_min",
+  "generation_duration_policy": {
+    "editorial_g_frames": [
+      120,
+      165
+    ],
+    "star-video2_generate_interpolate_seconds": [
+      4,
+      15
+    ],
+    "lib-cinema_AutoTake_seconds": [
+      5,
+      15
+    ],
+    "verification": "主控实时get_model核实，2026-11-17"
   }
 }

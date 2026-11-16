@@ -14,10 +14,10 @@
     {
       "start_frame": 120,
       "end_frame": 180,
-      "mode": "G",
-      "task_id": "G01b_120",
+      "mode": "A",
+      "task_id": "A_open",
       "quote": "“你头发剪到一半……放下剪刀去接电话……一天要接三十个。”",
-      "action": "承接前镜尾帧：手指点预约页，声波网断裂，图标折叠归入时间格。"
+      "action": "Claude以G首镜尾帧为构图参考，用可控2.5D几何与代码图层匹配接力：手指点预约页，声波网断裂，图标折叠归入时间格。"
     },
     {
       "start_frame": 180,
@@ -53,19 +53,19 @@
     },
     {
       "start_frame": 862,
-      "end_frame": 962,
+      "end_frame": 982,
       "mode": "G",
       "task_id": "G02_862",
       "quote": "“接一个活停一回……椅子上的人等着，电话里的人也等着。”",
       "action": "接听口喷出声波绳，分别拉住剪刀与顾客沙漏，剪刀动作被迫停住。"
     },
     {
-      "start_frame": 962,
+      "start_frame": 982,
       "end_frame": 1038,
-      "mode": "G",
-      "task_id": "G02_962",
+      "mode": "A",
+      "task_id": "A_bridge",
       "quote": "“接一个活停一回……椅子上的人等着，电话里的人也等着。”",
-      "action": "承接绷紧的绳，穿过电话通道揭露另一端沙漏仍在流动，两端时间同时耗损。"
+      "action": "Claude接绷紧声波绳的尾态，2.5D电话通道展开两端沙漏，砂流继续而剪刀停住，时间损失数字落定。"
     },
     {
       "start_frame": 1038,
@@ -302,173 +302,298 @@
   ],
   "sfx_events": [
     {
-      "task_id": "A01_01",
+      "task_id": "A01",
       "local_frame": 0,
       "global_frame": 1574,
       "sample_offset": 2518400,
-      "event": "结构入场 Whoosh"
+      "event": "结构入场 Whoosh",
+      "slot_id": "A01_01",
+      "slot_start": 1574
     },
     {
-      "task_id": "A01_01",
+      "task_id": "A01",
       "local_frame": 264,
       "global_frame": 1838,
       "sample_offset": 2940800,
-      "event": "主要状态变化 Click/Pop"
+      "event": "主要状态变化 Click/Pop",
+      "slot_id": "A01_01",
+      "slot_start": 1574
     },
     {
-      "task_id": "A01_01",
+      "task_id": "A01",
       "local_frame": 511,
       "global_frame": 2085,
       "sample_offset": 3336000,
-      "event": "结果锁定 机械落定"
+      "event": "结果锁定 机械落定",
+      "slot_id": "A01_01",
+      "slot_start": 1574
     },
     {
-      "task_id": "A01_02",
+      "task_id": "A01",
       "local_frame": 0,
       "global_frame": 2103,
       "sample_offset": 3364800,
-      "event": "结构入场 Whoosh"
+      "event": "结构入场 Whoosh",
+      "slot_id": "A01_02",
+      "slot_start": 2103
     },
     {
-      "task_id": "A01_02",
+      "task_id": "A01",
       "local_frame": 154,
       "global_frame": 2257,
       "sample_offset": 3611200,
-      "event": "主要状态变化 Click/Pop"
+      "event": "主要状态变化 Click/Pop",
+      "slot_id": "A01_02",
+      "slot_start": 2103
     },
     {
-      "task_id": "A01_02",
+      "task_id": "A01",
       "local_frame": 290,
       "global_frame": 2393,
       "sample_offset": 3828800,
-      "event": "结果锁定 机械落定"
+      "event": "结果锁定 机械落定",
+      "slot_id": "A01_02",
+      "slot_start": 2103
     },
     {
-      "task_id": "A02_01",
+      "task_id": "A02",
       "local_frame": 0,
       "global_frame": 2959,
       "sample_offset": 4734400,
-      "event": "结构入场 Whoosh"
+      "event": "结构入场 Whoosh",
+      "slot_id": "A02_01",
+      "slot_start": 2959
     },
     {
-      "task_id": "A02_01",
+      "task_id": "A02",
       "local_frame": 259,
       "global_frame": 3218,
       "sample_offset": 5148800,
-      "event": "主要状态变化 Click/Pop"
+      "event": "主要状态变化 Click/Pop",
+      "slot_id": "A02_01",
+      "slot_start": 2959
     },
     {
-      "task_id": "A02_01",
+      "task_id": "A02",
       "local_frame": 500,
       "global_frame": 3459,
       "sample_offset": 5534400,
-      "event": "结果锁定 机械落定"
+      "event": "结果锁定 机械落定",
+      "slot_id": "A02_01",
+      "slot_start": 2959
     },
     {
-      "task_id": "A03_01",
+      "task_id": "A03",
       "local_frame": 0,
       "global_frame": 5427,
       "sample_offset": 8683200,
-      "event": "结构入场 Whoosh"
+      "event": "结构入场 Whoosh",
+      "slot_id": "A03_01",
+      "slot_start": 5427
     },
     {
-      "task_id": "A03_01",
+      "task_id": "A03",
       "local_frame": 183,
       "global_frame": 5610,
       "sample_offset": 8976000,
-      "event": "主要状态变化 Click/Pop"
+      "event": "主要状态变化 Click/Pop",
+      "slot_id": "A03_01",
+      "slot_start": 5427
     },
     {
-      "task_id": "A03_01",
+      "task_id": "A03",
       "local_frame": 348,
       "global_frame": 5775,
       "sample_offset": 9240000,
-      "event": "结果锁定 机械落定"
+      "event": "结果锁定 机械落定",
+      "slot_id": "A03_01",
+      "slot_start": 5427
     },
     {
-      "task_id": "A03_02",
+      "task_id": "A03",
       "local_frame": 0,
       "global_frame": 5793,
       "sample_offset": 9268800,
-      "event": "结构入场 Whoosh"
+      "event": "结构入场 Whoosh",
+      "slot_id": "A03_02",
+      "slot_start": 5793
     },
     {
-      "task_id": "A03_02",
+      "task_id": "A03",
       "local_frame": 215,
       "global_frame": 6008,
       "sample_offset": 9612800,
-      "event": "主要状态变化 Click/Pop"
+      "event": "主要状态变化 Click/Pop",
+      "slot_id": "A03_02",
+      "slot_start": 5793
     },
     {
-      "task_id": "A03_02",
+      "task_id": "A03",
       "local_frame": 413,
       "global_frame": 6206,
       "sample_offset": 9929600,
-      "event": "结果锁定 机械落定"
+      "event": "结果锁定 机械落定",
+      "slot_id": "A03_02",
+      "slot_start": 5793
     },
     {
-      "task_id": "A04_01",
+      "task_id": "A04",
       "local_frame": 0,
       "global_frame": 6396,
       "sample_offset": 10233600,
-      "event": "结构入场 Whoosh"
+      "event": "结构入场 Whoosh",
+      "slot_id": "A04_01",
+      "slot_start": 6396
     },
     {
-      "task_id": "A04_01",
+      "task_id": "A04",
       "local_frame": 129,
       "global_frame": 6525,
       "sample_offset": 10440000,
-      "event": "主要状态变化 Click/Pop"
+      "event": "主要状态变化 Click/Pop",
+      "slot_id": "A04_01",
+      "slot_start": 6396
     },
     {
-      "task_id": "A04_01",
+      "task_id": "A04",
       "local_frame": 241,
       "global_frame": 6637,
       "sample_offset": 10619200,
-      "event": "结果锁定 机械落定"
+      "event": "结果锁定 机械落定",
+      "slot_id": "A04_01",
+      "slot_start": 6396
     },
     {
-      "task_id": "A05_01",
+      "task_id": "A05",
       "local_frame": 0,
       "global_frame": 6860,
       "sample_offset": 10976000,
-      "event": "结构入场 Whoosh"
+      "event": "结构入场 Whoosh",
+      "slot_id": "A05_01",
+      "slot_start": 6860
     },
     {
-      "task_id": "A05_01",
+      "task_id": "A05",
       "local_frame": 105,
       "global_frame": 6965,
       "sample_offset": 11144000,
-      "event": "主要状态变化 Click/Pop"
+      "event": "主要状态变化 Click/Pop",
+      "slot_id": "A05_01",
+      "slot_start": 6860
     },
     {
-      "task_id": "A05_01",
+      "task_id": "A05",
       "local_frame": 193,
       "global_frame": 7053,
       "sample_offset": 11284800,
-      "event": "结果锁定 机械落定"
+      "event": "结果锁定 机械落定",
+      "slot_id": "A05_01",
+      "slot_start": 6860
     },
     {
-      "task_id": "A05_02",
+      "task_id": "A05",
       "local_frame": 0,
       "global_frame": 7071,
       "sample_offset": 11313600,
-      "event": "结构入场 Whoosh"
+      "event": "结构入场 Whoosh",
+      "slot_id": "A05_02",
+      "slot_start": 7071
     },
     {
-      "task_id": "A05_02",
+      "task_id": "A05",
       "local_frame": 134,
       "global_frame": 7205,
       "sample_offset": 11528000,
-      "event": "主要状态变化 Click/Pop"
+      "event": "主要状态变化 Click/Pop",
+      "slot_id": "A05_02",
+      "slot_start": 7071
     },
     {
-      "task_id": "A05_02",
+      "task_id": "A05",
       "local_frame": 250,
       "global_frame": 7321,
       "sample_offset": 11713600,
-      "event": "结果锁定 机械落定"
+      "event": "结果锁定 机械落定",
+      "slot_id": "A05_02",
+      "slot_start": 7071
+    },
+    {
+      "task_id": "A_open",
+      "local_frame": 0,
+      "global_frame": 120,
+      "sample_offset": 192000,
+      "event": "匹配接力 Whoosh",
+      "slot_id": "A_open",
+      "slot_start": 120
+    },
+    {
+      "task_id": "A_open",
+      "local_frame": 30,
+      "global_frame": 150,
+      "sample_offset": 240000,
+      "event": "次级变化 Pop",
+      "slot_id": "A_open",
+      "slot_start": 120
+    },
+    {
+      "task_id": "A_open",
+      "local_frame": 54,
+      "global_frame": 174,
+      "sample_offset": 278400,
+      "event": "结果锁定 Click",
+      "slot_id": "A_open",
+      "slot_start": 120
+    },
+    {
+      "task_id": "A_bridge",
+      "local_frame": 0,
+      "global_frame": 982,
+      "sample_offset": 1571200,
+      "event": "匹配接力 Whoosh",
+      "slot_id": "A_bridge",
+      "slot_start": 982
+    },
+    {
+      "task_id": "A_bridge",
+      "local_frame": 28,
+      "global_frame": 1010,
+      "sample_offset": 1616000,
+      "event": "次级变化 Pop",
+      "slot_id": "A_bridge",
+      "slot_start": 982
+    },
+    {
+      "task_id": "A_bridge",
+      "local_frame": 50,
+      "global_frame": 1032,
+      "sample_offset": 1651200,
+      "event": "结果锁定 Click",
+      "slot_id": "A_bridge",
+      "slot_start": 982
     }
   ],
-  "allocation_note": "用户已裁定：指定段落全视觉化优先，A数量占比为保底参考非上限，可用G/R分担。"
+  "allocation_note": "用户已裁定：指定段落全视觉化优先，A数量占比为保底参考非上限，可用G/R分担。",
+  "generation_duration_policy": {
+    "timeline_g_min_frames": 120,
+    "timeline_g_max_frames": 165,
+    "opening": "G[0,120)+A_open[120,180)",
+    "model_minimum": "Read current get_model schema; Seedance 2.0 observed minimum 4s; earlier AutoTake lib-cinema observed minimum 5s. Generate legal length then record source trim when needed."
+  },
+  "statistics": {
+    "frames": {
+      "P": 1787,
+      "G": 1150,
+      "R": 1736,
+      "A": 3006
+    },
+    "percent": {
+      "P": 23.271,
+      "G": 14.976,
+      "R": 22.607,
+      "A": 39.146
+    },
+    "a_tasks": 7,
+    "a_slots": 10,
+    "a_continuous_blocks": 7
+  }
 }

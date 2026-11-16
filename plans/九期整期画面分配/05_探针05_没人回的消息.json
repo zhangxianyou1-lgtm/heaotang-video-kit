@@ -15,10 +15,10 @@
     {
       "start_frame": 120,
       "end_frame": 180,
-      "mode": "G",
-      "task_id": "G01b",
+      "mode": "A",
+      "task_id": "A_open",
       "quote": "“店里成单最多的人，丢的单子也是最多的”；“你发信息问价钱……半个小时没人回，去了别家……没回你的就是他”",
-      "action": "整体概念：顾问工位前巨石消息气泡瀑布砸下，层层叠起封住通路；墙外三个发光客户形体撞墙、倒计时归零后消散。问题词与3000元报名牌由可控文字层贴附，数量为视觉隐喻。 本子镜动作：客户撞墙，三枚倒计时牌归零，客户形体消散；顾问仍在墙内处理消息。"
+      "action": "Claude引用前一G镜尾帧和分层素材，以2.5D代码动画继续结果变化；不发起新的LibTV生成任务、不重复触发。客户撞墙，三枚倒计时牌归零，客户形体消散；顾问仍在墙内处理消息。"
     },
     {
       "start_frame": 180,
@@ -231,10 +231,10 @@
     {
       "start_frame": 6770,
       "end_frame": 6876,
-      "mode": "G",
-      "task_id": "G04",
+      "mode": "A",
+      "task_id": "A_insert_6770",
       "quote": "“最能干的那个人……不该花在回同一句话上……AI该先接走的”",
-      "action": "开头巨石墙从中间打开，灰色消息被辅助轨带走，顾问桌前留下清晰决策通路，匹配切真人收束。"
+      "action": "Claude以独立2.5D代码图形完成此短时槽，非LibTV生成镜头。开头巨石墙从中间打开，灰色消息被辅助轨带走，顾问桌前留下清晰决策通路，匹配切真人收束。"
     },
     {
       "start_frame": 6876,
@@ -515,15 +515,75 @@
       "sample_48k": 9364800,
       "action": "结果锁定",
       "sfx": "Click"
+    },
+    {
+      "task_id": "A_insert_6770",
+      "slot_start": 6770,
+      "local_frame": 12,
+      "global_frame": 6782,
+      "milliseconds": 226066.66666666666,
+      "sample_48k": 10851200,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A_insert_6770",
+      "slot_start": 6770,
+      "local_frame": 53,
+      "global_frame": 6823,
+      "milliseconds": 227433.33333333334,
+      "sample_48k": 10916800,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A_insert_6770",
+      "slot_start": 6770,
+      "local_frame": 94,
+      "global_frame": 6864,
+      "milliseconds": 228800.0,
+      "sample_48k": 10982400,
+      "action": "结果锁定",
+      "sfx": "Click"
+    },
+    {
+      "task_id": "A_open",
+      "slot_start": 120,
+      "local_frame": 12,
+      "global_frame": 132,
+      "milliseconds": 4400.0,
+      "sample_48k": 211200,
+      "action": "结构入场",
+      "sfx": "Whoosh"
+    },
+    {
+      "task_id": "A_open",
+      "slot_start": 120,
+      "local_frame": 30,
+      "global_frame": 150,
+      "milliseconds": 5000.0,
+      "sample_48k": 240000,
+      "action": "主体重组/关键状态落定",
+      "sfx": "Pop"
+    },
+    {
+      "task_id": "A_open",
+      "slot_start": 120,
+      "local_frame": 48,
+      "global_frame": 168,
+      "milliseconds": 5600.0,
+      "sample_48k": 268800,
+      "action": "结果锁定",
+      "sfx": "Click"
     }
   ],
   "metrics": {
-    "continuous_A_runs": 5,
+    "continuous_A_runs": 7,
     "P_percent": 19.684,
-    "A_percent": 38.998,
+    "A_percent": 41.361,
     "max_P_frames": 300,
-    "A_tasks": 5,
-    "A_slots": 9,
+    "A_tasks": 7,
+    "A_slots": 11,
     "A_limit_status": "reference_not_cap_user_confirmed"
   }
 }

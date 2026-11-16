@@ -29,6 +29,13 @@ def validate(d):
             a_ids.add(s['task_id']);a_runs+=last!='A'
         last=m
     assert cursor==n
+    merged=[]
+    for s in slots:
+        if merged and s['mode']=='G' and merged[-1]['mode']=='G' and s['task_id']==merged[-1]['task_id']:
+            merged[-1]['end_frame']=s['end_frame']
+        else: merged.append(dict(s))
+    for s in merged:
+        if s['mode']=='G': assert 120<=s['end_frame']-s['start_frame']<=165, ('G must be 4-5.5s',s)
     assert counts['P']/n<=.35 and maximum<=360, ('P limit',counts,maximum)
     for s in slots:
         a,b=s['start_frame'],s['end_frame']
@@ -52,6 +59,14 @@ def main():
         if i in EXPECTED:assert d['total_frames']==EXPECTED[i] and d['timing_basis']=='existing'
         else:assert d['timing_basis']=='estimated'
         stats=validate(d);stats['title']=d['title']
+        a_slots={(s['task_id'],s['start_frame']):s for s in d['slots'] if s['mode']=='A'}
+        event_slots=set()
+        for e in d.get('sfx_events',[]):
+            key=(e['task_id'],e['slot_start']);s=a_slots[key];event_slots.add(key)
+            assert 0<=e['local_frame']<s['end_frame']-s['start_frame']
+            assert e['global_frame']==s['start_frame']+e['local_frame']
+            assert e.get('sample_48k',e.get('sample_offset'))==e['global_frame']*1600
+        assert event_slots==set(a_slots), ('A slots missing SFX events',p.name)
         # old_section is an auditable source anchor, not a new timeline boundary.
         missing=[s for s in d['slots'] if s.get('old_section') in REQUIRED[i] and s['mode']=='P'
                  and s['start_frame']>=450 and s['end_frame']<=d['total_frames']-150]
@@ -66,13 +81,15 @@ def main():
     return results
 
 def self_check():
-    d={'total_frames':600,'timing_basis':'estimated','slots':[]}
-    for a,b,m in [(0,120,'G'),(120,180,'G'),(180,360,'P'),(360,450,'R'),(450,600,'P')]:
+    d={'total_frames':1200,'timing_basis':'estimated','slots':[]}
+    for a,b,m in [(0,120,'G'),(120,180,'A'),(180,360,'P'),(360,450,'R'),(450,1050,'R'),(1050,1200,'P')]:
         d['slots'].append(dict(start_frame=a,end_frame=b,mode=m,task_id=str(a),quote='x',action='x'))
-    # Deliberately invalid P ratio must fail; checks cannot simply accept coverage.
-    try: validate(d)
-    except AssertionError: pass
-    else: raise AssertionError('P ratio rejection missing')
+    validate(d)
+    for slot_index,mode in [(1,'G'),(4,'P')]:
+        bad=json.loads(json.dumps(d));bad['slots'][slot_index]['mode']=mode
+        try: validate(bad)
+        except AssertionError: pass
+        else: raise AssertionError('Short G or long P rejection missing')
 
 if __name__=='__main__':
     self_check();main()
