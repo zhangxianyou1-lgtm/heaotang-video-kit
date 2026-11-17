@@ -86,7 +86,10 @@ def validate_sfx(d, require_aligned=False):
         key=(e['task_id'],e['slot_start']);s=a_slots[key];event_slots.add(key)
         for field in ('anchor','visual_event','sound'):
             assert isinstance(e.get(field),str) and e[field].strip(), ('missing semantic SFX field',field,e)
-        if e.get('alignment_status')=='pending_word_alignment':
+        if e.get('alignment_status')=='not_used':
+            assert isinstance(e.get('reason'),str) and e['reason'].strip(), ('unused SFX needs reason',e)
+            assert all(e.get(k) is None for k in ('local_frame','global_frame','sample_48k','sample_offset')), ('unused SFX has timecode',e)
+        elif e.get('alignment_status')=='pending_word_alignment':
             pending+=1
             assert all(e.get(k) is None for k in ('local_frame','global_frame','sample_48k','sample_offset')), ('invented pending timecode',e)
             assert not require_aligned, 'SFX word alignment pending: plan is not ready to mix'
@@ -153,6 +156,11 @@ def self_check():
     rejected(lambda:validate_sfx(d))
     d['sfx_events'][0].update(alignment_status='aligned',alignment_evidence='fixture word boundary',global_frame=462,sample_48k=462*1600)
     assert validate_sfx(d,True)==0
+    unused=json.loads(json.dumps(d))
+    unused['sfx_events'][0].update(alignment_status='not_used',reason='Merged into another semantic event',local_frame=None,global_frame=None,sample_48k=None)
+    assert validate_sfx(unused,True)==0
+    del unused['sfx_events'][0]['reason']
+    rejected(lambda:validate_sfx(unused,True))
     # An aligned single plan must not be blocked by the other eight pending plans.
     with tempfile.TemporaryDirectory() as tmp, contextlib.redirect_stdout(io.StringIO()):
         p=Path(tmp)/'single_plan.json';p.write_text(json.dumps(d),encoding='utf-8')

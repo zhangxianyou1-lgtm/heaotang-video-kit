@@ -20,6 +20,10 @@ def clean_text(text):
 
 def match_sfx_candidates(plan_data, words):
     """Return candidate frame/sample alignments for each sfx_event using ASR word timestamps."""
+    if isinstance(words, dict):
+        words = words.get('words')  # Handoff ASR files also retain audio/source metadata.
+    if not isinstance(words, list):
+        raise ValueError('Expected a word list or a handoff object containing words')
     norm_words = []
     for w in words:
         token = clean_text(w.get("word", ""))
@@ -31,10 +35,17 @@ def match_sfx_candidates(plan_data, words):
                 "frame": round(float(w["start"]) * FPS),
             })
 
+    slots = {(s['task_id'], s['start_frame']): s for s in plan_data.get('slots', []) if s['mode'] == 'A'}
     results = []
     for ev in plan_data.get("sfx_events", []):
-        sf, ef = int(ev["slot_start"]), int(ev["slot_end"])
-        anchor_raw = ev.get("anchor_text", "")
+        sf = int(ev['slot_start'])
+        slot = slots.get((ev['task_id'], sf))
+        if slot is None and 'slot_end' not in ev:
+            raise ValueError(f"SFX event has no matching A slot: {ev['task_id']}@{sf}")
+        ef = int(slot['end_frame'] if slot else ev['slot_end'])
+        if ef <= sf or ('slot_end' in ev and int(ev['slot_end']) != ef):
+            raise ValueError(f"Conflicting SFX slot bounds: {ev['task_id']}@{sf}")
+        anchor_raw = ev.get('anchor') or ev.get('anchor_text', '')
         anchor = clean_text(anchor_raw)
         slot_words = [w for w in norm_words if sf <= w["frame"] < ef]
         joined = "".join(w["token"] for w in slot_words)
@@ -74,6 +85,22 @@ def self_check():
     assert out[0]["candidate_global_frame"] == 345
     assert out[0]["candidate_local_frame"] == 45
     assert out[0]["candidate_sample_48k"] == 345 * 1600
+    # Published nine-episode plans store the end in slots and use anchor.
+    plan['slots'] = [dict(task_id='A01', start_frame=300, end_frame=600, mode='A')]
+    ev = plan['sfx_events'][0]
+    ev['anchor'] = ev.pop('anchor_text')
+    del ev['slot_end']
+    assert match_sfx_candidates(plan, words)[0]['candidate_global_frame'] == 345
+    assert match_sfx_candidates(plan, {'words': words})[0]['candidate_global_frame'] == 345
+    assert match_sfx_candidates(plan, [])[0]['candidate_global_frame'] is None
+    assert ev['alignment_status'] == 'pending_word_alignment' and ev['global_frame'] is None
+    ev['slot_end'] = 500
+    try:
+        match_sfx_candidates(plan, words)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError('Conflicting slot bounds accepted')
     print("PASS: align_sfx_words self-check")
 
 
@@ -87,8 +114,8 @@ def main():
     if args.self_check or not (args.plan and args.words):
         self_check()
         return
-    plan_data = json.loads(Path(args.plan).read_text(encoding="utf-8"))
-    words = json.loads(Path(args.words).read_text(encoding="utf-8"))
+    plan_data = json.loads(Path(args.plan).read_text(encoding="utf-8-sig"))
+    words = json.loads(Path(args.words).read_text(encoding="utf-8-sig"))
     candidates = match_sfx_candidates(plan_data, words)
     if args.output:
         Path(args.output).write_text(json.dumps(candidates, ensure_ascii=False, indent=2), encoding="utf-8")
