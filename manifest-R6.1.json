@@ -40,8 +40,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 7730,
-      "sha256": "45a0eb5d3bbd767101d37332845117776a309bcc2babd66e19566084ea7c9f23"
+      "bytes": 8093,
+      "sha256": "3d8c08d9221ee855327c4e1830355ab7e786eb75476cad982e2a6ec69281023c"
     },
     {
       "path": "G时长下限_平台核实.md",
@@ -100,113 +100,113 @@
     },
     {
       "path": "plans/R6.1_结构核验.json",
-      "bytes": 3436,
-      "sha256": "49c785a0384d15d6b303b6008ffde030014aa09cc5b67a9e4245cb9ea535478e"
+      "bytes": 3560,
+      "sha256": "243c698a01ab8fc61adbf5542533817c9e154e23e6d38b60ac3c06c346b1812f"
     },
     {
       "path": "plans/R6.1_结构核验.md",
-      "bytes": 2501,
-      "sha256": "916684b36904d5547bba80db81992d5f6bec1a337379eabd85bc5889c992f163"
+      "bytes": 2799,
+      "sha256": "cf8400a77f92819fadf496d5dacfa987fe6c077e15262e67c12b2da7d59d14a4"
     },
     {
       "path": "plans/九期整期画面分配/00_阅读目录.md",
-      "bytes": 1208,
-      "sha256": "d917005f574ed90e5e18c895aa31716b65169108fbb70643fac9981d01947a8b"
+      "bytes": 1220,
+      "sha256": "d638ddd0d7a7e25fd889cfd5f96d007a59958c3a53c1e9c72e934f42ac663482"
     },
     {
       "path": "plans/九期整期画面分配/01_探针01_看不见的货架.json",
-      "bytes": 23921,
-      "sha256": "373aad0e13cde286344af7433732d2e153010237d8730b246ea7dd1cf58e7070"
+      "bytes": 47323,
+      "sha256": "dda9a7ec6a23101baed6ed79ff8c68f043bd23db15216d8b2a35cc39f6b91f02"
     },
     {
       "path": "plans/九期整期画面分配/01_探针01_看不见的货架.md",
-      "bytes": 26690,
-      "sha256": "af1b86461bf2fff508e749ae65022cb054da6a238c80368a4031a1ef3fa4641c"
+      "bytes": 58362,
+      "sha256": "8fe2ed2a954534fcd31d889e69d2ca2e6dbf0f75ba0a68261f49ee6b66aa488e"
     },
     {
       "path": "plans/九期整期画面分配/02_探针02_四个按钮五千块.json",
-      "bytes": 23017,
-      "sha256": "9a634a66209f5fd33cfac96f1013d992382504399d5277ece309a070a1ba3bcb"
+      "bytes": 49468,
+      "sha256": "1e3534237f6e09762f9509ea8091c3b405cb6c3d53b25e4ced9c284e2904798f"
     },
     {
       "path": "plans/九期整期画面分配/02_探针02_四个按钮五千块.md",
-      "bytes": 24799,
-      "sha256": "4569566f0e429b2ec21da5022bb1b61426f5e33c07519b823cb3c472ce99ef8c"
+      "bytes": 60930,
+      "sha256": "1e9810a168dfcc8a3650a4f5ddd4141177ab1cae1682d4214d4ebf50299e4f56"
     },
     {
       "path": "plans/九期整期画面分配/03_探针03_空了的那一格.json",
-      "bytes": 20285,
-      "sha256": "c3823ebed1b39d4e2b6a41102c858f07b76ce94bd6bf717371b34b76288b1103"
+      "bytes": 41538,
+      "sha256": "8b574eab04546285724c2fcc5afa393818eeafc0003bfa1eacf7cfce48818445"
     },
     {
       "path": "plans/九期整期画面分配/03_探针03_空了的那一格.md",
-      "bytes": 23330,
-      "sha256": "86f27e0470430985813973ada4c67ddd125706a0db74463d0d3d5505eab59cb2"
+      "bytes": 52538,
+      "sha256": "c697aa82b09e258342a2e7bccdb12ff21e44b306b8eca02de57808c36cd37a3e"
     },
     {
       "path": "plans/九期整期画面分配/04_探针04_空着的椅子.json",
-      "bytes": 29505,
-      "sha256": "e9e673282138fc92a4e7924d3ef0dbfa598dc38ab9ad518c31a78ae7a63263f2"
+      "bytes": 50712,
+      "sha256": "40267dae1e0de73416b40c29d8da80302dd8dddd6e7cbd8f7d00ab6ae2bfd2d9"
     },
     {
       "path": "plans/九期整期画面分配/04_探针04_空着的椅子.md",
-      "bytes": 30650,
-      "sha256": "1cf058bdc3b3cd3ac575f9f498a9013416276becf8e7b26308101700b1ba4fc2"
+      "bytes": 60186,
+      "sha256": "5bd44a9bfeaaabd8a0bc3a4c690f0eb40e25efc6d6471f55725b3359131cd7bf"
     },
     {
       "path": "plans/九期整期画面分配/05_探针05_没人回的消息.json",
-      "bytes": 25817,
-      "sha256": "b744a35eed07e4e3ccc270f0ad897d69854987c2c1948b7b10f292b9bf4265aa"
+      "bytes": 39204,
+      "sha256": "806629cd8e03808a8052c79e8ad62cb0cb2f452d7ece23fa678afccb46011d93"
     },
     {
       "path": "plans/九期整期画面分配/05_探针05_没人回的消息.md",
-      "bytes": 27429,
-      "sha256": "c6a1ec0d72d01729d0f950a4b2371906001104c42069562d4ca3c9713b62b737"
+      "bytes": 46503,
+      "sha256": "8414d8cfa7534019a2d2a4e06899f2023054ba14b7d8a9e246de1cdd940c261e"
     },
     {
       "path": "plans/九期整期画面分配/06_实录02_村里的货上了手机.json",
-      "bytes": 28516,
-      "sha256": "ded88a6d4bc72e5938776b236e1824b6f57f0981cead219f543f2d7f1861b535"
+      "bytes": 53221,
+      "sha256": "3b41f06ce95bbdeb384f31624ba9d829294882cec52e3312c43e19dec8ba0e3d"
     },
     {
       "path": "plans/九期整期画面分配/06_实录02_村里的货上了手机.md",
-      "bytes": 30174,
-      "sha256": "e0f62ccd33abc94f93c4c7a3f5145e3a4bc86532be622e82c8827736943a393d"
+      "bytes": 64053,
+      "sha256": "d9c3ca73f15eb7e1145b380a059ef9d3cf303cafe394d674f54c5f7b1c6f3aa9"
     },
     {
       "path": "plans/九期整期画面分配/07_实录06_自己搭的收银台.json",
-      "bytes": 21937,
-      "sha256": "2a1f88caa73cbd427896515484821b42f813b472ea33210b040a4d4992bb38dc"
+      "bytes": 35768,
+      "sha256": "ffa9306b5f0211f8009a44b6a42073def8ecba3fbfb191fadc02d8f5c8adb212"
     },
     {
       "path": "plans/九期整期画面分配/07_实录06_自己搭的收银台.md",
-      "bytes": 25046,
-      "sha256": "1bc4b5154b0af4d690c0450febaf1f238acb4f03b1115024602348017d23c212"
+      "bytes": 44355,
+      "sha256": "1a42de70e424f67fb71c342816d262d50071cd558f2958b4e8b3319216dc0cfd"
     },
     {
       "path": "plans/九期整期画面分配/08_实录11_理发店的电话.json",
-      "bytes": 25698,
-      "sha256": "79d2d6bbbedcdde7157f6eafe3425c4c8ae23470f7cae889816b15afb622f431"
+      "bytes": 49948,
+      "sha256": "dabb608550a16e6a7069e7ed2ed0bde4ff8fb26e38ae62828eadfa3f09da54be"
     },
     {
       "path": "plans/九期整期画面分配/08_实录11_理发店的电话.md",
-      "bytes": 27062,
-      "sha256": "d66f5dcc950ead5915a8b87789e4238d179d0f27e7a9c141ea034a3299484ccc"
+      "bytes": 60203,
+      "sha256": "40a5cc5b45f440b5b42f97feab11fbfa2861c14c7a17a23063591c19fe79e7b0"
     },
     {
       "path": "plans/九期整期画面分配/09_拆解01_先问五个问题.json",
-      "bytes": 22796,
-      "sha256": "9316d7da514db8a84263c680aa942823b76e7ebffbd6a6ba7fa46bbf5cd56f21"
+      "bytes": 38236,
+      "sha256": "4b21966b8515ec7173d6d91e70ce63b1c553649abe9a0f5846a50fb7057530db"
     },
     {
       "path": "plans/九期整期画面分配/09_拆解01_先问五个问题.md",
-      "bytes": 25188,
-      "sha256": "0d13e0d40e8bec8748119f45c3cf9b848f025f767bcae0cfe0a3e5aa5ed0ed40"
+      "bytes": 46684,
+      "sha256": "603ae78e2d66cab6e89987c029b8299f943eb4845906f945e90409152b81f3e8"
     },
     {
       "path": "plans/九期整期画面分配_合订本.md",
-      "bytes": 240942,
-      "sha256": "817fa8c7bd15f645f110b840adb2e3c896f8984e76c562e5947307feb88e04b3"
+      "bytes": 494520,
+      "sha256": "3c55e97efb32985d05b08bcf775bdab68031945619fb60b1e18bb4b4029cfb8a"
     },
     {
       "path": "R6.0_更新文件清单.md",
@@ -215,28 +215,28 @@
     },
     {
       "path": "R6.0_视觉风暴与零穿帮规范.md",
-      "bytes": 7034,
-      "sha256": "e9d207538d3e40e1528464ac6923f0131c7a72700f82f5c53e8334f954427bed"
+      "bytes": 6988,
+      "sha256": "874852f7ef5599961b6160a84489e0c627dd777afe24db9db70d3827c3aae797"
     },
     {
       "path": "R6.1_更新文件清单.md",
-      "bytes": 2096,
-      "sha256": "a2941e47780dbdaa50faaf64409c2c2f2636b3e1943df9a354b0e15c9875d325"
+      "bytes": 2532,
+      "sha256": "014bb14d569389c7c9e415217b472a7b40872c2ba511823a3c7eff282ea71f7a"
     },
     {
       "path": "R6.1_视觉风暴与零穿帮规范.md",
-      "bytes": 7034,
-      "sha256": "e9d207538d3e40e1528464ac6923f0131c7a72700f82f5c53e8334f954427bed"
+      "bytes": 7964,
+      "sha256": "f3f2e699c2e9b080d1cd10c0ee916d19b83b8f34f87bac7d0080c140b396aeeb"
     },
     {
       "path": "README.md",
-      "bytes": 2771,
-      "sha256": "eaf17ce89deef9549c9b7fe231c4bcf869c63ba834eca00bf14b8231f4b179e9"
+      "bytes": 2987,
+      "sha256": "cb5d35a9d0819059cf121ae53d97bc76560d1d27759a9bdb4468729c776f87d2"
     },
     {
       "path": "START.txt",
-      "bytes": 2870,
-      "sha256": "64b52fb5644a16da43eeb19ed88013aa85f533f4239d5015aa6c11414611cebb"
+      "bytes": 3073,
+      "sha256": "3306ded8571fa95d526d0bdd9dc47379031fc83695ddfebd6f37ae5e98ab7c94"
     },
     {
       "path": "tools/align_sfx_words.py",
@@ -245,8 +245,8 @@
     },
     {
       "path": "tools/check_r60_plans.py",
-      "bytes": 8371,
-      "sha256": "43283f6a62adcc40daae25b674448ce8dbd4b6c76b44cc82d85c9df07670d811"
+      "bytes": 9849,
+      "sha256": "9a37aa585511d6dd66e5db6becb3a0c3dad77f72262ab0fb5da0c25a5b09043e"
     },
     {
       "path": "tools/model-duration-evidence.json",
@@ -270,23 +270,23 @@
     },
     {
       "path": "tutorial/00_先读我.md",
-      "bytes": 6310,
-      "sha256": "604b82e2e0ffa07fa3e819f7c3644abbba4bbabbef527132b1b950c724c4e1a6"
+      "bytes": 6413,
+      "sha256": "547c189afe7c6f1ea98252752ce865bc521127fe830a1e30887c03bc6f9c5815"
     },
     {
       "path": "tutorial/00_先读我.txt",
-      "bytes": 6310,
-      "sha256": "604b82e2e0ffa07fa3e819f7c3644abbba4bbabbef527132b1b950c724c4e1a6"
+      "bytes": 6413,
+      "sha256": "547c189afe7c6f1ea98252752ce865bc521127fe830a1e30887c03bc6f9c5815"
     },
     {
       "path": "tutorial/01_直接复制给AI的启动词.txt",
-      "bytes": 2945,
-      "sha256": "bcc9ed7c2b3940ce26cb10e35ee0029bfc2291b588a31a564c63fc72c28086a1"
+      "bytes": 3146,
+      "sha256": "24786d24345567ce4c0fff17415e3e940e0029ba88bb4ce0af85f1b64f705a9e"
     },
     {
       "path": "tutorial/02_收到视频后的完整流程.md",
-      "bytes": 15606,
-      "sha256": "d6d7e5dd8538d3e819d1db66f2ae8e38e56b2f915ac0273a96e1ec98f72da80e"
+      "bytes": 15652,
+      "sha256": "189acffa561b730dda76543cc521a62d818226e604a0c1c119bb514e028cfa91"
     },
     {
       "path": "tutorial/03_任务与验收模板/Claude动画与BGM任务模板.md",
@@ -300,8 +300,8 @@
     },
     {
       "path": "tutorial/03_任务与验收模板/生成方案模板.md",
-      "bytes": 8657,
-      "sha256": "183ec290d9336729718d1549f728280b47945235fbf9131a7c815f7ab00403ef"
+      "bytes": 9313,
+      "sha256": "3865bc77becb324f622531062a050271feeb2016c67d84f8ca5ea7e78967c0fe"
     },
     {
       "path": "tutorial/03_任务与验收模板/项目记录模板.md",
@@ -325,23 +325,23 @@
     },
     {
       "path": "tutorial/05_创作参考/15支视频物体视觉方法/00_开始阅读.md",
-      "bytes": 3340,
-      "sha256": "251a205508c15c5c901964444f8be02d61fd28416939bc8cf05e7fb99f3fb080"
+      "bytes": 4166,
+      "sha256": "4f61fe07daf032e33643ce958c0f4aefd4e3973a142015bb9007ff6ab4a5a314"
     },
     {
       "path": "tutorial/05_创作参考/15支视频物体视觉方法/01_给AI的使用说明.md",
-      "bytes": 3589,
-      "sha256": "5af75fb608ea62d3824e99718845974a5b24f3b221a1120e812d34d99884b23a"
+      "bytes": 4476,
+      "sha256": "c6fc42bea5046f8f9f441184aef75e8b404a856418bebfa2339e9c25c96129ba"
     },
     {
       "path": "tutorial/05_创作参考/15支视频物体视觉方法/02_物体空间与镜头表现.md",
-      "bytes": 6609,
-      "sha256": "9c82bab7111692c0b9953e6bcb5633a92c14aba5fe3a6672e64a7155bdb2163a"
+      "bytes": 7324,
+      "sha256": "2e50db0183e3a471228fb3e9ea8b847ac75bf02278fff5873b57f50152f5c4d8"
     },
     {
       "path": "tutorial/05_创作参考/15支视频物体视觉方法/03_主审范围与修订记录.md",
-      "bytes": 8268,
-      "sha256": "bfa07e3e7ee686a2ddd31cdfd50a5cb9b2b93446ffe85a3aa91336cf1da6111b"
+      "bytes": 8731,
+      "sha256": "d7259f43f1c6aee2d59678214d3ddd6eb016e3207abd686a8af02edccd9039e6"
     },
     {
       "path": "tutorial/05_创作参考/15支视频物体视觉方法/04_素材范围与核查索引.md",
@@ -365,8 +365,8 @@
     },
     {
       "path": "tutorial/05_创作参考/15支视频物体视觉方法/按需故事主线/BV1DZHU6VENm/00_故事主线.md",
-      "bytes": 8437,
-      "sha256": "5dc9e047cd14dad8ed2972512ebd4a6e13d7fade806371d73505031c49482431"
+      "bytes": 8662,
+      "sha256": "ab5080716a8e867c3f634de6099918774e52fc2379f1e999d13475376fab68ac"
     },
     {
       "path": "tutorial/05_创作参考/15支视频物体视觉方法/按需故事主线/BV1DZHU6VENm/索引.md",
@@ -405,8 +405,8 @@
     },
     {
       "path": "tutorial/05_创作参考/15支视频物体视觉方法/按需故事主线/BV1pMht68EDU/00_故事主线.md",
-      "bytes": 8211,
-      "sha256": "a466a5f7c56f22170c51fd485db3e22f592a7e4446b2586782a3205d4a67441c"
+      "bytes": 8400,
+      "sha256": "c32af9aa674ee3962d915516d4179d5f11fbe2b57335ff66b13f1ce87b49c51f"
     },
     {
       "path": "tutorial/05_创作参考/15支视频物体视觉方法/按需故事主线/BV1pMht68EDU/索引.md",
@@ -435,8 +435,8 @@
     },
     {
       "path": "tutorial/05_创作参考/15支视频物体视觉方法/按需故事主线/BV1Uw826pE7J/00_故事主线.md",
-      "bytes": 9533,
-      "sha256": "9058d878b95fd08b45e1243d7b38a10934182b4c4b046428f52d056384d9a987"
+      "bytes": 9713,
+      "sha256": "25fb0a1119abc235f20329ad4c8b562c40558741906d551de738fd54318bfd10"
     },
     {
       "path": "tutorial/05_创作参考/15支视频物体视觉方法/按需故事主线/BV1Uw826pE7J/索引.md",
@@ -455,8 +455,8 @@
     },
     {
       "path": "tutorial/05_创作参考/动作提示词工程_研究综述.md",
-      "bytes": 13798,
-      "sha256": "da9662d6b81ed0b5f16e9ac181bb3e5bf1087c19a9bac8c14a7cdd2ed22409eb"
+      "bytes": 13655,
+      "sha256": "5aa035f1982c2b2e9da59363a445abdbfe7f4f994b6c9c2715c886b0ddf74d16"
     },
     {
       "path": "tutorial/05_创作参考/研究来源/00_来源索引.md",
@@ -485,8 +485,8 @@
     },
     {
       "path": "tutorial/05_创作参考/视觉构思参考.md",
-      "bytes": 10483,
-      "sha256": "d923479d0a85f5e0a9b9e3e7638561de12085888a8517f1bdcdb13fb6416ed0d"
+      "bytes": 10383,
+      "sha256": "fc7e39601df5a51b8361f99284d7c96b46fd013720c6836e15956a1889dd5d4b"
     },
     {
       "path": "tutorial/05_创作参考/视觉语言百科_v2.2/00_开始使用.md",
@@ -495,8 +495,8 @@
     },
     {
       "path": "tutorial/05_创作参考/视觉语言百科_v2.2/01_含义与构思.md",
-      "bytes": 8590,
-      "sha256": "a5d0a1ab6cff3c8ba1030c3b9a6c506c6c8b2ca24ed0a8516395120a807146e0"
+      "bytes": 8499,
+      "sha256": "0807e2202fe5b00b5015a3b5021e8af704acca97a56cdffb9e0233f709044d02"
     },
     {
       "path": "tutorial/05_创作参考/视觉语言百科_v2.2/02_关系词典.md",
@@ -555,8 +555,8 @@
     },
     {
       "path": "tutorial/05_创作参考/连续动作设计与视频提示词.md",
-      "bytes": 10291,
-      "sha256": "288303fc70f0eb81618b2a06be99a88482c84169e79f60f950c6a3734737005b"
+      "bytes": 10203,
+      "sha256": "0d6fdd16c5d1954a9155267f901b49795b3ddfe1dbabae5e54be72d531f301b8"
     },
     {
       "path": "tutorial/06_新电脑工具与素材检查.md",
@@ -565,13 +565,13 @@
     },
     {
       "path": "tutorial/AGENTS.md",
-      "bytes": 5035,
-      "sha256": "ae03b623f6e9c247c3ff3ca0658013045477127cca3b6a8a6c0fdaba9ed1eaef"
+      "bytes": 5170,
+      "sha256": "3be5722fee6bd4c785778473116d73d94e4f58db7da60178e31e53c523c69b76"
     },
     {
       "path": "tutorial/README.md",
-      "bytes": 2704,
-      "sha256": "2053dc85d9866a44429182a484f3073086c49a55dd02b43e7d698b7933081c7b"
+      "bytes": 2851,
+      "sha256": "bb898b868f2aa1673a76a71e780472a7ab9c4921949575972fa14f39f46f8b2f"
     },
     {
       "path": "tutorial/skills/client-scene-recreation/agents/openai.yaml",
@@ -645,13 +645,13 @@
     },
     {
       "path": "tutorial/skills/he-aotang-claude-handoff/SKILL.md",
-      "bytes": 6095,
-      "sha256": "0d94fb1c6f1ae216467eb316353a1dc490c1aa6366fcf68e018c3fbc1b99241e"
+      "bytes": 6039,
+      "sha256": "b0fa713f3a2aaa017c4f00666cdc455db6eca015ecfa4953c63fa582d0bfb720"
     },
     {
       "path": "tutorial/交付清单.json",
-      "bytes": 15999,
-      "sha256": "2dc63e52fb844f5cf7f7ac06b5534b6672579af1d4920c42172514ef73b1807e"
+      "bytes": 15601,
+      "sha256": "cc00ebe650ccbb0cb6f2209ef76c2c5da034f4c7feace14404118e09f843866b"
     }
   ]
 }

@@ -3,6 +3,7 @@ from pathlib import Path
 import json
 import argparse
 import math
+import re
 import contextlib
 import io
 import tempfile
@@ -56,6 +57,28 @@ def validate(d):
             'A_task_ids':len(a_ids),'A_continuous_runs':a_runs,'slots':len(slots),
             'timing_basis':d['timing_basis']}
 
+def validate_g_prompts(d, require_all=False):
+    cjk_re = re.compile(r'[\u4e00-\u9fff]')
+    stale = ('自主构思', '不限定固定道具', '拉丝黑钢', '磨旧黄铜', '绝无手指', '默认不新增人物')
+    prompt_fields = ('first_frame_prompt', 'last_frame_prompt', 'video_prompt')
+    checked = 0
+    for s in d['slots']:
+        if s['mode'] != 'G':
+            continue
+        for t in stale:
+            assert t not in s.get('action', ''), ('stale term in action', s['task_id'], t)
+        if require_all:
+            assert isinstance(s.get('visual_thesis'), str) and s['visual_thesis'].strip(), ('missing visual_thesis', s['task_id'])
+        for k in prompt_fields:
+            if require_all or k in s:
+                v = s.get(k)
+                assert isinstance(v, str) and len(cjk_re.findall(v)) >= 200, ('G prompt < 200 CJK chars', s['task_id'], k, len(cjk_re.findall(v or '')))
+                for t in stale:
+                    assert t not in v, ('stale term in prompt', s['task_id'], k, t)
+                checked += 1
+    return checked
+
+
 def validate_sfx(d, require_aligned=False):
     a_slots={(s['task_id'],s['start_frame']):s for s in d['slots'] if s['mode']=='A'}
     event_slots=set();pending=0
@@ -88,6 +111,7 @@ def main(require_aligned=False, plan=None):
         if i in EXPECTED:assert d['total_frames']==EXPECTED[i] and d['timing_basis']=='existing'
         elif i==1:assert d['timing_basis']=='estimated'
         stats=validate(d);stats['title']=d['title']
+        stats['G_prompts_checked']=validate_g_prompts(d, require_all=(i is not None))
         stats['pending_SFX_events']=validate_sfx(d,require_aligned)
         # old_section is an auditable source anchor, not a new timeline boundary.
         missing=[s for s in d['slots'] if s.get('old_section') in REQUIRED.get(i,[]) and s['mode']=='P'
@@ -118,6 +142,10 @@ def self_check():
     for value in (5,6.0):
         bad=json.loads(json.dumps(d));bad['slots'][0]['generation_seconds']=value
         rejected(lambda:validate(bad))
+    d['slots'][0].update(visual_thesis='test thesis',first_frame_prompt='测'*200,last_frame_prompt='测'*200,video_prompt='测'*200)
+    assert validate_g_prompts(d,True)==3
+    bad=json.loads(json.dumps(d));bad['slots'][0]['first_frame_prompt']='太短'
+    rejected(lambda:validate_g_prompts(bad,True))
     d['sfx_events']=[dict(task_id='450',slot_start=450,anchor='三单',visual_event='订单落位',sound='pop',alignment_status='pending_word_alignment',local_frame=None,global_frame=None,sample_48k=None)]
     assert validate_sfx(d)==1
     rejected(lambda:validate_sfx(d,True))

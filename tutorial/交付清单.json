@@ -16,23 +16,23 @@
     },
     {
       "path": "00_先读我.md",
-      "bytes": 6310,
-      "sha256": "604b82e2e0ffa07fa3e819f7c3644abbba4bbabbef527132b1b950c724c4e1a6"
+      "bytes": 6413,
+      "sha256": "547c189afe7c6f1ea98252752ce865bc521127fe830a1e30887c03bc6f9c5815"
     },
     {
       "path": "00_先读我.txt",
-      "bytes": 6310,
-      "sha256": "604b82e2e0ffa07fa3e819f7c3644abbba4bbabbef527132b1b950c724c4e1a6"
+      "bytes": 6413,
+      "sha256": "547c189afe7c6f1ea98252752ce865bc521127fe830a1e30887c03bc6f9c5815"
     },
     {
       "path": "01_直接复制给AI的启动词.txt",
-      "bytes": 2945,
-      "sha256": "bcc9ed7c2b3940ce26cb10e35ee0029bfc2291b588a31a564c63fc72c28086a1"
+      "bytes": 3146,
+      "sha256": "24786d24345567ce4c0fff17415e3e940e0029ba88bb4ce0af85f1b64f705a9e"
     },
     {
       "path": "02_收到视频后的完整流程.md",
-      "bytes": 15606,
-      "sha256": "d6d7e5dd8538d3e819d1db66f2ae8e38e56b2f915ac0273a96e1ec98f72da80e"
+      "bytes": 15652,
+      "sha256": "189acffa561b730dda76543cc521a62d818226e604a0c1c119bb514e028cfa91"
     },
     {
       "path": "03_任务与验收模板/Claude动画与BGM任务模板.md",
@@ -46,8 +46,8 @@
     },
     {
       "path": "03_任务与验收模板/生成方案模板.md",
-      "bytes": 8657,
-      "sha256": "183ec290d9336729718d1549f728280b47945235fbf9131a7c815f7ab00403ef"
+      "bytes": 9313,
+      "sha256": "3865bc77becb324f622531062a050271feeb2016c67d84f8ca5ea7e78967c0fe"
     },
     {
       "path": "03_任务与验收模板/项目记录模板.md",
@@ -71,23 +71,23 @@
     },
     {
       "path": "05_创作参考/15支视频物体视觉方法/00_开始阅读.md",
-      "bytes": 3340,
-      "sha256": "251a205508c15c5c901964444f8be02d61fd28416939bc8cf05e7fb99f3fb080"
+      "bytes": 4166,
+      "sha256": "4f61fe07daf032e33643ce958c0f4aefd4e3973a142015bb9007ff6ab4a5a314"
     },
     {
       "path": "05_创作参考/15支视频物体视觉方法/01_给AI的使用说明.md",
-      "bytes": 3589,
-      "sha256": "5af75fb608ea62d3824e99718845974a5b24f3b221a1120e812d34d99884b23a"
+      "bytes": 4476,
+      "sha256": "c6fc42bea5046f8f9f441184aef75e8b404a856418bebfa2339e9c25c96129ba"
     },
     {
       "path": "05_创作参考/15支视频物体视觉方法/02_物体空间与镜头表现.md",
-      "bytes": 6609,
-      "sha256": "9c82bab7111692c0b9953e6bcb5633a92c14aba5fe3a6672e64a7155bdb2163a"
+      "bytes": 7324,
+      "sha256": "2e50db0183e3a471228fb3e9ea8b847ac75bf02278fff5873b57f50152f5c4d8"
     },
     {
       "path": "05_创作参考/15支视频物体视觉方法/03_主审范围与修订记录.md",
-      "bytes": 8268,
-      "sha256": "bfa07e3e7ee686a2ddd31cdfd50a5cb9b2b93446ffe85a3aa91336cf1da6111b"
+      "bytes": 8731,
+      "sha256": "d7259f43f1c6aee2d59678214d3ddd6eb016e3207abd686a8af02edccd9039e6"
     },
     {
       "path": "05_创作参考/15支视频物体视觉方法/04_素材范围与核查索引.md",
@@ -111,8 +111,8 @@
     },
     {
       "path": "05_创作参考/15支视频物体视觉方法/按需故事主线/BV1DZHU6VENm/00_故事主线.md",
-      "bytes": 8437,
-      "sha256": "5dc9e047cd14dad8ed2972512ebd4a6e13d7fade806371d73505031c49482431"
+      "bytes": 8662,
+      "sha256": "ab5080716a8e867c3f634de6099918774e52fc2379f1e999d13475376fab68ac"
     },
     {
       "path": "05_创作参考/15支视频物体视觉方法/按需故事主线/BV1DZHU6VENm/索引.md",
@@ -151,8 +151,8 @@
     },
     {
       "path": "05_创作参考/15支视频物体视觉方法/按需故事主线/BV1pMht68EDU/00_故事主线.md",
-      "bytes": 8211,
-      "sha256": "a466a5f7c56f22170c51fd485db3e22f592a7e4446b2586782a3205d4a67441c"
+      "bytes": 8400,
+      "sha256": "c32af9aa674ee3962d915516d4179d5f11fbe2b57335ff66b13f1ce87b49c51f"
     },
     {
       "path": "05_创作参考/15支视频物体视觉方法/按需故事主线/BV1pMht68EDU/索引.md",
@@ -181,8 +181,8 @@
     },
     {
       "path": "05_创作参考/15支视频物体视觉方法/按需故事主线/BV1Uw826pE7J/00_故事主线.md",
-      "bytes": 9533,
-      "sha256": "9058d878b95fd08b45e1243d7b38a10934182b4c4b046428f52d056384d9a987"
+      "bytes": 9713,
+      "sha256": "25fb0a1119abc235f20329ad4c8b562c40558741906d551de738fd54318bfd10"
     },
     {
       "path": "05_创作参考/15支视频物体视觉方法/按需故事主线/BV1Uw826pE7J/索引.md",
@@ -201,8 +201,8 @@
     },
     {
       "path": "05_创作参考/动作提示词工程_研究综述.md",
-      "bytes": 13798,
-      "sha256": "da9662d6b81ed0b5f16e9ac181bb3e5bf1087c19a9bac8c14a7cdd2ed22409eb"
+      "bytes": 13655,
+      "sha256": "5aa035f1982c2b2e9da59363a445abdbfe7f4f994b6c9c2715c886b0ddf74d16"
     },
     {
       "path": "05_创作参考/研究来源/00_来源索引.md",
@@ -231,8 +231,8 @@
     },
     {
       "path": "05_创作参考/视觉构思参考.md",
-      "bytes": 10483,
-      "sha256": "d923479d0a85f5e0a9b9e3e7638561de12085888a8517f1bdcdb13fb6416ed0d"
+      "bytes": 10383,
+      "sha256": "fc7e39601df5a51b8361f99284d7c96b46fd013720c6836e15956a1889dd5d4b"
     },
     {
       "path": "05_创作参考/视觉语言百科_v2.2/00_开始使用.md",
@@ -241,8 +241,8 @@
     },
     {
       "path": "05_创作参考/视觉语言百科_v2.2/01_含义与构思.md",
-      "bytes": 8590,
-      "sha256": "a5d0a1ab6cff3c8ba1030c3b9a6c506c6c8b2ca24ed0a8516395120a807146e0"
+      "bytes": 8499,
+      "sha256": "0807e2202fe5b00b5015a3b5021e8af704acca97a56cdffb9e0233f709044d02"
     },
     {
       "path": "05_创作参考/视觉语言百科_v2.2/02_关系词典.md",
@@ -301,8 +301,8 @@
     },
     {
       "path": "05_创作参考/连续动作设计与视频提示词.md",
-      "bytes": 10291,
-      "sha256": "288303fc70f0eb81618b2a06be99a88482c84169e79f60f950c6a3734737005b"
+      "bytes": 10203,
+      "sha256": "0d6fdd16c5d1954a9155267f901b49795b3ddfe1dbabae5e54be72d531f301b8"
     },
     {
       "path": "06_新电脑工具与素材检查.md",
@@ -311,13 +311,13 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 5035,
-      "sha256": "ae03b623f6e9c247c3ff3ca0658013045477127cca3b6a8a6c0fdaba9ed1eaef"
+      "bytes": 5170,
+      "sha256": "3be5722fee6bd4c785778473116d73d94e4f58db7da60178e31e53c523c69b76"
     },
     {
       "path": "README.md",
-      "bytes": 2704,
-      "sha256": "2053dc85d9866a44429182a484f3073086c49a55dd02b43e7d698b7933081c7b"
+      "bytes": 2851,
+      "sha256": "bb898b868f2aa1673a76a71e780472a7ab9c4921949575972fa14f39f46f8b2f"
     },
     {
       "path": "skills/client-scene-recreation/agents/openai.yaml",
@@ -391,8 +391,8 @@
     },
     {
       "path": "skills/he-aotang-claude-handoff/SKILL.md",
-      "bytes": 6095,
-      "sha256": "0d94fb1c6f1ae216467eb316353a1dc490c1aa6366fcf68e018c3fbc1b99241e"
+      "bytes": 6039,
+      "sha256": "b0fa713f3a2aaa017c4f00666cdc455db6eca015ecfa4953c63fa582d0bfb720"
     }
   ]
 }

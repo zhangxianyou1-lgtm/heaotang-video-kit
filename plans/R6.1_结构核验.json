@@ -11,6 +11,7 @@
     "slots": 34,
     "timing_basis": "estimated",
     "title": "01_探针01_看不见的货架",
+    "G_prompts_checked": 27,
     "pending_SFX_events": 24,
     "A_reference_met": true
   },
@@ -26,6 +27,7 @@
     "slots": 31,
     "timing_basis": "existing",
     "title": "02_探针02_四个按钮五千块",
+    "G_prompts_checked": 30,
     "pending_SFX_events": 25,
     "A_reference_met": true
   },
@@ -41,6 +43,7 @@
     "slots": 30,
     "timing_basis": "existing",
     "title": "03_探针03_空了的那一格",
+    "G_prompts_checked": 24,
     "pending_SFX_events": 20,
     "A_reference_met": true
   },
@@ -56,6 +59,7 @@
     "slots": 37,
     "timing_basis": "existing",
     "title": "探针04_空着的椅子",
+    "G_prompts_checked": 24,
     "pending_SFX_events": 38,
     "A_reference_met": true
   },
@@ -71,6 +75,7 @@
     "slots": 29,
     "timing_basis": "existing",
     "title": "探针05_没人回的消息",
+    "G_prompts_checked": 15,
     "pending_SFX_events": 37,
     "A_reference_met": true
   },
@@ -86,6 +91,7 @@
     "slots": 37,
     "timing_basis": "existing",
     "title": "实录02_村里的货上了手机",
+    "G_prompts_checked": 27,
     "pending_SFX_events": 34,
     "A_reference_met": true
   },
@@ -101,6 +107,7 @@
     "slots": 33,
     "timing_basis": "existing",
     "title": "实录06《自己搭的收银台》",
+    "G_prompts_checked": 15,
     "pending_SFX_events": 23,
     "A_reference_met": true
   },
@@ -116,6 +123,7 @@
     "slots": 36,
     "timing_basis": "existing",
     "title": "实录11《理发店的电话》",
+    "G_prompts_checked": 24,
     "pending_SFX_events": 30,
     "A_reference_met": true
   },
@@ -131,6 +139,7 @@
     "slots": 33,
     "timing_basis": "existing",
     "title": "拆解01《先问五个问题》",
+    "G_prompts_checked": 15,
     "pending_SFX_events": 25,
     "A_reference_met": true
   }
