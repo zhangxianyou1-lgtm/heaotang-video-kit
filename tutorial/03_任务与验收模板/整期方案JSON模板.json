@@ -1,0 +1,241 @@
+{
+  "is_template": true,
+  "title": "【填写本期标题，创建真实方案时请删除 is_template 字段】",
+  "total_frames": 7455,
+  "timing_basis": "estimated",
+  "branding_plan": {
+    "intro_asset": "01_栏目片头_真实需求探针.mp4（按栏目选 01/02/03，4.0–4.5s；冲极致完播期可省去前插）",
+    "intro_frames": 120,
+    "outro_asset": "00_账号片头_和奥堂AIclub.mp4（片尾固定接 4.5s / 135帧，配 音效/00_账号片头_音效.wav）",
+    "outro_frames": 135,
+    "has_audio": true,
+    "placement_rule": "严禁放入 [0,450) 前15秒锁客区；前段默认在第一段悬念反问句收尾气口插 120–135帧 B_intro，片尾在末5秒真人收束后接 135帧(4.5s) B_outro"
+  },
+  "slots": [
+    {
+      "start_frame": 0,
+      "end_frame": 180,
+      "mode": "G",
+      "task_id": "G01",
+      "quote": "【00:00-00:06 开场第一句原声/文稿（与封面同一主语零换挡）】",
+      "visual_thesis": "【从当期口播V1原生推导的第二层意思命题：第0.0秒首帧即同场立住超现实尺度反差或结构异变】",
+      "action": "【五步单向不可逆动作链：奇观蓄势初态 → 物理触发接触 → 主体单向剧变推进 → 次级物理反应 → 终态停留】",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 6,
+      "duration_exception_reason": "6秒完整开场首镜，同一三维空间一次走完触发、主变化与结果定格",
+      "first_frame_prompt": "【正式方案须满≥200纯中文字符；第0.0秒即立住奇观；严锁9:16竖屏；零工程词污染（禁写字幕/y1440/后期图层/乱码/假字）】",
+      "last_frame_prompt": "【正式方案须满≥200纯中文字符；引用首帧同源编辑，严锁与首帧完全一致的9:16像素尺寸；核验触发接触与物理终态双闭环】",
+      "video_prompt": "【正式方案须满≥200纯中文字符；按起势触发、加速主剧变、余动阻尼停留三拍写出连续机械/物理路径，防透明淡化】"
+    },
+    {
+      "start_frame": 180,
+      "end_frame": 360,
+      "mode": "P",
+      "task_id": "P_open",
+      "quote": "【00:06-00:12 真人露脸建立关系与承诺】",
+      "action": "真人正对镜头建立关系与观看承诺，原声不断"
+    },
+    {
+      "start_frame": 360,
+      "end_frame": 450,
+      "mode": "R",
+      "task_id": "R_preview",
+      "quote": "【00:12-00:15 核心实操结果高光预览（若为真实新闻期可用 D 预览）】",
+      "action": "展示3秒核心仿真软件/真机操作结果高光预览，叠角标“稍后演示”"
+    },
+    {
+      "start_frame": 450,
+      "end_frame": 600,
+      "mode": "P",
+      "task_id": "P_hook_end",
+      "quote": "【00:15-00:20 钩子悬念反问收束句】",
+      "action": "真人完成第一段钩子反问收尾"
+    },
+    {
+      "start_frame": 600,
+      "end_frame": 720,
+      "mode": "B",
+      "task_id": "B_intro",
+      "branding_asset": "01_栏目片头_真实需求探针",
+      "has_audio": true,
+      "skip_generation": true,
+      "quote": "【4秒栏目片头（自带画面与音效，不念；接在钩子悬念句收尾气口后）】",
+      "action": "插入现成4秒栏目片头（Claude主轨/BGM/SFX在此区间保持全零静音）"
+    },
+    {
+      "start_frame": 720,
+      "end_frame": 1560,
+      "mode": "A",
+      "task_id": "A01",
+      "quote": "【算账/规则段完整口播原句】",
+      "action": "【交代核心商业关系与必要事实；具体媒介质感、字长在场景里与镜头运动由Claude子智能体零预设自由创造，并预留右下角小窗开口】",
+      "pip_window": {
+        "shape": "rect",
+        "x": 780,
+        "y": 1080,
+        "w": 240,
+        "h": 330,
+        "bottom_y": 1410
+      }
+    },
+    {
+      "start_frame": 1560,
+      "end_frame": 1710,
+      "mode": "G",
+      "task_id": "G02a",
+      "quote": "【中段奇观对应口播原句】",
+      "visual_thesis": "【本镜独立视觉命题】",
+      "action": "【五步单向不可逆动作链（G段全屏纯净不挂小窗）】",
+      "generation_model": "MiniMax-H3",
+      "generation_seconds": 5,
+      "first_frame_prompt": "【≥200纯中文字符可见细节】",
+      "last_frame_prompt": "【≥200纯中文字符同源尾帧细节】",
+      "video_prompt": "【≥200纯中文字符运动细节】"
+    },
+    {
+      "start_frame": 1710,
+      "end_frame": 2010,
+      "mode": "P",
+      "task_id": "P_mid1",
+      "quote": "【中段第一处转折反问（单次连续P≤360帧/12秒）】",
+      "action": "真人直视镜头替观众当面抬杠并引出下一步"
+    },
+    {
+      "start_frame": 2010,
+      "end_frame": 2970,
+      "mode": "A",
+      "task_id": "A02",
+      "quote": "【多案例或纵向1.0→2.0对比段口播原句】",
+      "action": "【核心对比关系与金额口径；Claude独立子智能体自由创造（错开A01媒介风格），预留左下角小窗开口】",
+      "pip_window": {
+        "shape": "square",
+        "x": 60,
+        "y": 1150,
+        "w": 260,
+        "h": 260,
+        "bottom_y": 1410
+      }
+    },
+    {
+      "start_frame": 2970,
+      "end_frame": 3270,
+      "mode": "P",
+      "task_id": "P_mid2",
+      "quote": "【切入实操前真人引子】",
+      "action": "真人交代接下来实机演示看哪一处关键变化"
+    },
+    {
+      "start_frame": 3270,
+      "end_frame": 4230,
+      "mode": "R",
+      "task_id": "R01",
+      "quote": "【高逼真客户仿真软件/真机录屏演示段口播原句】",
+      "action": "【调用client-scene-recreation构建以假乱真的行业仿真系统并真实录屏，预留右下角小窗开口；若点名真实新闻/人物则改用 mode: D 并填满3个 public_candidates】",
+      "pip_window": {
+        "shape": "rect",
+        "x": 780,
+        "y": 1080,
+        "w": 240,
+        "h": 330,
+        "bottom_y": 1410
+      }
+    },
+    {
+      "start_frame": 4230,
+      "end_frame": 4530,
+      "mode": "P",
+      "task_id": "P_mid3",
+      "quote": "【演示后真人点破意外增量账】",
+      "action": "真人直视镜头给出关键商业判断"
+    },
+    {
+      "start_frame": 4530,
+      "end_frame": 5850,
+      "mode": "A",
+      "task_id": "A03",
+      "quote": "【规则拆解段口播原句】",
+      "action": "【核心拆解逻辑；Claude独立子智能体自由创造】"
+    },
+    {
+      "start_frame": 5850,
+      "end_frame": 7020,
+      "mode": "A",
+      "task_id": "A04",
+      "quote": "【跨场景规律点破段口播原句】",
+      "action": "【跨场景结构共性与边界；Claude独立子智能体自由创造】",
+      "pip_window": {
+        "shape": "circle",
+        "x": 800,
+        "y": 1170,
+        "w": 240,
+        "h": 240,
+        "bottom_y": 1410
+      }
+    },
+    {
+      "start_frame": 7020,
+      "end_frame": 7320,
+      "mode": "P",
+      "task_id": "P_end",
+      "quote": "【末段10秒真人价值加冕＋系列追更尾钩（含最后5秒[7170,7320)收束判断，连续P≤12秒）】",
+      "action": "真人完整收束全片判断并抛出下一期追更钩子"
+    },
+    {
+      "start_frame": 7320,
+      "end_frame": 7455,
+      "mode": "B",
+      "task_id": "B_outro",
+      "branding_asset": "00_账号片头_和奥堂AIclub",
+      "has_audio": true,
+      "skip_generation": true,
+      "quote": "【片尾4.5秒和奥堂总Logo收束】",
+      "action": "接入 00_账号片头_和奥堂AIclub.mp4 前135帧(4.5s)＋匹配音效，定格锁住关注"
+    }
+  ],
+  "sfx_events": [
+    {
+      "task_id": "A01",
+      "slot_start": 720,
+      "anchor": "【该A槽口播真实说出的关键词】",
+      "visual_event": "【Claude子智能体按自创画面回填的视觉动作】",
+      "sound": "【拟用短促音效】",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A02",
+      "slot_start": 2010,
+      "anchor": "【关键词】",
+      "visual_event": "【视觉子事件】",
+      "sound": "【音效】",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A03",
+      "slot_start": 4530,
+      "anchor": "【关键词】",
+      "visual_event": "【视觉子事件】",
+      "sound": "【音效】",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    },
+    {
+      "task_id": "A04",
+      "slot_start": 5850,
+      "anchor": "【关键词】",
+      "visual_event": "【视觉子事件】",
+      "sound": "【音效】",
+      "alignment_status": "pending_word_alignment",
+      "local_frame": null,
+      "global_frame": null,
+      "sample_48k": null
+    }
+  ]
+}

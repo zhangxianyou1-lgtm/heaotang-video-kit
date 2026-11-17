@@ -1,7 +1,7 @@
 """Align pending_word_alignment SFX events against pipeline words.json candidates.
 
 Usage:
-  python tools/align_sfx_words.py --plan plans/九期整期画面分配/02_探针02_四个按钮五千块.json --words jobs/current/words.json
+  python tools/align_sfx_words.py --plan jobs/current/plan.json --words jobs/current/words.json
   python tools/align_sfx_words.py --self-check
 """
 import argparse
@@ -85,7 +85,7 @@ def self_check():
     assert out[0]["candidate_global_frame"] == 345
     assert out[0]["candidate_local_frame"] == 45
     assert out[0]["candidate_sample_48k"] == 345 * 1600
-    # Published nine-episode plans store the end in slots and use anchor.
+    # Standard R6.1 plans store the end bound in slots and use the anchor field.
     plan['slots'] = [dict(task_id='A01', start_frame=300, end_frame=600, mode='A')]
     ev = plan['sfx_events'][0]
     ev['anchor'] = ev.pop('anchor_text')
