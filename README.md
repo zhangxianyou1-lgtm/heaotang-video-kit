@@ -27,7 +27,6 @@ python tools/check_r60_plans.py
 python tools/check_r_sim_clean.py --self-check
 python tools/align_sfx_words.py --self-check
 python pipeline/test_pipeline.py
-python agent-workflow/scripts/test_workflow.py
 
 # 录屏前扫描 R 类仿真软件前端源码（拦截“交互演示/示例数据/演示账号/原稿口径/无真实支付”等叠甲穿帮词）
 python tools/check_r_sim_clean.py "jobs/本期名称/sim_ui/"
