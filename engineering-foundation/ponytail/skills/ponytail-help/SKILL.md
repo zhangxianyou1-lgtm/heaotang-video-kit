@@ -3,8 +3,8 @@ name: ponytail-help
 description: >
   Quick reference for ponytail levels, skills and commands. One-shot display.
   Use for /ponytail-help, "ponytail help", "how do I use ponytail".
+disable-model-invocation: true
 ---
-
 # Ponytail Help
 
 Display this reference card when invoked. One-shot, do NOT change mode,

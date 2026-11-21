@@ -2,4 +2,4 @@ interface:
   display_name: "Poteto: create-verification-skill"
   short_description: "Generate a project-local verification skill that drives your app the way a user does — any language, framework, or platform. Use for /create"
 policy:
-  allow_implicit_invocation: false
+  allow_implicit_invocation: true

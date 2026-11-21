@@ -2,7 +2,6 @@
 name: poteto-principles
 description: "Lauren Tan (@poteto)'s 24 high-trust engineering principles from pstack (Prove It Works, Subtract Before You Add, Laziness Protocol, Attack the Premise, Build the Lever, Encode Lessons in Structure, Test Behavior Not Implementation, etc.). Consult when steering architecture, verification, debugging, or scope."
 ---
-
 # Poteto's 24 Engineering Principles (`pstack`)
 
 When a task hits one of the triggers below, open [`references/all-24-principles.md`](references/all-24-principles.md) for the exact rule and state which decision the principle changed:

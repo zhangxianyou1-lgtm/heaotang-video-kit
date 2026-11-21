@@ -5,7 +5,6 @@ description: >
   changes nothing. Use for "ponytail debt", "what did ponytail defer", "list the
   shortcuts", /ponytail-debt.
 ---
-
 Every deliberate ponytail shortcut is marked with a `shortcut:` comment naming
 its ceiling and upgrade path (older code may say `ponytail:`). This collects them into one ledger so a deferral
 can't quietly become permanent.
