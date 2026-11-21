@@ -1,0 +1,31 @@
+{
+  "name": "matt-pocock-skills-local",
+  "version": "1.3.2",
+  "description": "Matt Pocock 28 个原版工程与对齐技能（v1.3.2）：grill-with-docs、GLOSSARY 领域词典、to-spec/to-tickets、implement-spec 并行实施与双轴 code-review。",
+  "author": {
+    "name": "Matt Pocock (upstream)",
+    "url": "https://github.com/mattpocock/skills"
+  },
+  "homepage": "https://github.com/mattpocock/skills",
+  "repository": "https://github.com/mattpocock/skills",
+  "license": "MIT",
+  "keywords": [
+    "engineering",
+    "grilling",
+    "to-spec",
+    "tdd",
+    "code-review"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Matt Pocock 工程与规格技能 (v1.3.2)",
+    "shortDescription": "需求追问对齐、GLOSSARY领域词典、规格拆单、并行实施与双轴审查",
+    "longDescription": "同步自 mattpocock/skills v1.3.2 全部 28 个原版技能，负责三剑客底座的前段对齐、拆解与 Spec 符合度审查。",
+    "developerName": "Matt Pocock",
+    "category": "Productivity",
+    "capabilities": [
+      "Instructions"
+    ],
+    "defaultPrompt": "使用 grill-with-docs 对齐当前需求并维护 GLOSSARY.md。"
+  }
+}

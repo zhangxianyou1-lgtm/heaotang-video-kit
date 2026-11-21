@@ -1,0 +1,17 @@
+{
+  "name": "mattpocock-skills",
+  "displayName": "Matt Pocock Engineering Skills",
+  "version": "1.3.2",
+  "description": "Matt Pocock's 28 engineering & alignment skills: grill-with-docs (GLOSSARY + ADRs), to-spec, to-tickets, implement-spec, TDD, diagnosing-bugs, and two-axis Spec+Standards code-review.",
+  "author": {
+    "name": "Matt Pocock",
+    "url": "https://www.aihero.dev"
+  },
+  "homepage": "https://github.com/mattpocock/skills",
+  "repository": "https://github.com/mattpocock/skills",
+  "suggestedPrompts": [
+    "Use grill-with-docs to stress-test this feature idea one question at a time and update GLOSSARY.md",
+    "Use to-spec and to-tickets to turn our agreed plan into vertical-slice tracer bullets",
+    "Run code-review against main along both Spec and Standards axes"
+  ]
+}

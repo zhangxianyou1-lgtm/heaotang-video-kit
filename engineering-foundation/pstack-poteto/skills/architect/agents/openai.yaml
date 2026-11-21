@@ -1,0 +1,5 @@
+interface:
+  display_name: "Poteto: architect"
+  short_description: "Sketch types, signatures, and module structure before code, then stay in the loop while implementation fills in. Use for /architect, 'archit"
+policy:
+  allow_implicit_invocation: false

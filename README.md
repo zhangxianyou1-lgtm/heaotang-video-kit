@@ -7,7 +7,7 @@
 4. **`G` 超现实 3D 奇观视频**（巫师三母本 ＋ `0.0s` 首帧即奇观 ＋ 同画幅因果接触双闭环 ＋ `MiniMax-H3` 单向物理变化）；
 5. **`P + PIP` 全屏真人与知识点专门开口小窗双边铁笼**（全屏 `15%–35%` 防失踪防干讲 ＋ 知识点 `≥3` 处 `PIP` 开口 `y≤1420` 同步嵌回 5 分钟原片 ＋ 官方 4 支片头/4.5s 总 Logo 智能卡位 ＋ 总装 `-16 LUFS` 响度标准化）。
 
-[最高执行规范](R6.1_视觉风暴与零穿帮规范.md) · [五大视觉模块与多模型压榨指南](多模型性能压榨指南_GPT_MiniMax_Claude.md) · [一键启动词](START.txt) · [完整制作流程](tutorial/02_收到视频后的完整流程.md) · [原片粗剪流水线](pipeline/README.md)
+[最高执行规范](R6.1_视觉风暴与零穿帮规范.md) · [五大视觉模块与多模型压榨指南](多模型性能压榨指南_GPT_MiniMax_Claude.md) · [一键启动词](START.txt) · [完整制作流程](tutorial/02_收到视频后的完整流程.md) · [原片粗剪流水线](pipeline/README.md) · [三剑客工程底座](engineering-foundation/README.md)
 
 ---
 
@@ -27,6 +27,10 @@ python tools/check_r60_plans.py
 python tools/check_r_sim_clean.py --self-check
 python tools/align_sfx_words.py --self-check
 python pipeline/test_pipeline.py
+python engineering-foundation/install_foundation.py --check
+
+# 新电脑一键实装三剑客全局底座（Matt Pocock + Ponytail + Poteto pstack）到 Codex 与 Antigravity
+python engineering-foundation/install_foundation.py
 
 # 录屏前扫描 R 类仿真软件前端源码（拦截“交互演示/示例数据/演示账号/原稿口径/无真实支付”等叠甲穿帮词）
 python tools/check_r_sim_clean.py "jobs/本期名称/sim_ui/"

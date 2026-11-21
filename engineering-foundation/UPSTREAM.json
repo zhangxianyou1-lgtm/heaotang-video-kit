@@ -1,0 +1,29 @@
+{
+  "assembled_date": "2026-11-21",
+  "sources": {
+    "mattpocock-skills": {
+      "repository": "https://github.com/mattpocock/skills",
+      "version": "1.3.2",
+      "commit": "abeeaf95660ba9e8b7c753eb38f441ca707a8823",
+      "author": "Matt Pocock",
+      "license": "MIT",
+      "role": "Front-stage alignment, domain glossary/ADRs, spec/ticket slicing, parallel worktree implementation, two-axis Spec+Standards review"
+    },
+    "ponytail": {
+      "repository": "https://github.com/DietrichGebert/ponytail",
+      "version": "5.3.3",
+      "commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+      "author": "Dietrich Gebert",
+      "license": "MIT",
+      "role": "Mid-stage implementation restraint: 6-rung YAGNI solution ladder and on-call senior dev lean diff review"
+    },
+    "pstack-poteto": {
+      "repository": "https://github.com/cursor/plugins/tree/main/pstack",
+      "version": "1.0.0+poteto",
+      "commit": "792440e8a560a4a3f63748cdee70491ecd412982",
+      "author": "Lauren Tan (@poteto)",
+      "license": "MIT",
+      "role": "Back-stage empirical verification & low-human-review loop: adversarial run-proven interrogate, blast-radius proof, verify-<app> generator, structural mistake elimination (/correct), and 24 engineering principles"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "pstack-poteto-local",
+  "version": "1.0.0",
+  "description": "土豆姐 (@poteto) pstack 核心实证与免人审技能包（14 项无冲突原版技能）：interrogate 对抗实证审查、blast-radius、create-verification-skill、correct 结构防错与 24 条工程原则。",
+  "author": {
+    "name": "Lauren Tan (@poteto, upstream)",
+    "url": "https://github.com/cursor/plugins/tree/main/pstack"
+  },
+  "homepage": "https://github.com/cursor/plugins/tree/main/pstack",
+  "repository": "https://github.com/cursor/plugins",
+  "license": "MIT",
+  "keywords": [
+    "verification",
+    "interrogate",
+    "blast-radius",
+    "pstack",
+    "poteto"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Poteto pstack 实证与免审技能",
+    "shortDescription": "对抗实跑破壁审查、爆炸半径实证、项目自验生成与结构化防错",
+    "longDescription": "精选自 cursor/plugins/pstack，去除了与 Matt Pocock 重名的技能及私有模型硬编码，专注解决 AI 自审与减少人工 Review 负担。",
+    "developerName": "Lauren Tan (@poteto)",
+    "category": "Productivity",
+    "capabilities": [
+      "Instructions"
+    ],
+    "defaultPrompt": "使用 interrogate 对当前改动做对抗式实跑审查，只保留运行证伪的真实缺陷。"
+  }
+}

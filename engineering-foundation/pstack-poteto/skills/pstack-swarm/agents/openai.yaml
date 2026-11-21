@@ -1,0 +1,5 @@
+interface:
+  display_name: "Poteto: pstack-swarm"
+  short_description: "Fan out N parallel workers, drain them, and return one report. Use for /pstack-swarm, 'swarm this', or parallel coverage, races, gauntlets, "
+policy:
+  allow_implicit_invocation: false

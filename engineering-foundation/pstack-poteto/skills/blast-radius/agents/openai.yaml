@@ -1,0 +1,5 @@
+interface:
+  display_name: "Poteto: blast-radius"
+  short_description: "Find what a change could break somewhere else before it ships, beyond the diff, and prove the one fact it's safe because of by running real "
+policy:
+  allow_implicit_invocation: false

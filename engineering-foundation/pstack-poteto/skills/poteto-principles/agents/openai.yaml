@@ -1,0 +1,5 @@
+interface:
+  display_name: "Poteto 24 Principles"
+  short_description: "Poteto's 24 high-trust engineering & verification principles"
+policy:
+  allow_implicit_invocation: true

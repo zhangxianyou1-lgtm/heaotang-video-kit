@@ -1,0 +1,17 @@
+{
+  "name": "ponytail",
+  "displayName": "Ponytail (Lazy Senior Dev)",
+  "version": "5.3.3",
+  "description": "Lazy senior developer mode: 6-rung YAGNI solution ladder (reuse codebase, stdlib, and native features first; write minimal complete diffs) plus ponytail-review and ponytail-audit.",
+  "author": {
+    "name": "Dietrich Gebert",
+    "url": "https://github.com/DietrichGebert"
+  },
+  "homepage": "https://github.com/DietrichGebert/ponytail",
+  "repository": "https://github.com/DietrichGebert/ponytail",
+  "suggestedPrompts": [
+    "Apply Ponytail's solution ladder to solve this with the smallest complete change",
+    "Run ponytail-review on my uncommitted diff to catch bugs, scale risks, and removable bloat",
+    "Run ponytail-audit to find dead code and high-leverage simplifications"
+  ]
+}

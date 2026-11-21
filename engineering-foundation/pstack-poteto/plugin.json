@@ -1,0 +1,17 @@
+{
+  "name": "pstack-poteto",
+  "displayName": "Poteto pstack (Verification & Review)",
+  "version": "1.0.0",
+  "description": "Lauren Tan (@poteto)'s verification & low-human-review skills from pstack: adversarial run-proven /interrogate, /blast-radius, /create-verification-skill, /correct, /architect, and 24 engineering principles.",
+  "author": {
+    "name": "Lauren Tan (@poteto)",
+    "url": "https://github.com/cursor/plugins/tree/main/pstack"
+  },
+  "homepage": "https://github.com/cursor/plugins/tree/main/pstack",
+  "repository": "https://github.com/cursor/plugins",
+  "suggestedPrompts": [
+    "Run interrogate on my current branch diff and report only findings proven by a real command run",
+    "Run blast-radius on this change and prove the core safety invariant by running code",
+    "Use create-verification-skill to generate an end-to-end verify skill and feature map for this repo"
+  ]
+}

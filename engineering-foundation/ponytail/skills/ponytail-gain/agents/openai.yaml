@@ -1,0 +1,5 @@
+interface:
+  display_name: "Ponytail Gain"
+  short_description: ">"
+policy:
+  allow_implicit_invocation: false
